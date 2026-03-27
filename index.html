@@ -75,7 +75,7 @@
     background: var(--navy-deep);
     display: flex; align-items: center; justify-content: space-between;
     padding: 0 48px;
-    height: 68px;
+    height: 88px;
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
 
@@ -86,7 +86,7 @@
   .nav-logo-mark {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 900;
-    font-size: 28px;
+    font-size: 36px;
     color: var(--white);
     letter-spacing: -1px;
   }
@@ -145,7 +145,7 @@
     position: relative;
     display: flex; align-items: center;
     overflow: hidden;
-    padding-top: 68px;
+    padding-top: 88px;
   }
 
   .hero-bg-image {
@@ -1316,7 +1316,7 @@
 
   /* ── NAV SHRINK ON SCROLL ── */
   nav.scrolled {
-    height: 52px !important;
+    height: 64px !important;
     background: rgba(13,22,64,0.97) !important;
     backdrop-filter: blur(12px);
     box-shadow: 0 4px 24px rgba(0,0,0,0.3);
@@ -1413,13 +1413,13 @@
   @media (max-width: 768px) {
 
     /* ── NAV ── */
-    nav { padding: 0 20px; height: 60px; }
+    nav { padding: 0 20px; height: 72px; }
     .nav-tagline { display: none; }
     .nav-links { display: none; flex-direction: column; gap: 0; }
     .nav-links.open {
       display: flex;
       position: fixed;
-      top: 60px; left: 0; right: 0;
+      top: 72px; left: 0; right: 0;
       background: var(--navy-deep);
       padding: 16px 0 24px;
       border-top: 1px solid rgba(255,255,255,0.08);
@@ -1460,7 +1460,7 @@
     .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
     /* ── HERO ── */
-    .hero { min-height: 100svh; padding-top: 60px; }
+    .hero { min-height: 100svh; padding-top: 72px; }
     .hero-inner { padding: 48px 20px 56px; }
     .hero-deco { display: none; }
     .hero h1 { font-size: clamp(44px, 11vw, 64px); }
@@ -2332,6 +2332,114 @@
     .trust-num { font-size: 36px; }
   }
 
+  /* ══════════════════════════
+     SUPPLIER CAROUSEL
+  ══════════════════════════ */
+  .suppliers { overflow: hidden; }
+  .carousel-wrap {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 32px;
+  }
+  .carousel-wrap::before,
+  .carousel-wrap::after {
+    content: '';
+    position: absolute; top: 0; bottom: 0;
+    width: 120px; z-index: 2; pointer-events: none;
+  }
+  .carousel-wrap::before { left: 0; background: linear-gradient(to right, var(--white), transparent); }
+  .carousel-wrap::after  { right: 0; background: linear-gradient(to left, var(--white), transparent); }
+  .carousel-track {
+    display: flex;
+    gap: 2px;
+    width: max-content;
+    animation: carouselScroll 32s linear infinite;
+  }
+  .carousel-track.paused { animation-play-state: paused; }
+  @keyframes carouselScroll {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .carousel-item {
+    background: var(--white);
+    border: 1px solid var(--grey-light);
+    padding: 28px 36px;
+    display: flex; align-items: center; justify-content: center;
+    min-width: 160px;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: filter 0.25s, opacity 0.25s, transform 0.25s, box-shadow 0.25s;
+    flex-shrink: 0;
+    cursor: default;
+  }
+  .carousel-item:hover {
+    filter: none; opacity: 1;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(28,43,110,0.12);
+    position: relative; z-index: 1;
+  }
+  .suppliers-grid-full {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    background: var(--grey-light);
+    border: 1px solid var(--grey-light);
+    margin-bottom: 32px;
+    animation: gridReveal 0.5s ease both;
+  }
+  @keyframes gridReveal {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .supplier-logo-full {
+    background: var(--white);
+    padding: 32px 24px;
+    display: flex; align-items: center; justify-content: center;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: filter 0.25s, opacity 0.25s, transform 0.25s;
+  }
+  .supplier-logo-full:hover {
+    filter: none; opacity: 1;
+    transform: scale(1.04);
+    position: relative; z-index: 1;
+  }
+  .view-all-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--orange);
+    color: var(--navy);
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-bottom: 3px;
+    transition: color 0.2s, border-color 0.2s;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .view-all-btn:hover { color: var(--orange); }
+  .view-all-btn.expanded { color: var(--orange); border-color: var(--navy); }
+  .supplier-logo-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+  @media (max-width: 768px) {
+    .carousel-item { min-width: 130px; padding: 20px 24px; }
+    .carousel-wrap::before, .carousel-wrap::after { width: 60px; }
+    .suppliers-grid-full { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .suppliers-grid-full { grid-template-columns: repeat(2, 1fr); }
+    .carousel-item { min-width: 110px; padding: 16px 18px; }
+  }
+
 </style>
 </head>
 <body>
@@ -2537,29 +2645,74 @@
 </section>
 
 <!-- SUPPLIERS -->
-<section class="suppliers">
+<section class="suppliers" id="suppliers">
   <div class="section-inner">
     <div class="suppliers-header fade-up">
       <div class="section-eyebrow" style="justify-content:center;">Trusted Suppliers</div>
       <h2>Partnered With<br><span class="accent">Industry Leaders.</span></h2>
       <p>We partner with the industry's finest to bring you the best range, quality and value for money.</p>
     </div>
-    <div class="suppliers-grid fade-up fade-up-2">
-      <div class="supplier-logo"><span class="supplier-logo-text">Plascon</span></div>
-      <div class="supplier-logo"><span class="supplier-logo-text">Duram</span></div>
-      <div class="supplier-logo"><span class="supplier-logo-text">Medal</span></div>
-      <div class="supplier-logo"><span class="supplier-logo-text">AB Academy</span></div>
-      <div class="supplier-logo"><span class="supplier-logo-text">AfriLadder</span></div>
-      <div class="supplier-logo"><span class="supplier-logo-text">Harvey</span></div>
-      <div class="supplier-logo"><span class="supplier-logo-text">Malls Tiles</span></div>
-      <div class="supplier-logo"><span class="supplier-logo-text">Volsma</span></div>
-      <div class="supplier-logo"><span class="supplier-logo-text">RobMeg Steel</span></div>
-      <div class="supplier-logo"><span class="supplier-logo-text">Heunis</span></div>
-      <div class="supplier-logo"><span class="supplier-logo-text">Mechook</span></div>
-      <div class="supplier-logo"><span class="supplier-logo-text">Workforce</span></div>
+
+    <!-- CAROUSEL VIEW (default) -->
+    <div class="carousel-wrap fade-up fade-up-2" id="carouselWrap">
+      <div class="carousel-track" id="carouselTrack">
+        <!-- Row 1 — duplicated for infinite loop -->
+        <div class="carousel-item"><span class="supplier-logo-text">Plascon</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Duram</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Medal</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">AfriSam</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Eureka</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Eurolux</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Agrinet</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">AfriLadder</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Harvey</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Malls Tiles</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Volsma</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">RobMeg Steel</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Heunis</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Mechook</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Workforce</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Plascon</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Duram</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Medal</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">AfriSam</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Eureka</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Eurolux</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Agrinet</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">AfriLadder</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Harvey</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Malls Tiles</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Volsma</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">RobMeg Steel</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Heunis</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Mechook</span></div>
+        <div class="carousel-item"><span class="supplier-logo-text">Workforce</span></div>
+      </div>
     </div>
+
+    <!-- GRID VIEW (shown when "View All" clicked) -->
+    <div class="suppliers-grid-full" id="suppliersGrid" style="display:none;">
+      <div class="supplier-logo-full"><span class="supplier-logo-text">Plascon</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">Duram</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">Medal</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">AfriSam</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">Eureka</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">Eurolux</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">Agrinet</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">AfriLadder</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">Harvey</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">Malls Tiles</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">Volsma</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">RobMeg Steel</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">Heunis</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">Mechook</span></div>
+      <div class="supplier-logo-full"><span class="supplier-logo-text">Workforce</span></div>
+    </div>
+
     <div class="suppliers-cta fade-up fade-up-3">
-      <a href="services.html#benefits" style="display:inline-flex;align-items:center;gap:8px;color:var(--navy);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:3px;">View All Suppliers →</a>
+      <button id="viewAllBtn" onclick="toggleSuppliers()" class="view-all-btn">
+        View All Suppliers →
+      </button>
     </div>
   </div>
 </section>
@@ -2961,6 +3114,44 @@
     });
   }
   window.addEventListener('scroll', () => { closeNav(); }, { passive: true });
+
+  // ── SUPPLIER CAROUSEL TOGGLE ──
+  let suppliersExpanded = false;
+  function toggleSuppliers() {
+    suppliersExpanded = !suppliersExpanded;
+    const carousel = document.getElementById('carouselWrap');
+    const grid = document.getElementById('suppliersGrid');
+    const btn = document.getElementById('viewAllBtn');
+    if (suppliersExpanded) {
+      carousel.style.display = 'none';
+      grid.style.display = 'grid';
+      btn.textContent = '← Show Carousel';
+      btn.classList.add('expanded');
+      // Stagger grid items
+      grid.querySelectorAll('.supplier-logo-full').forEach((el, i) => {
+        el.style.opacity = '0';
+        el.style.transform = 'scale(0.9)';
+        setTimeout(() => {
+          el.style.transition = 'opacity 0.3s ease, transform 0.3s ease, filter 0.25s, box-shadow 0.25s';
+          el.style.opacity = '0.6';
+          el.style.transform = 'scale(1)';
+        }, i * 40);
+      });
+    } else {
+      carousel.style.display = 'block';
+      grid.style.display = 'none';
+      btn.textContent = 'View All Suppliers →';
+      btn.classList.remove('expanded');
+      // Resume carousel
+      document.getElementById('carouselTrack').classList.remove('paused');
+    }
+  }
+  // Pause carousel on hover
+  const track = document.getElementById('carouselTrack');
+  if (track) {
+    track.addEventListener('mouseenter', () => track.classList.add('paused'));
+    track.addEventListener('mouseleave', () => track.classList.remove('paused'));
+  }
 
   // ── AUDIENCE TOGGLE ──
   document.querySelectorAll('.toggle-btn').forEach(btn => {
