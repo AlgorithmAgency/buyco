@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — BUYCO | Procurement, Logistics & Growth Tools</title>
+<meta name="description" content="Explore BUYCO's three service pillars — Procurement Power, Supply Chain Optimisation, and Sustainable Growth — designed to transform independent building material retailers.">
+<meta property="og:title" content="BUYCO Services — Procurement, Logistics & Growth">
+<meta property="og:description" content="Corporate-scale procurement, streamlined logistics and growth tools built for independent building material retailers across Southern Africa.">
+<meta name="theme-color" content="#0D1640">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#1C2B6E;--navy-dark:#111E52;--navy-deep:#0D1640;--orange:#F5821F;--orange-dark:#D96E10;--white:#FFFFFF;--off-white:#F4F5F8;--grey:#8A919E;--grey-light:#E8EAF0;--text-dark:#1A1F2E;--text-body:#3D4459}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Barlow',sans-serif;color:var(--text-dark);background:var(--white);overflow-x:hidden}
+  h1,h2,h3,h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;line-height:1.05;letter-spacing:-0.01em;text-transform:uppercase}
+  p{line-height:1.7;color:var(--text-body)}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--navy-deep);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:68px;border-bottom:1px solid rgba(255,255,255,0.08);transition:height .3s,background .3s}
+  nav.scrolled{height:52px!important;background:rgba(13,22,64,0.97)!important;backdrop-filter:blur(12px);box-shadow:0 4px 24px rgba(0,0,0,0.3)}
+  .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+  .nav-logo-mark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:28px;color:var(--white);letter-spacing:-1px}
+  .nav-logo-mark span{color:var(--orange)}
+  .nav-tagline{font-size:9px;color:rgba(255,255,255,0.45);letter-spacing:1.5px;text-transform:uppercase;border-left:1px solid rgba(255,255,255,0.2);padding-left:10px;line-height:1.4;max-width:140px}
+  .nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+  .nav-links a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;transition:color .2s;position:relative}
+  .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--orange);transition:width .25s}
+  .nav-links a:hover{color:var(--white)}
+  .nav-links a:hover::after,.nav-links a.active::after{width:100%}
+  .nav-links a.active{color:var(--orange)}
+  .nav-links .highlight{color:var(--orange)}
+  .btn-nav{background:var(--orange);color:var(--white)!important;padding:10px 22px;border-radius:3px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:background .2s}
+  .btn-nav:hover{background:var(--orange-dark)!important}
+  .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;margin-left:auto}
+  .nav-hamburger span{display:block;width:24px;height:2px;background:var(--white);border-radius:2px;transition:transform .3s,opacity .3s}
+  .nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-hamburger.open span:nth-child(2){opacity:0}
+  .nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  section{position:relative}
+  .section-inner{max-width:1200px;margin:0 auto;padding:0 48px}
+  .section-eyebrow{font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+  .section-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--orange)}
+  .accent{color:var(--orange)}
+  .fade-up{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+  .fade-up.visible{opacity:1;transform:translateY(0)}
+  .fade-up-2{transition-delay:.15s}
+  .fade-up-3{transition-delay:.3s}
+  .btn-primary{background:var(--orange);color:var(--white);padding:16px 32px;border-radius:3px;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;transition:background .2s,transform .15s;display:inline-block}
+  .btn-primary:hover{background:var(--orange-dark);transform:translateY(-1px)}
+  .btn-ghost{border:2px solid rgba(255,255,255,0.4);color:var(--white);padding:14px 28px;border-radius:3px;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;transition:all .2s;display:inline-block}
+  .btn-ghost:hover{border-color:var(--white);background:rgba(255,255,255,0.08)}
+  .btn-navy{background:var(--navy);color:var(--white);padding:16px 32px;border-radius:3px;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;transition:background .2s;display:inline-block}
+  .btn-navy:hover{background:var(--orange)}
+  .scroll-progress{position:fixed;top:0;left:0;height:3px;background:var(--orange);z-index:999;width:0%;box-shadow:0 0 8px rgba(245,130,31,0.6)}
+  .whatsapp-btn{position:fixed;bottom:28px;left:28px;z-index:200;background:#25D366;color:var(--white);display:flex;align-items:center;gap:10px;padding:12px 20px 12px 14px;border-radius:50px;text-decoration:none;font-weight:700;font-size:13px;box-shadow:0 6px 24px rgba(37,211,102,0.4);transform:translateX(-120px);opacity:0;transition:transform .4s cubic-bezier(0.34,1.56,0.64,1),opacity .4s;white-space:nowrap}
+  .whatsapp-btn.show{transform:translateX(0);opacity:1}
+  .whatsapp-btn:hover{background:#1ebe5d;transform:translateY(-2px)!important;color:var(--white)}
+
+  /* PAGE HERO */
+  .page-hero{min-height:52vh;background:linear-gradient(105deg,var(--navy-deep) 0%,var(--navy) 60%,#1E3080 100%);position:relative;display:flex;align-items:flex-end;padding-top:68px;overflow:hidden}
+  .page-hero-deco{position:absolute;right:-20px;top:50%;transform:translateY(-50%);font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:220px;color:transparent;-webkit-text-stroke:2px rgba(255,255,255,0.04);pointer-events:none;white-space:nowrap}
+  .page-hero-inner{position:relative;z-index:2;max-width:1200px;margin:0 auto;padding:60px 48px 72px;width:100%}
+  .breadcrumb{display:flex;align-items:center;gap:8px;margin-bottom:20px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.45)}
+  .breadcrumb a{color:rgba(255,255,255,0.45);text-decoration:none;transition:color .2s}
+  .breadcrumb a:hover{color:var(--orange)}
+  .breadcrumb span{color:var(--orange)}
+  .page-hero h1{font-size:clamp(48px,7vw,88px);color:var(--white);margin-bottom:20px;max-width:700px}
+  .page-hero-sub{font-size:17px;color:rgba(255,255,255,0.65);max-width:520px;line-height:1.7}
+
+  /* SERVICES NAV */
+  .services-nav{background:var(--white);border-bottom:1px solid var(--grey-light);position:sticky;top:68px;z-index:50;transition:top .3s}
+  .services-nav-inner{max-width:1200px;margin:0 auto;padding:0 48px;display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+  .services-nav-inner::-webkit-scrollbar{display:none}
+  .snav-link{padding:18px 28px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:var(--grey);text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap;transition:color .2s,border-color .2s}
+  .snav-link:hover{color:var(--navy)}
+  .snav-link.active{color:var(--orange);border-bottom-color:var(--orange)}
+
+  /* ══ 1. OVERVIEW ══ */
+  .overview{padding:80px 0;background:var(--white)}
+  .overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+  .overview-card{padding:48px 36px;background:var(--off-white);border-top:4px solid transparent;transition:all .3s;cursor:default}
+  .overview-card:hover{border-top-color:var(--orange);transform:translateY(-6px);box-shadow:0 20px 48px rgba(28,43,110,0.1);background:var(--white)}
+  .ov-num{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;color:var(--orange);letter-spacing:2px;margin-bottom:16px;display:block}
+  .ov-icon{font-size:40px;margin-bottom:20px;display:block}
+  .overview-card h3{font-size:26px;color:var(--navy);margin-bottom:12px}
+  .overview-card p{font-size:14px;color:var(--text-body);line-height:1.7;margin-bottom:20px}
+  .ov-link{font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--orange);text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:2px;transition:color .2s}
+  .ov-link:hover{color:var(--orange-dark)}
+
+  /* ══ 2. PROCUREMENT ══ */
+  .procurement{padding:100px 0;background:var(--navy-deep);overflow:hidden}
+  .svc-split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .svc-content h2{font-size:clamp(32px,4vw,52px);margin-bottom:20px}
+  .svc-content.light h2{color:var(--white)}
+  .svc-content.dark h2{color:var(--navy)}
+  .svc-content p{font-size:16px;line-height:1.7;margin-bottom:16px}
+  .svc-content.light p{color:rgba(255,255,255,0.65)}
+  .svc-content.dark p{color:var(--text-body)}
+  .svc-benefits{list-style:none;margin-top:28px;display:flex;flex-direction:column;gap:14px}
+  .svc-benefits li{display:flex;align-items:flex-start;gap:12px;font-size:15px}
+  .svc-benefits li.light{color:rgba(255,255,255,0.75)}
+  .svc-benefits li.dark{color:var(--text-body)}
+  .svc-bullet{width:22px;height:22px;background:var(--orange);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;margin-top:1px}
+  .svc-bullet::after{content:'✓';color:white;font-size:11px;font-weight:700}
+  .svc-visual{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:48px;position:relative;overflow:hidden}
+  .svc-visual-light{background:var(--off-white);padding:48px;position:relative;overflow:hidden}
+  .svc-big-num{position:absolute;right:-10px;top:-10px;font-family:'Barlow Condensed',sans-serif;font-size:180px;font-weight:900;color:rgba(255,255,255,0.04);line-height:1;pointer-events:none}
+  .svc-big-num-dark{position:absolute;right:-10px;top:-10px;font-family:'Barlow Condensed',sans-serif;font-size:180px;font-weight:900;color:rgba(28,43,110,0.05);line-height:1;pointer-events:none}
+  .svc-stat-stack{display:flex;flex-direction:column;gap:2px;position:relative;z-index:1}
+  .svc-stat-row{background:rgba(255,255,255,0.06);padding:24px 28px;border-left:4px solid var(--orange)}
+  .svc-stat-row-light{background:var(--white);padding:24px 28px;border-left:4px solid var(--orange)}
+  .svc-stat-row-num{font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:900;color:var(--orange);display:block;line-height:1}
+  .svc-stat-row-label{font-size:12px;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px;margin-top:4px;display:block}
+  .svc-stat-row-label-dark{font-size:12px;color:var(--grey);text-transform:uppercase;letter-spacing:1px;margin-top:4px;display:block}
+
+  /* ══ 3. LOGISTICS ══ */
+  .logistics{padding:100px 0;background:var(--white)}
+
+  /* ══ 4. GROWTH ══ */
+  .growth{padding:100px 0;background:var(--off-white)}
+
+  /* ══ 5. SCORECARD ══ */
+  .scorecard-section{padding:100px 0;background:var(--navy-deep)}
+  .scorecard-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .sc-content h2{font-size:clamp(32px,4vw,52px);color:var(--white);margin-bottom:20px}
+  .sc-content p{color:rgba(255,255,255,0.65);font-size:16px;line-height:1.7;margin-bottom:16px}
+  .sc-pillars{display:flex;flex-direction:column;gap:16px;margin:28px 0}
+  .sc-pillar{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,0.05);padding:18px 20px;border-left:4px solid var(--orange)}
+  .sc-pillar-icon{width:40px;height:40px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:15px;color:white;flex-shrink:0}
+  .sc-pillar h5{font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:2px}
+  .sc-pillar p{font-size:12px;color:rgba(255,255,255,0.5);margin:0;line-height:1.5}
+  .sc-visual{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);padding:40px;position:relative;overflow:hidden}
+  .sc-bars{display:flex;flex-direction:column;gap:16px;position:relative;z-index:1}
+  .sc-bar-row{display:flex;flex-direction:column;gap:6px}
+  .sc-bar-label{display:flex;justify-content:space-between;font-size:12px;font-weight:700;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:1px}
+  .sc-bar-track{height:8px;background:rgba(255,255,255,0.08);border-radius:4px;overflow:hidden}
+  .sc-bar-fill{height:100%;background:var(--orange);border-radius:4px;width:0%;transition:width 1.4s cubic-bezier(0.4,0,0.2,1);box-shadow:0 0 10px rgba(245,130,31,0.5)}
+  .sc-visual h3{font-size:24px;color:var(--white);margin-bottom:8px;position:relative;z-index:1}
+  .sc-visual h3 span{color:var(--orange)}
+  .sc-visual > p{color:rgba(255,255,255,0.55);font-size:13px;margin-bottom:24px;position:relative;z-index:1}
+
+  /* ══ 6. BENEFITS FULL ══ */
+  .benefits-full{padding:100px 0;background:var(--white)}
+  .benefits-header{margin-bottom:56px}
+  .benefits-header h2{font-size:clamp(32px,4vw,52px);color:var(--navy);margin-bottom:12px}
+  .audience-toggle{display:inline-flex;background:var(--off-white);border:1px solid var(--grey-light);border-radius:3px;overflow:hidden;margin-top:24px}
+  .toggle-btn{background:transparent;border:none;color:var(--grey);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;padding:12px 32px;cursor:pointer;transition:background .25s,color .25s}
+  .toggle-btn.active{background:var(--navy);color:var(--white)}
+  .toggle-btn:not(.active):hover{background:rgba(28,43,110,0.06);color:var(--navy)}
+  .benefits-panel{display:none}
+  .benefits-panel.active{display:block;animation:panelIn .4s ease both}
+  @keyframes panelIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+  .benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:40px}
+  .benefit-card{background:var(--off-white);padding:36px 28px;border-top:4px solid transparent;transition:all .3s}
+  .benefit-card:hover{border-top-color:var(--orange);transform:translateY(-4px);box-shadow:0 16px 40px rgba(28,43,110,0.08);background:var(--white)}
+  .benefit-icon{font-size:28px;margin-bottom:16px;display:block}
+  .benefit-card h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;text-transform:uppercase;color:var(--navy);margin-bottom:10px}
+  .benefit-card p{font-size:14px;color:var(--text-body);line-height:1.7}
+
+  /* ══ 7. CTA ══ */
+  .svc-cta{padding:80px 0;background:var(--navy-deep)}
+  .svc-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+  .svc-cta h2{font-size:clamp(28px,3.5vw,44px);color:var(--white)}
+  .svc-cta p{color:rgba(255,255,255,0.6);font-size:16px;margin-top:8px;max-width:500px}
+  .cta-btns{display:flex;gap:16px;flex-wrap:wrap}
+
+  /* FOOTER */
+  footer{background:var(--navy-deep);padding:56px 0 32px;border-top:1px solid rgba(255,255,255,0.06)}
+  .footer-inner{max-width:1200px;margin:0 auto;padding:0 48px}
+  .footer-top{display:flex;justify-content:space-between;gap:48px;margin-bottom:48px;flex-wrap:wrap}
+  .footer-brand{max-width:280px}
+  .footer-logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:32px;color:var(--white);letter-spacing:-1px;margin-bottom:4px}
+  .footer-logo span{color:var(--orange)}
+  .footer-tagline-text{font-size:10px;color:rgba(255,255,255,0.35);text-transform:uppercase;letter-spacing:2px;margin-bottom:16px}
+  .footer-desc{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7}
+  .footer-nav h4{font-size:12px;color:rgba(255,255,255,0.4);letter-spacing:2px;margin-bottom:16px;font-family:'Barlow',sans-serif;font-weight:700;text-transform:uppercase}
+  .footer-nav ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+  .footer-nav a{color:rgba(255,255,255,0.65);text-decoration:none;font-size:14px;transition:color .2s,padding-left .2s;padding-left:0}
+  .footer-nav a:hover{color:var(--white);padding-left:8px}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+  .footer-bottom p{font-size:12px;color:rgba(255,255,255,0.3)}
+  .footer-legal{display:flex;gap:24px}
+  .footer-legal a{font-size:12px;color:rgba(255,255,255,0.3);text-decoration:none}
+  .footer-legal a:hover{color:rgba(255,255,255,.6)}
+
+  /* RESPONSIVE */
+  @media(max-width:1024px){nav,div.services-nav-inner,.page-hero-inner,.section-inner,.footer-inner{padding-left:28px;padding-right:28px}}
+  @media(max-width:768px){
+    nav{padding:0 20px;height:60px}.nav-tagline{display:none}
+    .nav-links{display:none;flex-direction:column}
+    .nav-links.open{display:flex;position:fixed;top:60px;left:0;right:0;background:var(--navy-deep);padding:16px 0 24px;z-index:99;box-shadow:0 16px 32px rgba(0,0,0,.4)}
+    .nav-links.open li{width:100%}
+    .nav-links.open a{display:block;padding:14px 24px;font-size:15px;border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav-links.open .btn-nav{margin:12px 24px 0;display:block;text-align:center}
+    .nav-hamburger{display:flex}
+    .page-hero-deco{display:none}
+    .page-hero h1{font-size:clamp(40px,10vw,60px)}
+    .page-hero-inner,.section-inner,.services-nav-inner,.footer-inner{padding-left:20px;padding-right:20px}
+    .overview-grid,.svc-split,.scorecard-inner,.benefits-grid{grid-template-columns:1fr}
+    .svc-cta-inner{flex-direction:column}
+    .footer-top{flex-direction:column;gap:32px}
+    .footer-bottom{flex-direction:column;text-align:center}
+    .footer-legal{justify-content:center}
+    .whatsapp-btn{bottom:16px;left:16px;font-size:12px;padding:11px 16px 11px 12px}
+    .services-nav{top:60px}
+  }
+  @media(max-width:480px){
+    .svc-visual,.svc-visual-light,.sc-visual,.franchise-cta-box{padding:24px 20px}
+    .section-inner,.page-hero-inner,.footer-inner{padding-left:16px;padding-right:16px}
+    .benefits-grid{grid-template-columns:1fr}
+  }
+  .nav-hamburger{display:none}
+  @media(max-width:768px){.nav-hamburger{display:flex}}
+</style>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<a href="https://wa.me/27219275000?text=Hi%20BUYCO%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." class="whatsapp-btn" id="whatsappBtn" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="22" height="22" viewBox="0 0 26 26" fill="none"><path d="M13 1C6.373 1 1 6.373 1 13c0 2.127.553 4.124 1.52 5.854L1 25l6.348-1.494A11.94 11.94 0 0013 25c6.627 0 12-5.373 12-12S19.627 1 13 1z" fill="white"/><path d="M19.11 16.28c-.306-.153-1.81-.893-2.09-.994-.28-.102-.484-.153-.688.153-.204.306-.79.994-.967 1.198-.178.204-.357.23-.663.077-.306-.153-1.292-.476-2.46-1.517-.91-.81-1.524-1.811-1.702-2.117-.178-.306-.019-.47.133-.622.137-.136.306-.357.459-.535.153-.179.204-.306.306-.51.102-.204.051-.382-.026-.535-.077-.153-.688-1.658-.942-2.27-.248-.596-.5-.515-.688-.524l-.586-.01c-.204 0-.535.077-.816.382-.28.306-1.07 1.046-1.07 2.55 0 1.506 1.096 2.959 1.249 3.163.153.204 2.157 3.294 5.228 4.623.731.315 1.301.503 1.746.644.734.233 1.402.2 1.93.121.589-.088 1.81-.74 2.065-1.455.255-.714.255-1.326.178-1.454-.076-.128-.28-.204-.586-.357z" fill="white"/></svg>
+  <span>Chat With Us</span>
+</a>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">BUY<span>CO</span><span style="color:var(--orange);font-size:10px;vertical-align:super;">.</span></div>
+    <div class="nav-tagline">The Building Company's Collective Buying Group</div>
+  </a>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="index.html#benefits">Benefits</a></li>
+    <li><a href="index.html#faq" class="highlight">Promotions</a></li>
+    <li><a href="join.html" class="btn-nav">Get Started</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-deco">SERVICES</div>
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <span>Services</span></div>
+    <h1>Tools That <span class="accent">Move</span><br>the Needle.</h1>
+    <p class="page-hero-sub">Three integrated service pillars — Procurement, Logistics, and Growth — built to transform how independent retailers compete, buy, and scale.</p>
+  </div>
+</section>
+
+<!-- STICKY SERVICES NAV -->
+<div class="services-nav" id="servicesNav">
+  <div class="services-nav-inner">
+    <a href="#procurement" class="snav-link active" data-section="procurement">01 — Procurement</a>
+    <a href="#logistics" class="snav-link" data-section="logistics">02 — Logistics</a>
+    <a href="#growth" class="snav-link" data-section="growth">03 — Growth</a>
+    <a href="#scorecard" class="snav-link" data-section="scorecard">04 — Scorecard</a>
+    <a href="#benefits" class="snav-link" data-section="benefits">05 — Benefits</a>
+  </div>
+</div>
+
+<!-- OVERVIEW CARDS -->
+<section class="overview">
+  <div class="section-inner">
+    <div class="overview-grid">
+      <div class="overview-card fade-up">
+        <span class="ov-num">01 — Procurement</span>
+        <span class="ov-icon">💪</span>
+        <h3>Unlock Procurement Power</h3>
+        <p>Turn collective scale into competitive advantage. Access supplier pricing and terms typically reserved for large national chains — from day one.</p>
+        <a href="#procurement" class="ov-link">Learn more →</a>
+      </div>
+      <div class="overview-card fade-up fade-up-2">
+        <span class="ov-num">02 — Logistics</span>
+        <span class="ov-icon">🚚</span>
+        <h3>Optimise Your Supply Chain</h3>
+        <p>Remove friction, reduce lead times, and increase delivery reliability through coordinated ordering and shared distribution infrastructure.</p>
+        <a href="#logistics" class="ov-link">Learn more →</a>
+      </div>
+      <div class="overview-card fade-up fade-up-3">
+        <span class="ov-num">03 — Growth</span>
+        <span class="ov-icon">📈</span>
+        <h3>Accelerate Sustainable Growth</h3>
+        <p>Smarter stock turn, better margin structures, private label opportunities and market intelligence to fuel long-term profitability.</p>
+        <a href="#growth" class="ov-link">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1. PROCUREMENT -->
+<section class="procurement" id="procurement">
+  <div class="section-inner">
+    <div class="svc-split">
+      <div class="svc-content light fade-up">
+        <div class="section-eyebrow" style="color:var(--orange);">01 — Procurement</div>
+        <h2>Buying Power<br><span class="accent">From Day One.</span></h2>
+        <p>The moment you join BUYCO, you access The Building Company's R6 billion procurement infrastructure — the same leverage that powers BUCO and Timbercity nationwide.</p>
+        <p>Supplier agreements are pre-negotiated at national scale, meaning you receive competitive pricing, favourable payment terms, and commercial advantages that would be impossible to achieve alone.</p>
+        <ul class="svc-benefits">
+          <li class="light"><div class="svc-bullet"></div><span>Immediate access to R6B+ in collective buying power</span></li>
+          <li class="light"><div class="svc-bullet"></div><span>Pre-negotiated pricing with 100+ national and regional suppliers</span></li>
+          <li class="light"><div class="svc-bullet"></div><span>Preferential supplier terms and rebate structures</span></li>
+          <li class="light"><div class="svc-bullet"></div><span>Centralised procurement management — less admin, more trading</span></li>
+          <li class="light"><div class="svc-bullet"></div><span>Access to exclusive products and private label ranges</span></li>
+          <li class="light"><div class="svc-bullet"></div><span>Monthly promotional calendars and seasonal buying opportunities</span></li>
+        </ul>
+      </div>
+      <div class="svc-visual fade-up fade-up-2">
+        <div class="svc-big-num">01</div>
+        <div class="svc-stat-stack">
+          <div class="svc-stat-row"><span class="svc-stat-row-num">R6B+</span><span class="svc-stat-row-label">Total Group Buying Power</span></div>
+          <div class="svc-stat-row"><span class="svc-stat-row-num">100+</span><span class="svc-stat-row-label">Accredited Suppliers</span></div>
+          <div class="svc-stat-row"><span class="svc-stat-row-num">Day 1</span><span class="svc-stat-row-label">Access From Joining</span></div>
+          <div class="svc-stat-row"><span class="svc-stat-row-num">130+</span><span class="svc-stat-row-label">BUCO & Timbercity Outlets in Network</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. LOGISTICS -->
+<section class="logistics" id="logistics">
+  <div class="section-inner">
+    <div class="svc-split">
+      <div class="svc-visual-light fade-up">
+        <div class="svc-big-num-dark">02</div>
+        <div class="svc-stat-stack">
+          <div class="svc-stat-row-light"><span class="svc-stat-row-num">4-Day</span><span class="svc-stat-row-label-dark">Average Procurement Cycle</span></div>
+          <div class="svc-stat-row-light"><span class="svc-stat-row-num">↓30%</span><span class="svc-stat-row-label-dark">Average Lead Time Reduction</span></div>
+          <div class="svc-stat-row-light"><span class="svc-stat-row-num">8</span><span class="svc-stat-row-label-dark">Countries in Distribution Network</span></div>
+          <div class="svc-stat-row-light"><span class="svc-stat-row-num">Shared</span><span class="svc-stat-row-label-dark">Load Distribution — Lower Cost Per Delivery</span></div>
+        </div>
+      </div>
+      <div class="svc-content dark fade-up fade-up-2">
+        <div class="section-eyebrow">02 — Logistics</div>
+        <h2>Supply Chain<br><span class="accent">Without the Friction.</span></h2>
+        <p>Stockouts, late deliveries, and fragmented ordering are the silent margin killers for independent retailers. BUYCO's logistics framework eliminates them.</p>
+        <p>Through coordinated ordering, shared distribution runs and consolidated delivery schedules, we reduce the cost and complexity of getting stock to your shelves — reliably and predictably.</p>
+        <ul class="svc-benefits">
+          <li class="dark"><div class="svc-bullet"></div><span>Shared load solutions — lower cost per delivery across members</span></li>
+          <li class="dark"><div class="svc-bullet"></div><span>Coordinated ordering that reduces lead times significantly</span></li>
+          <li class="dark"><div class="svc-bullet"></div><span>Regional supplier road shows and direct delivery support</span></li>
+          <li class="dark"><div class="svc-bullet"></div><span>Improved stock availability and reduced out-of-stock incidents</span></li>
+          <li class="dark"><div class="svc-bullet"></div><span>Cross-border distribution across 8 Southern African countries</span></li>
+        </ul>
+        <div style="margin-top:28px"><a href="join.html" class="btn-navy">Get Started</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. GROWTH -->
+<section class="growth" id="growth">
+  <div class="section-inner">
+    <div class="svc-split">
+      <div class="svc-content dark fade-up">
+        <div class="section-eyebrow">03 — Growth</div>
+        <h2>Smarter Growth.<br><span class="accent">Lasting Results.</span></h2>
+        <p>Procurement savings are just the start. BUYCO's growth tools are designed to compound your advantage over time — through better margins, smarter stock turn, and insights that guide every commercial decision.</p>
+        <p>Whether it's access to private label products, market intelligence data, or monthly promotional campaigns, we give you the firepower to grow on your terms.</p>
+        <ul class="svc-benefits">
+          <li class="dark"><div class="svc-bullet"></div><span>Private label product range — differentiate your store offering</span></li>
+          <li class="dark"><div class="svc-bullet"></div><span>Market trend data and regional consumer behaviour insights</span></li>
+          <li class="dark"><div class="svc-bullet"></div><span>Monthly promotional calendars and seasonal campaign support</span></li>
+          <li class="dark"><div class="svc-bullet"></div><span>Staff training programmes from leading suppliers</span></li>
+          <li class="dark"><div class="svc-bullet"></div><span>Early access to new product launches and exclusive SKUs</span></li>
+          <li class="dark"><div class="svc-bullet"></div><span>Pathway to the 2026 franchise brand for qualifying members</span></li>
+        </ul>
+      </div>
+      <div class="svc-visual-light fade-up fade-up-2">
+        <div class="svc-big-num-dark">03</div>
+        <div class="svc-stat-stack">
+          <div class="svc-stat-row-light"><span class="svc-stat-row-num">Q1</span><span class="svc-stat-row-label-dark">Typical Margin Improvement Timeline</span></div>
+          <div class="svc-stat-row-light"><span class="svc-stat-row-num">Monthly</span><span class="svc-stat-row-label-dark">Promotional Calendar Updates</span></div>
+          <div class="svc-stat-row-light"><span class="svc-stat-row-num">2026</span><span class="svc-stat-row-label-dark">Franchise Brand Launch for Members</span></div>
+          <div class="svc-stat-row-light"><span class="svc-stat-row-num">100%</span><span class="svc-stat-row-label-dark">Independence Retained</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. SCORECARD -->
+<section class="scorecard-section" id="scorecard">
+  <div class="section-inner">
+    <div class="scorecard-inner">
+      <div class="sc-content fade-up">
+        <div class="section-eyebrow" style="color:var(--orange);">04 — Scorecard</div>
+        <h2>Measure What<br><span class="accent">Actually Matters.</span></h2>
+        <p>The BUYCO Scorecard is a free diagnostic tool that evaluates your business across three core performance pillars — giving you a clear, practical view of exactly where buying smarter can unlock hidden profitability.</p>
+        <p>Most retailers know something is wrong but can't pinpoint where. The scorecard tells you precisely — and shows you the fix.</p>
+        <div class="sc-pillars">
+          <div class="sc-pillar"><div class="sc-pillar-icon">01</div><div><h5>Procurement Performance</h5><p>Are you buying at the right price from the right suppliers?</p></div></div>
+          <div class="sc-pillar"><div class="sc-pillar-icon">02</div><div><h5>Supply Chain Efficiency</h5><p>Is your stock flow costing you margin and customer satisfaction?</p></div></div>
+          <div class="sc-pillar"><div class="sc-pillar-icon">03</div><div><h5>Commercial Structure</h5><p>Are your supplier terms and rebate structures working in your favour?</p></div></div>
+        </div>
+        <a href="join.html" class="btn-primary" style="margin-top:8px;">Start Your Free Scorecard</a>
+      </div>
+      <div class="sc-visual fade-up fade-up-2">
+        <div class="svc-big-num">04</div>
+        <h3>Your Score <span>At a Glance</span></h3>
+        <p>Example retailer performance metrics — before joining BUYCO.</p>
+        <div class="sc-bars">
+          <div class="sc-bar-row"><div class="sc-bar-label"><span>Procurement</span><span class="bar-val">--</span></div><div class="sc-bar-track"><div class="sc-bar-fill" data-target="58"></div></div></div>
+          <div class="sc-bar-row"><div class="sc-bar-label"><span>Supply Chain</span><span class="bar-val">--</span></div><div class="sc-bar-track"><div class="sc-bar-fill" data-target="44"></div></div></div>
+          <div class="sc-bar-row"><div class="sc-bar-label"><span>Commercial</span><span class="bar-val">--</span></div><div class="sc-bar-track"><div class="sc-bar-fill" data-target="51"></div></div></div>
+        </div>
+        <p style="color:rgba(255,255,255,0.35);font-size:11px;margin-top:16px;letter-spacing:1px;text-transform:uppercase;">↑ With BUYCO, these scores improve across all three pillars within one quarter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. BENEFITS FULL WITH TOGGLE -->
+<section class="benefits-full" id="benefits">
+  <div class="section-inner">
+    <div class="benefits-header fade-up">
+      <div class="section-eyebrow">05 — Benefits</div>
+      <h2>What You Get When<br><span class="accent">You Join.</span></h2>
+      <p style="color:var(--grey);margin-top:12px;font-size:15px">Choose your perspective — every stakeholder in the BUYCO ecosystem wins.</p>
+      <div class="audience-toggle">
+        <button class="toggle-btn active" data-audience="retailers">For Retailers</button>
+        <button class="toggle-btn" data-audience="suppliers">For Suppliers</button>
+      </div>
+    </div>
+    <div class="benefits-panel active" data-panel="retailers">
+      <div class="benefits-grid">
+        <div class="benefit-card"><div class="benefit-icon">💪</div><h4>You Stay Independent</h4><p>Your name. Your team. Your brand. We strengthen you — not standardise you. Retain full autonomy while gaining the power of a national group.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">⚡</div><h4>Buying Power from Day One</h4><p>Access The Building Company's R6 billion procurement leverage instantly. Pricing and terms typically reserved for large-scale chains.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">📈</div><h4>Improved Margins & ROI</h4><p>Supplier agreements structured to support margin growth through smarter logistics, shared distribution, and enhanced commercial terms.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">🚚</div><h4>Tailored Logistics</h4><p>Shared load solutions reduce lead times and increase delivery efficiency — benefiting both your store and your supply chain partners.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">🏷️</div><h4>Private Label Products</h4><p>Differentiate your shelves with an exclusive private label range backed by guaranteed quality and competitive pricing.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">🎓</div><h4>Staff Training & Support</h4><p>Ongoing product training from suppliers empowers your team and elevates the customer experience in your store.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">🔔</div><h4>Monthly Promotions</h4><p>Stay ahead with regular access to monthly supplier promotions, exclusive deals, and early updates on new product releases.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">🌐</div><h4>Growing Supplier Base</h4><p>New suppliers added monthly, including small-scale manufacturers gaining market traction — always expanding your options.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">🚀</div><h4>Franchise Pathway (2026)</h4><p>Members in good standing gain privileged access to BUYCO's new franchise retail brand launching in 2026.</p></div>
+      </div>
+    </div>
+    <div class="benefits-panel" data-panel="suppliers">
+      <div class="benefits-grid">
+        <div class="benefit-card"><div class="benefit-icon">🌍</div><h4>Immediate Market Exposure</h4><p>Access 130+ BUCO and Timbercity outlets plus a growing network of independent retailers across 8 Southern African countries.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">📦</div><h4>Consolidated Volume</h4><p>Benefit from coordinated bulk orders, improved delivery efficiency, and volume growth through shared logistics and distribution runs.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">🤝</div><h4>Fair Commercial Partnerships</h4><p>Collaboration over competition — improved rebate structures, product integrity protection, and preferential retail status.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">📊</div><h4>Market Intelligence</h4><p>Insights into market trends, regional performance data, and consumer behaviour to inform your product and pricing strategy.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">📣</div><h4>Group Promotions</h4><p>Participate in monthly promotional calendars and seasonal campaigns to drive retailer sell-through at scale.</p></div>
+        <div class="benefit-card"><div class="benefit-icon">🚀</div><h4>Scalable Distribution</h4><p>Whether penetrating new regions or scaling nationally, BUYCO provides the framework for growth with predictable volume.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="svc-cta">
+  <div class="section-inner">
+    <div class="svc-cta-inner">
+      <div class="fade-up">
+        <h2>It's Hammer Time.<br><span class="accent">Let's Build Together.</span></h2>
+        <p>Ready to access procurement power, streamlined logistics and growth tools? Join BUYCO and start competing at a corporate level — today.</p>
+      </div>
+      <div class="cta-btns fade-up">
+        <a href="join.html" class="btn-primary">Get Started Free</a>
+        <a href="join.html#contact" class="btn-ghost">Talk to the Team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">BUY<span>CO</span><span style="color:var(--orange);font-size:10px;vertical-align:super;">.</span></div>
+        <div class="footer-tagline-text">The Building Company's Collective Buying Group</div>
+        <p class="footer-desc">Empowering independent building material retailers across Southern Africa with corporate-scale buying power.</p>
+      </div>
+      <div class="footer-nav"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="about.html#legacy">Our Story</a></li><li><a href="index.html#footprint">Our Footprint</a></li></ul></div>
+      <div class="footer-nav"><h4>Services</h4><ul><li><a href="#procurement">Procurement</a></li><li><a href="#logistics">Logistics</a></li><li><a href="#growth">Growth Tools</a></li><li><a href="#scorecard">Scorecard</a></li></ul></div>
+      <div class="footer-nav"><h4>Join BUYCO</h4><ul><li><a href="join.html">For Retailers</a></li><li><a href="join.html#suppliers">For Suppliers</a></li><li><a href="join.html">Get Started</a></li></ul></div>
+      <div class="footer-nav"><h4>Downloads</h4><ul><li><a href="#" download>📄 Retailer Brochure</a></li><li><a href="#" download>📄 Supplier Brochure</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 BUYCO. The Building Company's Collective Buying Group. All rights reserved.</p>
+      <div class="footer-legal"><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
+  document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 80); document.getElementById('scrollProgress').style.width = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100) + '%'; }, {passive:true});
+  window.addEventListener('scroll', () => { document.getElementById('whatsappBtn').classList.toggle('show', window.scrollY > 400); }, {passive:true});
+  const hb = document.getElementById('navHamburger'), nl = document.getElementById('navLinks');
+  hb.addEventListener('click', () => { hb.classList.toggle('open'); nl.classList.toggle('open'); });
+  window.addEventListener('scroll', () => { hb.classList.remove('open'); nl.classList.remove('open'); }, {passive:true});
+  // Services sticky nav active state
+  const sections = ['procurement','logistics','growth','scorecard','benefits'];
+  const snavLinks = document.querySelectorAll('.snav-link');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(id => { const el = document.getElementById(id); if(el && window.scrollY >= el.offsetTop - 160) current = id; });
+    snavLinks.forEach(l => { l.classList.toggle('active', l.dataset.section === current); });
+  }, {passive:true});
+  // Benefits toggle
+  document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const audience = btn.dataset.audience;
+      document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.benefits-panel').forEach(p => { p.classList.remove('active'); if(p.dataset.panel === audience) p.classList.add('active'); });
+    });
+  });
+  // Scorecard bars animation
+  const scObs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.querySelectorAll('.sc-bar-fill').forEach((bar, i) => {
+          const target = parseInt(bar.dataset.target);
+          setTimeout(() => {
+            bar.style.width = target + '%';
+            const valEl = bar.closest('.sc-bar-row').querySelector('.bar-val');
+            let count = 0;
+            const timer = setInterval(() => { count = Math.min(count + 2, target); valEl.textContent = count + '%'; if(count >= target) clearInterval(timer); }, 20);
+          }, i * 200 + 300);
+        });
+        scObs.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.4});
+  const scVisual = document.querySelector('.sc-visual');
+  if(scVisual) scObs.observe(scVisual);
+</script>
+</body>
+</html>
