@@ -1325,64 +1325,7 @@
 
   nav { transition: height 0.3s ease, background 0.3s ease; }
 
-  /* ── STICKY SCROLL CTA ── */
-  .sticky-cta {
-    position: fixed;
-    bottom: 28px; right: 28px;
-    z-index: 200;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-end;
-  }
-
-  .sticky-scorecard-btn {
-    background: var(--orange);
-    color: var(--white);
-    padding: 14px 22px;
-    border-radius: 3px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    text-decoration: none;
-    box-shadow: 0 8px 24px rgba(245,130,31,0.45);
-    transform: translateX(120px);
-    opacity: 0;
-    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), opacity 0.4s ease, background 0.2s, box-shadow 0.2s;
-    display: flex; align-items: center; gap: 8px;
-    white-space: nowrap;
-  }
-
-  .sticky-scorecard-btn.show {
-    transform: translateX(0);
-    opacity: 1;
-  }
-
-  .sticky-scorecard-btn:hover {
-    background: var(--orange-dark);
-    box-shadow: 0 12px 32px rgba(245,130,31,0.55);
-    transform: translateY(-2px) !important;
-  }
-
-  .back-to-top {
-    width: 44px; height: 44px;
-    background: var(--navy);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 3px;
-    display: flex; align-items: center; justify-content: center;
-    cursor: pointer;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.3s, transform 0.3s, background 0.2s;
-    color: var(--white);
-    font-size: 18px;
-    text-decoration: none;
-  }
-
-  .back-to-top.show { opacity: 1; transform: translateY(0); }
-  .back-to-top:hover { background: var(--orange); border-color: var(--orange); }
+  
 
   /* ── SCROLL PROGRESS BAR ── */
   .scroll-progress {
@@ -1590,8 +1533,6 @@
     .footer-legal { justify-content: center; }
 
     /* ── STICKY CTA ── */
-    .sticky-scorecard-btn { font-size: 12px; padding: 12px 16px; }
-    .sticky-cta { bottom: 16px; right: 16px; }
   }
 
   /* ══════════════════════════════════════
@@ -2196,41 +2137,6 @@
   }
 
   /* ══════════════════════════
-     WHATSAPP BUTTON
-  ══════════════════════════ */
-  .whatsapp-btn {
-    position: fixed;
-    bottom: 28px; left: 28px;
-    z-index: 200;
-    background: #25D366;
-    color: var(--white);
-    display: flex; align-items: center; gap: 10px;
-    padding: 12px 20px 12px 14px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 0.3px;
-    box-shadow: 0 6px 24px rgba(37,211,102,0.4);
-    transform: translateX(-120px);
-    opacity: 0;
-    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), opacity 0.4s ease, box-shadow 0.2s, background 0.2s;
-    white-space: nowrap;
-  }
-  .whatsapp-btn.show {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  .whatsapp-btn:hover {
-    background: #1ebe5d;
-    box-shadow: 0 10px 32px rgba(37,211,102,0.55);
-    transform: translateY(-2px) !important;
-    color: var(--white);
-  }
-  .whatsapp-label { line-height: 1; }
-
-  /* ══════════════════════════
      COOKIE CONSENT BANNER
   ══════════════════════════ */
   .cookie-banner {
@@ -2366,7 +2272,6 @@
     .cookie-content { padding: 0 20px; flex-direction: column; gap: 16px; }
     .cookie-actions { width: 100%; }
     .cookie-accept, .cookie-decline { flex: 1; text-align: center; }
-    .whatsapp-btn { bottom: 16px; left: 16px; padding: 11px 16px 11px 12px; font-size: 12px; }
   }
   @media (max-width: 480px) {
     .values-cards { grid-template-columns: 1fr; }
@@ -2379,16 +2284,6 @@
 
 <!-- SCROLL PROGRESS -->
 <div class="scroll-progress" id="scrollProgress"></div>
-
-<!-- WHATSAPP FLOATING BUTTON -->
-<a href="https://wa.me/27219275000?text=Hi%20BUYCO%2C%20I%27d%20like%20to%20find%20out%20more%20about%20joining%20your%20buying%20group."
-   class="whatsapp-btn" id="whatsappBtn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M13 1C6.373 1 1 6.373 1 13c0 2.127.553 4.124 1.52 5.854L1 25l6.348-1.494A11.94 11.94 0 0013 25c6.627 0 12-5.373 12-12S19.627 1 13 1z" fill="#25D366"/>
-    <path d="M19.11 16.28c-.306-.153-1.81-.893-2.09-.994-.28-.102-.484-.153-.688.153-.204.306-.79.994-.967 1.198-.178.204-.357.23-.663.077-.306-.153-1.292-.476-2.46-1.517-.91-.81-1.524-1.811-1.702-2.117-.178-.306-.019-.47.133-.622.137-.136.306-.357.459-.535.153-.179.204-.306.306-.51.102-.204.051-.382-.026-.535-.077-.153-.688-1.658-.942-2.27-.248-.596-.5-.515-.688-.524l-.586-.01c-.204 0-.535.077-.816.382-.28.306-1.07 1.046-1.07 2.55 0 1.506 1.096 2.959 1.249 3.163.153.204 2.157 3.294 5.228 4.623.731.315 1.301.503 1.746.644.734.233 1.402.2 1.93.121.589-.088 1.81-.74 2.065-1.455.255-.714.255-1.326.178-1.454-.076-.128-.28-.204-.586-.357z" fill="white"/>
-  </svg>
-  <span class="whatsapp-label">Chat With Us</span>
-</a>
 
 <!-- COOKIE CONSENT BANNER -->
 <div class="cookie-banner" id="cookieBanner">
@@ -2404,12 +2299,6 @@
   </div>
 </div>
 
-<!-- STICKY CTA + BACK TO TOP -->
-<div class="sticky-cta">
-  <a href="#" class="sticky-scorecard-btn" id="stickyCta">⚡ Get Your Scorecard</a>
-  <a href="#" class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑</a>
-</div>
-
 <!-- NAV -->
 <nav id="mainNav">
   <div class="nav-logo">
@@ -2420,11 +2309,11 @@
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#" onclick="closeNav()">About Us</a></li>
-    <li><a href="#" onclick="closeNav()">Services</a></li>
-    <li><a href="#" onclick="closeNav()">Benefits</a></li>
-    <li><a href="#" class="highlight" onclick="closeNav()">Promotions</a></li>
-    <li><a href="#" class="btn-nav" onclick="closeNav()">Get Started</a></li>
+    <li><a href="about.html" onclick="closeNav()">About Us</a></li>
+    <li><a href="services.html" onclick="closeNav()">Services</a></li>
+    <li><a href="index.html#benefits" onclick="closeNav()">Benefits</a></li>
+    <li><a href="index.html#benefits" class="highlight" onclick="closeNav()">Promotions</a></li>
+    <li><a href="join.html" class="btn-nav" onclick="closeNav()">Get Started</a></li>
   </ul>
 </nav>
 
@@ -2438,8 +2327,8 @@
     <h1>Compete <span class="accent">Smarter.</span><br>Grow <span class="accent">Bigger.</span></h1>
     <p class="hero-sub">BUYCO arms independent Building & Hardware Retailers with corporate-scale procurement, elite supplier access, and commercial tools to dominate their local markets.</p>
     <div class="hero-ctas">
-      <a href="#" class="btn-primary">Get Your Scorecard</a>
-      <a href="#" class="btn-ghost">Our Services</a>
+      <a href="join.html" class="btn-primary">Get Your Scorecard</a>
+      <a href="services.html" class="btn-ghost">Our Services</a>
     </div>
     <div class="hero-stats">
       <div class="stat-item">
@@ -2820,7 +2709,7 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn-primary-orange" style="margin-top:8px;">Start Your Free Scorecard</a>
+        <a href="join.html" class="btn-primary-orange" style="margin-top:8px;">Start Your Free Scorecard</a>
       </div>
       <div class="scorecard-visual fade-up fade-up-2">
         <h3>Frustrated By<br><span class="accent">Shrinking Margins?</span></h3>
@@ -2839,7 +2728,7 @@
             <div class="score-bar-track"><div class="score-bar-fill" data-target="74"></div></div>
           </div>
         </div>
-        <a href="#" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Get Your Scorecard Now →</a>
+        <a href="join.html" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Get Your Scorecard Now →</a>
       </div>
     </div>
   </div>
@@ -2907,7 +2796,7 @@
       <div class="supplier-logo"><span class="supplier-logo-text">Workforce</span></div>
     </div>
     <div class="suppliers-cta fade-up fade-up-3">
-      <a href="#" style="display:inline-flex;align-items:center;gap:8px;color:var(--navy);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:3px;">View All Suppliers →</a>
+      <a href="services.html#benefits" style="display:inline-flex;align-items:center;gap:8px;color:var(--navy);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:3px;">View All Suppliers →</a>
     </div>
   </div>
 </section>
@@ -2967,7 +2856,7 @@
           <h2 class="fade-up">Measure What <span class="accent">Matters.</span><br>Maximise Your <span class="accent">Potential.</span></h2>
         </div>
         <div class="services-header-cta">
-          <a href="#">Click Here To Get Your Scorecard →</a>
+          <a href="join.html">Click Here To Get Your Scorecard →</a>
         </div>
       </div>
     </div>
@@ -3002,7 +2891,7 @@
         <div class="section-eyebrow">FAQ</div>
         <h2>Questions<br><span class="accent">Answered.</span></h2>
         <p>Can't find what you're looking for? Our team is ready to help.</p>
-        <a href="#contact" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Contact Us</a>
+        <a href="join.html#contact" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Contact Us</a>
       </div>
       <div class="faq-list fade-up fade-up-2">
         <div class="faq-item">
@@ -3199,7 +3088,7 @@
         <h2>The Foundation for a<br><span class="accent">New Franchise Brand.</span></h2>
         <p>BUYCO is more than a buying group — it's the launchpad for an exciting new franchise retail brand set to launch in 2026. Independent building material merchants who grow with us now will have the opportunity to shape the next chapter of the Southern African building materials industry.</p>
         <p style="margin-top:12px;font-weight:600;color:var(--navy);">Join today and be first in line when the doors open.</p>
-        <a href="#contact" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Register Your Interest</a>
+        <a href="join.html" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Register Your Interest</a>
       </div>
     </div>
   </div>
@@ -3215,8 +3104,8 @@
         <p>Don't let another day pass with shrinking margins. Get your free scorecard and unlock the path to greater profitability — together.</p>
       </div>
       <div class="cta-actions fade-up fade-up-2">
-        <a href="#contact" class="btn-primary">Start Your Free Scorecard</a>
-        <a href="#contact" class="btn-ghost">Get In Touch</a>
+        <a href="join.html" class="btn-primary">Start Your Free Scorecard</a>
+        <a href="join.html#contact" class="btn-ghost">Get In Touch</a>
       </div>
     </div>
   </div>
@@ -3234,27 +3123,27 @@
       <div class="footer-nav">
         <h4>Company</h4>
         <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Story</a></li>
-          <li><a href="#">Our Footprint</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#legacy">Our Story</a></li>
+          <li><a href="index.html#footprint">Our Footprint</a></li>
         </ul>
       </div>
       <div class="footer-nav">
         <h4>Services</h4>
         <ul>
-          <li><a href="#">Procurement</a></li>
-          <li><a href="#">Logistics</a></li>
-          <li><a href="#">Growth Tools</a></li>
-          <li><a href="#">Scorecard</a></li>
+          <li><a href="services.html#procurement">Procurement</a></li>
+          <li><a href="services.html#logistics">Logistics</a></li>
+          <li><a href="services.html#growth">Growth Tools</a></li>
+          <li><a href="services.html#scorecard">Scorecard</a></li>
         </ul>
       </div>
       <div class="footer-nav">
         <h4>Join BUYCO</h4>
         <ul>
-          <li><a href="#">For Retailers</a></li>
-          <li><a href="#">For Suppliers</a></li>
-          <li><a href="#">Promotions</a></li>
-          <li><a href="#">Get Started</a></li>
+          <li><a href="join.html">For Retailers</a></li>
+          <li><a href="join.html#suppliers">For Suppliers</a></li>
+          <li><a href="index.html#benefits">Promotions</a></li>
+          <li><a href="join.html">Get Started</a></li>
         </ul>
       </div>
       <div class="footer-nav">
@@ -3262,16 +3151,16 @@
         <ul>
           <li><a href="#" download>📄 Retailer Brochure</a></li>
           <li><a href="#" download>📄 Supplier Brochure</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="join.html#contact">Privacy Policy</a></li>
+          <li><a href="join.html#contact">Terms & Conditions</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <p>© 2025 BUYCO. The Building Company's Collective Buying Group. All rights reserved.</p>
       <div class="footer-legal">
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Privacy Policy</a>
+        <a href="join.html#contact">Terms & Conditions</a>
+        <a href="join.html#contact">Privacy Policy</a>
       </div>
     </div>
   </div>
@@ -3420,15 +3309,7 @@
   }, { passive: true });
 
   // ── WHATSAPP + STICKY ELEMENTS ──
-  const stickyCta = document.getElementById('stickyCta');
-  const backToTop = document.getElementById('backToTop');
-  const whatsappBtn = document.getElementById('whatsappBtn');
-  window.addEventListener('scroll', () => {
-    const show = window.scrollY > 400;
-    if (stickyCta) stickyCta.classList.toggle('show', show);
-    if (backToTop) backToTop.classList.toggle('show', show);
-    if (whatsappBtn) whatsappBtn.classList.toggle('show', show);
-  }, { passive: true });
+  
 
   // ── COOKIE BANNER ──
   function acceptCookies() {
