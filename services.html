@@ -52,9 +52,7 @@
   .btn-navy{background:var(--navy);color:var(--white);padding:16px 32px;border-radius:3px;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;transition:background .2s;display:inline-block}
   .btn-navy:hover{background:var(--orange)}
   .scroll-progress{position:fixed;top:0;left:0;height:3px;background:var(--orange);z-index:999;width:0%;box-shadow:0 0 8px rgba(245,130,31,0.6)}
-  .whatsapp-btn{position:fixed;bottom:28px;left:28px;z-index:200;background:#25D366;color:var(--white);display:flex;align-items:center;gap:10px;padding:12px 20px 12px 14px;border-radius:50px;text-decoration:none;font-weight:700;font-size:13px;box-shadow:0 6px 24px rgba(37,211,102,0.4);transform:translateX(-120px);opacity:0;transition:transform .4s cubic-bezier(0.34,1.56,0.64,1),opacity .4s;white-space:nowrap}
-  .whatsapp-btn.show{transform:translateX(0);opacity:1}
-  .whatsapp-btn:hover{background:#1ebe5d;transform:translateY(-2px)!important;color:var(--white)}
+  
 
   /* PAGE HERO */
   .page-hero{min-height:52vh;background:linear-gradient(105deg,var(--navy-deep) 0%,var(--navy) 60%,#1E3080 100%);position:relative;display:flex;align-items:flex-end;padding-top:68px;overflow:hidden}
@@ -201,7 +199,6 @@
     .footer-top{flex-direction:column;gap:32px}
     .footer-bottom{flex-direction:column;text-align:center}
     .footer-legal{justify-content:center}
-    .whatsapp-btn{bottom:16px;left:16px;font-size:12px;padding:11px 16px 11px 12px}
     .services-nav{top:60px}
   }
   @media(max-width:480px){
@@ -216,11 +213,6 @@
 <body>
 
 <div class="scroll-progress" id="scrollProgress"></div>
-<a href="https://wa.me/27219275000?text=Hi%20BUYCO%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services." class="whatsapp-btn" id="whatsappBtn" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <svg width="22" height="22" viewBox="0 0 26 26" fill="none"><path d="M13 1C6.373 1 1 6.373 1 13c0 2.127.553 4.124 1.52 5.854L1 25l6.348-1.494A11.94 11.94 0 0013 25c6.627 0 12-5.373 12-12S19.627 1 13 1z" fill="white"/><path d="M19.11 16.28c-.306-.153-1.81-.893-2.09-.994-.28-.102-.484-.153-.688.153-.204.306-.79.994-.967 1.198-.178.204-.357.23-.663.077-.306-.153-1.292-.476-2.46-1.517-.91-.81-1.524-1.811-1.702-2.117-.178-.306-.019-.47.133-.622.137-.136.306-.357.459-.535.153-.179.204-.306.306-.51.102-.204.051-.382-.026-.535-.077-.153-.688-1.658-.942-2.27-.248-.596-.5-.515-.688-.524l-.586-.01c-.204 0-.535.077-.816.382-.28.306-1.07 1.046-1.07 2.55 0 1.506 1.096 2.959 1.249 3.163.153.204 2.157 3.294 5.228 4.623.731.315 1.301.503 1.746.644.734.233 1.402.2 1.93.121.589-.088 1.81-.74 2.065-1.455.255-.714.255-1.326.178-1.454-.076-.128-.28-.204-.586-.357z" fill="white"/></svg>
-  <span>Chat With Us</span>
-</a>
-
 <nav id="mainNav">
   <a href="index.html" class="nav-logo">
     <div class="nav-logo-mark">BUY<span>CO</span><span style="color:var(--orange);font-size:10px;vertical-align:super;">.</span></div>
@@ -476,11 +468,11 @@
       <div class="footer-nav"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="about.html#legacy">Our Story</a></li><li><a href="index.html#footprint">Our Footprint</a></li></ul></div>
       <div class="footer-nav"><h4>Services</h4><ul><li><a href="#procurement">Procurement</a></li><li><a href="#logistics">Logistics</a></li><li><a href="#growth">Growth Tools</a></li><li><a href="#scorecard">Scorecard</a></li></ul></div>
       <div class="footer-nav"><h4>Join BUYCO</h4><ul><li><a href="join.html">For Retailers</a></li><li><a href="join.html#suppliers">For Suppliers</a></li><li><a href="join.html">Get Started</a></li></ul></div>
-      <div class="footer-nav"><h4>Downloads</h4><ul><li><a href="#" download>📄 Retailer Brochure</a></li><li><a href="#" download>📄 Supplier Brochure</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+      <div class="footer-nav"><h4>Downloads</h4><ul><li><a href="#" download>📄 Retailer Brochure</a></li><li><a href="#" download>📄 Supplier Brochure</a></li><li><a href="join.html#contact">Privacy Policy</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <p>© 2025 BUYCO. The Building Company's Collective Buying Group. All rights reserved.</p>
-      <div class="footer-legal"><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a></div>
+      <div class="footer-legal"><a href="join.html#contact">Terms & Conditions</a><a href="join.html#contact">Privacy Policy</a></div>
     </div>
   </div>
 </footer>
@@ -489,8 +481,7 @@
   const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
   document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
   const nav = document.querySelector('nav');
-  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 80); document.getElementById('scrollProgress').style.width = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100) + '%'; }, {passive:true});
-  window.addEventListener('scroll', () => { document.getElementById('whatsappBtn').classList.toggle('show', window.scrollY > 400); }, {passive:true});
+  
   const hb = document.getElementById('navHamburger'), nl = document.getElementById('navLinks');
   hb.addEventListener('click', () => { hb.classList.toggle('open'); nl.classList.toggle('open'); });
   window.addEventListener('scroll', () => { hb.classList.remove('open'); nl.classList.remove('open'); }, {passive:true});
