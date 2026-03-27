@@ -1,0 +1,3791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ── PRIMARY META ── -->
+<title>BUYCO — More Than You Bargained For | Independent Retail Collective</title>
+<meta name="description" content="BUYCO arms independent Building & Hardware Retailers across Southern Africa with R6B+ corporate-scale buying power, elite supplier access, and commercial tools to compete with the big players.">
+<meta name="keywords" content="buying group, building materials, hardware retail, South Africa, procurement, independent retailer, BUCO, Timbercity">
+<meta name="author" content="BUYCO — The Building Company's Collective Buying Group">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.buyco.co.za/">
+
+<!-- ── OPEN GRAPH (Facebook, WhatsApp, LinkedIn) ── -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.buyco.co.za/">
+<meta property="og:title" content="BUYCO — More Than You Bargained For">
+<meta property="og:description" content="Join Southern Africa's most dynamic buying group. R6B+ in buying power. 8 countries. 100+ independent retailers. Built by traders, for traders.">
+<meta property="og:image" content="https://www.buyco.co.za/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="BUYCO">
+<meta property="og:locale" content="en_ZA">
+
+<!-- ── TWITTER CARD ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BUYCO — More Than You Bargained For">
+<meta name="twitter:description" content="Corporate-scale buying power for independent building material retailers across Southern Africa.">
+<meta name="twitter:image" content="https://www.buyco.co.za/og-image.jpg">
+
+<!-- ── THEME COLOR ── -->
+<meta name="theme-color" content="#0D1640">
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1C2B6E;
+    --navy-dark: #111E52;
+    --navy-deep: #0D1640;
+    --orange: #F5821F;
+    --orange-dark: #D96E10;
+    --white: #FFFFFF;
+    --off-white: #F4F5F8;
+    --grey: #8A919E;
+    --grey-light: #E8EAF0;
+    --text-dark: #1A1F2E;
+    --text-body: #3D4459;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Barlow', sans-serif;
+    color: var(--text-dark);
+    background: var(--white);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+  }
+
+  p { line-height: 1.7; color: var(--text-body); }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--navy-deep);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 48px;
+    height: 68px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .nav-logo {
+    display: flex; align-items: center; gap: 10px;
+  }
+
+  .nav-logo-mark {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: var(--white);
+    letter-spacing: -1px;
+  }
+
+  .nav-logo-mark span { color: var(--orange); }
+
+  .nav-tagline {
+    font-size: 9px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    padding-left: 10px;
+    line-height: 1.4;
+    max-width: 140px;
+  }
+
+  .nav-links {
+    display: flex; align-items: center; gap: 32px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--white); }
+
+  .nav-links .highlight { color: var(--orange); }
+
+  .btn-nav {
+    background: var(--orange);
+    color: var(--white);
+    padding: 10px 22px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .btn-nav:hover { background: var(--orange-dark); color: var(--white); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(105deg, var(--navy-deep) 0%, var(--navy) 60%, #1E3080 100%);
+    position: relative;
+    display: flex; align-items: center;
+    overflow: hidden;
+    padding-top: 68px;
+  }
+
+  .hero-bg-image {
+    position: absolute; inset: 0;
+    background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80') center/cover no-repeat;
+    opacity: 0.18;
+    mix-blend-mode: luminosity;
+  }
+
+  /* Big decorative BUYCO letters */
+  .hero-deco {
+    position: absolute;
+    right: -40px; top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 320px;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255,255,255,0.06);
+    letter-spacing: -10px;
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+  }
+
+  .hero-inner {
+    position: relative; z-index: 2;
+    max-width: 1200px; margin: 0 auto;
+    padding: 80px 48px;
+    width: 100%;
+  }
+
+  .hero-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 20px;
+    display: flex; align-items: center; gap: 12px;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 32px; height: 2px;
+    background: var(--orange);
+  }
+
+  .hero h1 {
+    font-size: clamp(56px, 8vw, 100px);
+    color: var(--white);
+    margin-bottom: 24px;
+    max-width: 700px;
+  }
+
+  .hero h1 .accent { color: var(--orange); }
+
+  .hero-sub {
+    font-size: 17px;
+    color: rgba(255,255,255,0.7);
+    max-width: 520px;
+    margin-bottom: 40px;
+    line-height: 1.7;
+  }
+
+  .hero-ctas {
+    display: flex; gap: 16px; align-items: center; flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+
+  .btn-primary {
+    background: var(--orange);
+    color: var(--white);
+    padding: 16px 32px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-block;
+  }
+
+  .btn-primary:hover { background: var(--orange-dark); transform: translateY(-1px); }
+
+  .btn-ghost {
+    border: 2px solid rgba(255,255,255,0.4);
+    color: var(--white);
+    padding: 14px 30px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+    display: inline-block;
+  }
+
+  .btn-ghost:hover { border-color: var(--white); background: rgba(255,255,255,0.08); }
+
+  /* Stats bar */
+  .hero-stats {
+    display: flex; gap: 0;
+    border-top: 1px solid rgba(255,255,255,0.12);
+    padding-top: 40px;
+  }
+
+  .stat-item {
+    padding-right: 40px;
+    margin-right: 40px;
+    border-right: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .stat-item:last-child { border-right: none; }
+
+  .stat-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    color: var(--orange);
+    line-height: 1;
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 4px;
+    display: block;
+  }
+
+  /* ── SECTION DEFAULTS ── */
+  section { position: relative; }
+
+  .section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 48px;
+  }
+
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 12px;
+    display: flex; align-items: center; gap: 10px;
+  }
+
+  .section-eyebrow::before {
+    content: '';
+    display: block;
+    width: 24px; height: 2px;
+    background: var(--orange);
+  }
+
+  /* ── OUR STORY ── */
+  .our-story {
+    padding: 100px 0;
+    background: var(--white);
+  }
+
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .story-image {
+    position: relative;
+  }
+
+  .story-image img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 2px;
+    display: block;
+  }
+
+  .story-image-badge {
+    position: absolute;
+    bottom: -24px; right: -24px;
+    background: var(--orange);
+    color: var(--white);
+    padding: 28px 32px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.3;
+  }
+
+  .story-content h2 {
+    font-size: clamp(36px, 4vw, 52px);
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .story-content h2 .accent { color: var(--orange); }
+
+  .story-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .story-bullets {
+    list-style: none;
+    margin-top: 28px;
+    display: flex; flex-direction: column; gap: 14px;
+  }
+
+  .story-bullets li {
+    display: flex; align-items: flex-start; gap: 12px;
+    font-size: 15px;
+    color: var(--text-body);
+  }
+
+  .story-bullets li::before {
+    content: '';
+    flex-shrink: 0;
+    width: 20px; height: 20px;
+    background: var(--orange);
+    border-radius: 50%;
+    margin-top: 2px;
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .story-bullets li strong { color: var(--navy); }
+
+  /* ── WHAT WE OFFER ── */
+  .services {
+    padding: 100px 0;
+    background: var(--navy-deep);
+    overflow: hidden;
+  }
+
+  .services-header {
+    margin-bottom: 64px;
+  }
+
+  .services-header h2 {
+    font-size: clamp(36px, 4vw, 56px);
+    color: var(--white);
+    max-width: 600px;
+  }
+
+  .services-header h2 .accent { color: var(--orange); }
+
+  .services-header-row {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    gap: 40px;
+  }
+
+  .services-header-cta a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--orange);
+    padding-bottom: 2px;
+    display: flex; align-items: center; gap: 8px;
+    white-space: nowrap;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+  }
+
+  .service-card {
+    background: rgba(255,255,255,0.04);
+    padding: 48px 36px;
+    border: 1px solid rgba(255,255,255,0.07);
+    position: relative;
+    transition: background 0.3s;
+  }
+
+  .service-card:hover { background: rgba(255,255,255,0.07); }
+
+  .service-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.05);
+    line-height: 1;
+    position: absolute;
+    top: 20px; right: 24px;
+  }
+
+  .service-tag {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 26px;
+    color: var(--white);
+    margin-bottom: 16px;
+    line-height: 1.1;
+  }
+
+  .service-card p {
+    color: rgba(255,255,255,0.55);
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* ── SCORECARD ── */
+  .scorecard {
+    padding: 100px 0;
+    background: var(--off-white);
+  }
+
+  .scorecard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .scorecard-content h2 {
+    font-size: clamp(36px, 4vw, 52px);
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .scorecard-content h2 .accent { color: var(--orange); }
+
+  .scorecard-content p {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .scorecard-pillars {
+    display: flex; flex-direction: column; gap: 16px;
+    margin-bottom: 36px;
+  }
+
+  .pillar {
+    display: flex; align-items: center; gap: 16px;
+    background: var(--white);
+    padding: 18px 20px;
+    border-left: 4px solid var(--orange);
+    border-radius: 0 2px 2px 0;
+  }
+
+  .pillar-icon {
+    width: 36px; height: 36px;
+    background: var(--orange);
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    color: white;
+    font-weight: 900;
+    font-size: 13px;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+
+  .pillar-text strong {
+    display: block;
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 14px;
+  }
+
+  .pillar-text span {
+    font-size: 13px;
+    color: var(--grey);
+  }
+
+  .scorecard-visual {
+    background: var(--navy);
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .scorecard-visual::before {
+    content: '8';
+    position: absolute;
+    right: -10px; top: -20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 200px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.04);
+    line-height: 1;
+  }
+
+  .scorecard-visual h3 {
+    color: var(--white);
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .scorecard-visual h3 .accent { color: var(--orange); }
+
+  .scorecard-visual p {
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+
+  .btn-primary-orange {
+    background: var(--orange);
+    color: var(--white);
+    padding: 16px 28px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s;
+  }
+
+  .btn-primary-orange:hover { background: var(--orange-dark); }
+
+  /* ── FOOTPRINT ── */
+  .footprint {
+    padding: 100px 0;
+    background: var(--navy-deep);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footprint-bg {
+    position: absolute; inset: 0;
+    background: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80') center/cover;
+    opacity: 0.08;
+  }
+
+  .footprint-inner { position: relative; z-index: 2; }
+
+  .footprint-header {
+    display: flex; justify-content: space-between; align-items: flex-end;
+    margin-bottom: 64px;
+    gap: 40px;
+  }
+
+  .footprint-header h2 {
+    font-size: clamp(36px, 4vw, 56px);
+    color: var(--white);
+    max-width: 500px;
+  }
+
+  .footprint-header h2 .accent { color: var(--orange); }
+
+  .footprint-header p {
+    color: rgba(255,255,255,0.55);
+    max-width: 320px;
+    font-size: 15px;
+  }
+
+  .countries-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    margin-bottom: 48px;
+  }
+
+  .country-item {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 24px 20px;
+    text-align: center;
+    transition: background 0.2s;
+  }
+
+  .country-item:hover { background: rgba(245,130,31,0.15); border-color: rgba(245,130,31,0.3); }
+
+  .country-item span {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  .country-dot {
+    width: 8px; height: 8px;
+    background: var(--orange);
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  /* ── SUPPLIERS ── */
+  .suppliers {
+    padding: 100px 0;
+    background: var(--white);
+  }
+
+  .suppliers-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .suppliers-header h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    color: var(--navy);
+  }
+
+  .suppliers-header h2 .accent { color: var(--orange); }
+
+  .suppliers-header p {
+    color: var(--grey);
+    margin-top: 12px;
+    font-size: 15px;
+  }
+
+  .suppliers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--grey-light);
+    border: 1px solid var(--grey-light);
+    margin-bottom: 32px;
+  }
+
+  .supplier-logo {
+    background: var(--white);
+    padding: 32px 28px;
+    display: flex; align-items: center; justify-content: center;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: filter 0.2s, opacity 0.2s;
+  }
+
+  .supplier-logo:hover { filter: none; opacity: 1; }
+
+  .supplier-logo-text {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .suppliers-cta {
+    text-align: center;
+  }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials {
+    padding: 100px 0;
+    background: var(--off-white);
+  }
+
+  .testimonials-header {
+    margin-bottom: 64px;
+  }
+
+  .testimonials-header h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    color: var(--navy);
+  }
+
+  .testimonials-header h2 .accent { color: var(--orange); }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .testimonial-card {
+    background: var(--white);
+    padding: 36px;
+    border-bottom: 4px solid var(--navy);
+    position: relative;
+  }
+
+  .testimonial-card::before {
+    content: '"';
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 80px;
+    color: var(--orange);
+    line-height: 0.8;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .stars {
+    color: var(--orange);
+    font-size: 14px;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+  }
+
+  .testimonial-text {
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  .testimonial-author {
+    display: flex; align-items: center; gap: 12px;
+  }
+
+  .author-avatar {
+    width: 42px; height: 42px;
+    background: var(--navy);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--white);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  .author-name {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--navy);
+  }
+
+  .author-role {
+    font-size: 12px;
+    color: var(--grey);
+  }
+
+  /* ── CTA BANNER ── */
+  .cta-banner {
+    background: var(--navy-deep);
+    padding: 80px 0;
+  }
+
+  .cta-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+
+  .cta-text h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .cta-text h2 .accent { color: var(--orange); }
+
+  .cta-text p {
+    color: rgba(255,255,255,0.6);
+    max-width: 480px;
+    font-size: 16px;
+  }
+
+  .cta-actions {
+    display: flex; gap: 16px; flex-shrink: 0; flex-wrap: wrap;
+  }
+
+  /* ── ORANGE TICKER ── */
+  .ticker {
+    background: var(--orange);
+    padding: 16px 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .ticker-inner {
+    display: inline-flex; gap: 48px;
+    animation: ticker 20s linear infinite;
+  }
+
+  .ticker-item {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex; align-items: center; gap: 16px;
+  }
+
+  .ticker-item::after {
+    content: '·';
+    color: rgba(255,255,255,0.5);
+  }
+
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy-deep);
+    padding: 56px 0 32px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .footer-inner {
+    max-width: 1200px; margin: 0 auto; padding: 0 48px;
+  }
+
+  .footer-top {
+    display: flex; justify-content: space-between; gap: 48px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+  }
+
+  .footer-brand {
+    max-width: 280px;
+  }
+
+  .footer-logo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--white);
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+  }
+
+  .footer-logo span { color: var(--orange); }
+
+  .footer-tagline-text {
+    font-size: 10px;
+    color: rgba(255,255,255,0.35);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+
+  .footer-desc {
+    font-size: 13px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.7;
+  }
+
+  .footer-nav h4 {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+  }
+
+  .footer-nav ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+
+  .footer-nav a {
+    color: rgba(255,255,255,0.65);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+  }
+
+  .footer-nav a:hover { color: var(--white); }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+  }
+
+  .footer-legal {
+    display: flex; gap: 24px;
+  }
+
+  .footer-legal a {
+    font-size: 12px;
+    color: rgba(255,255,255,0.3);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-legal a:hover { color: rgba(255,255,255,0.6); }
+
+  /* ── ANIMATIONS ── */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .fade-up-2 { transition-delay: 0.15s; }
+  .fade-up-3 { transition-delay: 0.3s; }
+  .fade-up-4 { transition-delay: 0.45s; }
+
+  /* ── ANIMATED ORANGE DOT ── */
+  .country-dot {
+    position: relative;
+  }
+  .country-dot::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--orange);
+    animation: dot-ping 2s ease-out infinite;
+    opacity: 0;
+  }
+  @keyframes dot-ping {
+    0%   { transform: translate(-50%,-50%) scale(1); opacity: 0.8; }
+    70%  { transform: translate(-50%,-50%) scale(3); opacity: 0; }
+    100% { transform: translate(-50%,-50%) scale(3); opacity: 0; }
+  }
+
+  /* Stagger ping delays per country */
+  .country-item:nth-child(1) .country-dot::after { animation-delay: 0s; }
+  .country-item:nth-child(2) .country-dot::after { animation-delay: 0.25s; }
+  .country-item:nth-child(3) .country-dot::after { animation-delay: 0.5s; }
+  .country-item:nth-child(4) .country-dot::after { animation-delay: 0.75s; }
+  .country-item:nth-child(5) .country-dot::after { animation-delay: 1s; }
+  .country-item:nth-child(6) .country-dot::after { animation-delay: 1.25s; }
+  .country-item:nth-child(7) .country-dot::after { animation-delay: 1.5s; }
+  .country-item:nth-child(8) .country-dot::after { animation-delay: 1.75s; }
+
+  /* ── COUNTRY CARD ENTRANCE & HOVER ── */
+  .country-item {
+    opacity: 0;
+    transform: translateY(16px) scale(0.95);
+    transition: opacity 0.4s ease, transform 0.4s ease, background 0.25s, border-color 0.25s;
+    cursor: pointer;
+  }
+  .country-item.country-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  .country-item:hover {
+    background: rgba(245,130,31,0.18) !important;
+    border-color: rgba(245,130,31,0.5) !important;
+    transform: translateY(-4px) scale(1.02) !important;
+    box-shadow: 0 12px 32px rgba(245,130,31,0.2);
+  }
+  .country-item:hover .country-dot {
+    background: var(--orange);
+    box-shadow: 0 0 0 4px rgba(245,130,31,0.3);
+    transform: scale(1.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .country-item:hover span:last-child {
+    color: var(--orange) !important;
+    font-weight: 700;
+  }
+
+  /* ── SERVICE CARD ENTRANCE & HOVER ── */
+  .service-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease, background 0.3s;
+  }
+  .service-card.service-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .service-card:hover {
+    background: rgba(255,255,255,0.09) !important;
+    transform: translateY(-6px) !important;
+    box-shadow: 0 20px 48px rgba(0,0,0,0.3);
+  }
+  .service-card:hover .service-tag {
+    background: var(--white);
+    color: var(--orange);
+  }
+  .service-card:hover .service-number {
+    color: rgba(245,130,31,0.12);
+  }
+
+  /* ── SUPPLIER LOGO ENTRANCE & HOVER ── */
+  .supplier-logo {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.4s ease, transform 0.4s ease, filter 0.3s, box-shadow 0.3s;
+  }
+  .supplier-logo.supplier-visible {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  .supplier-logo:hover {
+    filter: none !important;
+    opacity: 1 !important;
+    transform: scale(1.05) !important;
+    box-shadow: 0 8px 24px rgba(28,43,110,0.12);
+    z-index: 2;
+    position: relative;
+  }
+
+  /* ── TESTIMONIAL CARD ENTRANCE & HOVER ── */
+  .testimonial-card {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s;
+  }
+  .testimonial-card.testimonial-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .testimonial-card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 20px 48px rgba(28,43,110,0.12);
+    border-bottom-color: var(--orange);
+  }
+  .testimonial-card:hover .author-avatar {
+    background: var(--orange);
+    transform: scale(1.1);
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  /* ── STORY IMAGE HOVER ── */
+  .story-img-placeholder {
+    width: 100%;
+    height: 480px;
+    border-radius: 2px;
+    overflow: hidden;
+    display: block;
+  }
+
+  .story-image img,
+  .story-img-placeholder {
+    transition: transform 0.6s ease;
+  }
+
+  .story-image:hover .story-img-placeholder {
+    transform: scale(1.03);
+  }
+
+  /* ── PILLAR ENTRANCE ── */
+  .pillar {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, box-shadow 0.25s, border-left-color 0.25s;
+  }
+  .pillar.pillar-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .pillar:hover {
+    box-shadow: 0 8px 24px rgba(28,43,110,0.1);
+    border-left-color: var(--navy);
+    transform: translateX(4px) !important;
+  }
+  .pillar:hover .pillar-icon {
+    background: var(--navy);
+    transform: rotate(-5deg) scale(1.1);
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  /* ── BTN SHIMMER ── */
+  .btn-primary, .btn-primary-orange, .btn-nav {
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-primary::after, .btn-primary-orange::after, .btn-nav::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 60%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.5s ease;
+  }
+  .btn-primary:hover::after, .btn-primary-orange:hover::after, .btn-nav:hover::after {
+    left: 150%;
+  }
+
+  /* ── NAV LINK UNDERLINE SLIDE ── */
+  .nav-links li a:not(.btn-nav) {
+    position: relative;
+  }
+  .nav-links li a:not(.btn-nav)::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 2px;
+    background: var(--orange);
+    transition: width 0.25s ease;
+  }
+  .nav-links li a:not(.btn-nav):hover::after {
+    width: 100%;
+  }
+
+  /* ── STORY BULLETS HOVER ── */
+  .story-bullets li {
+    transition: transform 0.2s ease;
+    cursor: default;
+  }
+  .story-bullets li:hover {
+    transform: translateX(6px);
+  }
+  .story-bullets li:hover strong { color: var(--orange); }
+
+  /* ── HERO STAT ITEMS HOVER ── */
+  .stat-item {
+    transition: transform 0.2s ease;
+    cursor: default;
+  }
+  .stat-item:hover { transform: translateY(-4px); }
+  .stat-item:hover .stat-number { text-shadow: 0 0 20px rgba(245,130,31,0.5); }
+
+  /* ── SCORECARD VISUAL PULSE BORDER ── */
+  .scorecard-visual {
+    transition: box-shadow 0.3s;
+  }
+  .scorecard-visual:hover {
+    box-shadow: 0 0 0 2px var(--orange), 0 24px 48px rgba(28,43,110,0.2);
+  }
+
+  /* ── SECTION EYEBROW SLIDE ── */
+  .section-eyebrow {
+    overflow: hidden;
+  }
+
+  /* ── TICKER PAUSE ON HOVER ── */
+  .ticker:hover .ticker-inner {
+    animation-play-state: paused;
+  }
+
+  /* ── FOOTER NAV LINK HOVER ── */
+  .footer-nav a {
+    position: relative;
+    padding-left: 0;
+    transition: color 0.2s, padding-left 0.2s;
+  }
+  .footer-nav a:hover {
+    color: var(--white) !important;
+    padding-left: 8px;
+  }
+  .footer-nav a::before {
+    content: '→';
+    position: absolute;
+    left: -16px;
+    opacity: 0;
+    color: var(--orange);
+    transition: opacity 0.2s, left 0.2s;
+    font-size: 12px;
+  }
+  .footer-nav a:hover::before {
+    opacity: 1;
+    left: -8px;
+  }
+
+  /* ── HERO ENTRANCE ANIMATION ── */
+  .hero-eyebrow { animation: slideRight 0.8s ease 0.2s both; }
+  .hero h1      { animation: slideRight 0.9s ease 0.4s both; }
+  .hero-sub     { animation: slideRight 0.8s ease 0.6s both; }
+  .hero-ctas    { animation: slideRight 0.8s ease 0.8s both; }
+  .hero-stats   { animation: fadeInUp 0.8s ease 1s both; }
+
+  @keyframes slideRight {
+    from { opacity: 0; transform: translateX(-32px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  /* ── D3 MAP ── */
+  .map-container {
+    position: relative;
+    width: 100%;
+  }
+
+  #d3map {
+    width: 100%;
+  }
+
+  #d3map svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
+  }
+
+  .d3-country {
+    cursor: pointer;
+  }
+
+  .map-dot {
+    fill: var(--orange);
+    cursor: pointer;
+  }
+
+  .map-pulse {
+    fill: none;
+    stroke: var(--orange);
+    stroke-width: 1.5;
+    animation: mapPing 2.5s ease-out infinite;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @keyframes mapPing {
+    0%   { r: 5;  opacity: 0.9; }
+    70%  { r: 18; opacity: 0; }
+    100% { r: 18; opacity: 0; }
+  }
+
+  .map-tooltip {
+    position: absolute;
+    background: var(--orange);
+    color: var(--white);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 3px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.2s, transform 0.2s;
+    white-space: nowrap;
+    z-index: 10;
+  }
+
+  .map-tooltip.visible { opacity: 1; transform: translateY(0); }
+
+  .map-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%; left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--orange);
+  }
+
+  /* ── FOOTPRINT LAYOUT ── */
+  .footprint-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  /* ── COUNTRIES GRID (2-col inside footprint) ── */
+  .footprint .countries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ── NAV SHRINK ON SCROLL ── */
+  nav.scrolled {
+    height: 52px !important;
+    background: rgba(13,22,64,0.97) !important;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    transition: height 0.3s ease, background 0.3s ease;
+  }
+
+  nav { transition: height 0.3s ease, background 0.3s ease; }
+
+  /* ── STICKY SCROLL CTA ── */
+  .sticky-cta {
+    position: fixed;
+    bottom: 28px; right: 28px;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+  }
+
+  .sticky-scorecard-btn {
+    background: var(--orange);
+    color: var(--white);
+    padding: 14px 22px;
+    border-radius: 3px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(245,130,31,0.45);
+    transform: translateX(120px);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), opacity 0.4s ease, background 0.2s, box-shadow 0.2s;
+    display: flex; align-items: center; gap: 8px;
+    white-space: nowrap;
+  }
+
+  .sticky-scorecard-btn.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .sticky-scorecard-btn:hover {
+    background: var(--orange-dark);
+    box-shadow: 0 12px 32px rgba(245,130,31,0.55);
+    transform: translateY(-2px) !important;
+  }
+
+  .back-to-top {
+    width: 44px; height: 44px;
+    background: var(--navy);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s, background 0.2s;
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .back-to-top.show { opacity: 1; transform: translateY(0); }
+  .back-to-top:hover { background: var(--orange); border-color: var(--orange); }
+
+  /* ── SCROLL PROGRESS BAR ── */
+  .scroll-progress {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    background: var(--orange);
+    z-index: 999;
+    width: 0%;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 8px rgba(245,130,31,0.6);
+  }
+
+  /* ── HERO MOUSE SPOTLIGHT ── */
+  .hero-spotlight {
+    position: absolute; inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: radial-gradient(circle 350px at 50% 50%, rgba(245,130,31,0.06) 0%, transparent 70%);
+    transition: background 0.1s;
+  }
+
+  /* ── ANIMATED SCORECARD PROGRESS BARS ── */
+  .scorecard-bars {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .score-bar-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .score-bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .score-bar-track {
+    height: 6px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .score-bar-fill {
+    height: 100%;
+    background: var(--orange);
+    border-radius: 3px;
+    width: 0%;
+    transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
+    box-shadow: 0 0 8px rgba(245,130,31,0.5);
+  }
+
+  /* ══════════════════════════════════════
+     RESPONSIVE — TABLET (≤ 1024px)
+  ══════════════════════════════════════ */
+  @media (max-width: 1024px) {
+    nav { padding: 0 28px; }
+    .hero-inner { padding: 60px 28px; }
+    .section-inner { padding: 0 28px; }
+
+    .story-grid { gap: 48px; }
+    .scorecard-grid { gap: 48px; }
+    .footprint-layout { gap: 40px; }
+
+    .hero-deco { font-size: 220px; right: -20px; }
+
+    .services-header-row { flex-direction: column; align-items: flex-start; gap: 16px; }
+
+    .footer-top { gap: 32px; }
+  }
+
+  /* ══════════════════════════════════════
+     RESPONSIVE — MOBILE LANDSCAPE / SMALL TABLET (≤ 768px)
+  ══════════════════════════════════════ */
+  @media (max-width: 768px) {
+
+    /* ── NAV ── */
+    nav { padding: 0 20px; height: 60px; }
+    .nav-tagline { display: none; }
+    .nav-links { display: none; flex-direction: column; gap: 0; }
+    .nav-links.open {
+      display: flex;
+      position: fixed;
+      top: 60px; left: 0; right: 0;
+      background: var(--navy-deep);
+      padding: 16px 0 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      z-index: 99;
+      box-shadow: 0 16px 32px rgba(0,0,0,0.4);
+    }
+    .nav-links.open li { width: 100%; }
+    .nav-links.open a {
+      display: block;
+      padding: 14px 24px;
+      font-size: 15px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .nav-links.open .btn-nav {
+      margin: 12px 24px 0;
+      display: block;
+      text-align: center;
+      border-radius: 3px;
+      padding: 14px 24px;
+    }
+    .nav-hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      margin-left: auto;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ── HERO ── */
+    .hero { min-height: 100svh; padding-top: 60px; }
+    .hero-inner { padding: 48px 20px 56px; }
+    .hero-deco { display: none; }
+    .hero h1 { font-size: clamp(44px, 11vw, 64px); }
+    .hero-sub { font-size: 15px; }
+    .hero-ctas { flex-direction: column; align-items: flex-start; gap: 12px; margin-bottom: 48px; }
+    .btn-primary, .btn-ghost { width: 100%; text-align: center; }
+    .hero-stats {
+      flex-wrap: wrap;
+      gap: 0;
+      padding-top: 28px;
+    }
+    .stat-item {
+      width: 50%;
+      padding: 16px 0;
+      margin: 0;
+      border-right: none !important;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .stat-item:nth-child(odd) { border-right: 1px solid rgba(255,255,255,0.1) !important; padding-right: 16px; }
+    .stat-item:nth-child(even) { padding-left: 16px; }
+    .stat-item:nth-last-child(-n+2) { border-bottom: none; }
+    .stat-number { font-size: 32px; }
+
+    /* ── SECTION DEFAULTS ── */
+    .section-inner { padding: 0 20px; }
+    .our-story, .services, .scorecard, .footprint,
+    .suppliers, .testimonials, .cta-banner, footer { padding: 64px 0; }
+
+    /* ── STORY ── */
+    .story-grid { grid-template-columns: 1fr; gap: 0; }
+    .story-image { margin-bottom: 56px; }
+    .story-img-placeholder { height: 280px; }
+    .story-image-badge {
+      bottom: -16px; right: 0;
+      padding: 18px 20px;
+      font-size: 13px;
+    }
+
+    /* ── SERVICES ── */
+    .services-grid { grid-template-columns: 1fr; gap: 2px; }
+    .service-card { padding: 36px 24px; }
+
+    /* ── SCORECARD ── */
+    .scorecard-grid { grid-template-columns: 1fr; gap: 32px; }
+    .scorecard-visual { padding: 32px 24px; }
+
+    /* ── FOOTPRINT ── */
+    .footprint-header { flex-direction: column; gap: 16px; margin-bottom: 40px; }
+    .footprint-layout { grid-template-columns: 1fr; gap: 32px; }
+    .footprint .countries-grid { grid-template-columns: repeat(2, 1fr); }
+    #d3map { max-width: 340px; margin: 0 auto; }
+
+    /* ── SUPPLIERS ── */
+    .suppliers-grid { grid-template-columns: repeat(2, 1fr); }
+    .supplier-logo { padding: 20px 16px; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-grid { grid-template-columns: 1fr; gap: 16px; }
+
+    /* ── CTA BANNER ── */
+    .cta-inner { flex-direction: column; align-items: flex-start; gap: 28px; }
+    .cta-actions { flex-direction: column; width: 100%; }
+    .cta-actions .btn-primary,
+    .cta-actions .btn-ghost { width: 100%; text-align: center; }
+
+    /* ── FOOTER ── */
+    .footer-top { flex-direction: column; gap: 36px; }
+    .footer-brand { max-width: 100%; }
+    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    .footer-legal { justify-content: center; }
+
+    /* ── STICKY CTA ── */
+    .sticky-scorecard-btn { font-size: 12px; padding: 12px 16px; }
+    .sticky-cta { bottom: 16px; right: 16px; }
+  }
+
+  /* ══════════════════════════════════════
+     RESPONSIVE — SMALL MOBILE (≤ 480px)
+  ══════════════════════════════════════ */
+  @media (max-width: 480px) {
+    .hero h1 { font-size: clamp(38px, 10vw, 52px); }
+    .hero-sub { font-size: 14px; }
+
+    .services-header h2 { font-size: 32px; }
+    .scorecard-content h2 { font-size: 30px; }
+    .footprint-header h2 { font-size: 30px; }
+    .testimonials-header h2 { font-size: 28px; }
+    .story-content h2 { font-size: 30px; }
+    .cta-text h2 { font-size: 28px; }
+
+    .section-inner { padding: 0 16px; }
+    .hero-inner { padding: 36px 16px 48px; }
+
+    .stat-number { font-size: 28px; }
+
+    .countries-grid { grid-template-columns: repeat(2, 1fr); }
+    .suppliers-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .scorecard-visual { padding: 24px 20px; }
+    .pillar { padding: 14px 16px; }
+
+    .ticker-item { font-size: 12px; letter-spacing: 1.5px; }
+
+    .story-img-placeholder { height: 240px; }
+
+    .footer-inner { padding: 0 16px; }
+    .footer-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+    .back-to-top { width: 38px; height: 38px; font-size: 16px; }
+  }
+
+  /* ══════════════════════════════════════
+     HAMBURGER — hidden on desktop
+  ══════════════════════════════════════ */
+  .nav-hamburger { display: none; }
+  @media (max-width: 768px) {
+    .nav-hamburger { display: flex; }
+  }
+
+  /* ══════════════════════════
+     HOW IT WORKS
+  ══════════════════════════ */
+  .how-it-works {
+    padding: 100px 0;
+    background: var(--white);
+  }
+  .hiw-header {
+    text-align: center;
+    margin-bottom: 72px;
+  }
+  .hiw-header h2 {
+    font-size: clamp(32px, 4vw, 52px);
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .hiw-header h2 .accent { color: var(--orange); }
+  .hiw-sub {
+    color: var(--grey);
+    max-width: 520px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  .hiw-steps {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2px;
+    position: relative;
+  }
+  .hiw-step {
+    background: var(--off-white);
+    padding: 48px 36px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 4px solid transparent;
+  }
+  .hiw-step:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 48px rgba(28,43,110,0.1);
+    border-bottom-color: var(--orange);
+  }
+  .hiw-step-number {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    color: rgba(28,43,110,0.06);
+    line-height: 1;
+    position: absolute;
+    top: 16px; right: 20px;
+  }
+  .hiw-step-icon {
+    width: 56px; height: 56px;
+    background: var(--orange);
+    border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--white);
+    margin-bottom: 24px;
+    transition: transform 0.2s ease;
+  }
+  .hiw-step:hover .hiw-step-icon { transform: scale(1.1) rotate(-3deg); }
+  .hiw-step h3 {
+    font-size: 26px;
+    color: var(--navy);
+    margin-bottom: 12px;
+  }
+  .hiw-step p {
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.7;
+  }
+  .hiw-connector {
+    position: absolute;
+    top: 56px; right: -24px;
+    width: 48px; height: 2px;
+    background: var(--orange);
+    z-index: 2;
+  }
+  .hiw-connector::after {
+    content: '';
+    position: absolute;
+    right: -6px; top: -4px;
+    border: 5px solid transparent;
+    border-left-color: var(--orange);
+  }
+
+  /* ══════════════════════════
+     BENEFITS + TOGGLE
+  ══════════════════════════ */
+  .benefits {
+    padding: 100px 0;
+    background: var(--navy-deep);
+  }
+  .benefits-header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+  .benefits-header h2 {
+    font-size: clamp(32px, 4vw, 52px);
+    color: var(--white);
+    margin-bottom: 12px;
+  }
+  .benefits-header h2 .accent { color: var(--orange); }
+  .benefits-sub {
+    color: rgba(255,255,255,0.55);
+    font-size: 16px;
+    margin-bottom: 36px;
+  }
+  .audience-toggle {
+    display: inline-flex;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .toggle-btn {
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.55);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 12px 32px;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s;
+    position: relative;
+  }
+  .toggle-btn.active {
+    background: var(--orange);
+    color: var(--white);
+  }
+  .toggle-btn:not(.active):hover {
+    background: rgba(255,255,255,0.08);
+    color: var(--white);
+  }
+  .benefits-panel {
+    display: none;
+  }
+  .benefits-panel.active {
+    display: block;
+    animation: panelIn 0.4s ease both;
+  }
+  @keyframes panelIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2px;
+  }
+  .benefit-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    padding: 40px 32px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  .benefit-card:hover {
+    background: rgba(255,255,255,0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+    border-color: rgba(245,130,31,0.2);
+  }
+  .benefit-icon {
+    font-size: 28px;
+    margin-bottom: 18px;
+    display: block;
+  }
+  .benefit-card h4 {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 12px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .benefit-card p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.55);
+    line-height: 1.7;
+  }
+
+  /* ══════════════════════════
+     FAQ
+  ══════════════════════════ */
+  .faq {
+    padding: 100px 0;
+    background: var(--off-white);
+  }
+  .faq-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .faq-left h2 {
+    font-size: clamp(32px, 3.5vw, 48px);
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .faq-left h2 .accent { color: var(--orange); }
+  .faq-left p { color: var(--grey); font-size: 15px; }
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .faq-item {
+    background: var(--white);
+    border-left: 3px solid transparent;
+    transition: border-color 0.25s;
+  }
+  .faq-item.open {
+    border-left-color: var(--orange);
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 22px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--navy);
+    transition: color 0.2s;
+  }
+  .faq-question:hover { color: var(--orange); }
+  .faq-icon {
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--orange);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    line-height: 1;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 24px;
+  }
+  .faq-item.open .faq-answer {
+    max-height: 300px;
+    padding: 0 24px 22px;
+  }
+  .faq-answer p {
+    font-size: 14px;
+    color: var(--text-body);
+    line-height: 1.8;
+    border-top: 1px solid var(--grey-light);
+    padding-top: 16px;
+  }
+
+  /* ══════════════════════════
+     CONTACT FORM
+  ══════════════════════════ */
+  .contact {
+    padding: 100px 0;
+    background: var(--white);
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .contact-info h2 {
+    font-size: clamp(32px, 3.5vw, 48px);
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .contact-info h2 .accent { color: var(--orange); }
+  .contact-info > p {
+    font-size: 15px;
+    color: var(--text-body);
+    margin-bottom: 36px;
+    line-height: 1.7;
+  }
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact-detail-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .contact-detail-icon {
+    width: 44px; height: 44px;
+    background: var(--off-white);
+    border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+    transition: background 0.2s;
+  }
+  .contact-detail-item:hover .contact-detail-icon { background: var(--orange); }
+  .contact-detail-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--grey);
+    font-weight: 700;
+  }
+  .contact-detail-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .contact-form-wrap {
+    background: var(--off-white);
+    padding: 48px;
+    border-radius: 2px;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .form-group label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--navy);
+  }
+  .req { color: var(--orange); }
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 14px 16px;
+    background: var(--white);
+    border: 1.5px solid var(--grey-light);
+    border-radius: 2px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px;
+    color: var(--text-dark);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group select:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 0 3px rgba(245,130,31,0.12);
+  }
+  .form-group textarea { resize: vertical; min-height: 110px; }
+  .form-select-wrap { position: relative; }
+  .form-select-wrap::after {
+    content: '▾';
+    position: absolute;
+    right: 16px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--orange);
+    pointer-events: none;
+    font-size: 14px;
+  }
+  .btn-form-submit {
+    background: var(--navy);
+    color: var(--white);
+    border: none;
+    padding: 16px 32px;
+    border-radius: 3px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-form-submit:hover { background: var(--orange); transform: translateY(-1px); }
+  .form-success {
+    display: none;
+    background: rgba(28,43,110,0.08);
+    border-left: 4px solid var(--orange);
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    border-radius: 0 2px 2px 0;
+  }
+  .form-success span { color: var(--orange); margin-right: 6px; }
+
+  /* ── RESPONSIVE FOR NEW SECTIONS ── */
+  @media (max-width: 768px) {
+    .hiw-steps { grid-template-columns: 1fr; gap: 2px; }
+    .hiw-connector { display: none; }
+    .benefits-grid { grid-template-columns: 1fr; }
+    .faq-layout { grid-template-columns: 1fr; gap: 40px; }
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .contact-form-wrap { padding: 28px 20px; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 480px) {
+    .audience-toggle { width: 100%; }
+    .toggle-btn { flex: 1; padding: 12px 16px; font-size: 13px; }
+    .benefit-card { padding: 28px 20px; }
+    .hiw-step { padding: 32px 20px; }
+  }
+
+  /* ══════════════════════════
+     VALUES SECTION
+  ══════════════════════════ */
+  .values {
+    padding: 100px 0;
+    background: var(--white);
+  }
+  .values-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .values-left h2 {
+    font-size: clamp(32px, 3.5vw, 48px);
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .values-left h2 .accent { color: var(--orange); }
+  .values-left > p {
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+  .values-quote {
+    border-left: 4px solid var(--orange);
+    padding: 16px 20px;
+    background: var(--off-white);
+    font-style: italic;
+    font-size: 15px;
+    color: var(--navy);
+    font-weight: 600;
+    line-height: 1.6;
+    border-radius: 0 2px 2px 0;
+  }
+  .values-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+  .value-card {
+    background: var(--off-white);
+    padding: 32px 28px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s, background 0.25s;
+  }
+  .value-card:hover {
+    border-bottom-color: var(--orange);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(28,43,110,0.08);
+    background: var(--white);
+  }
+  .value-icon {
+    font-size: 28px;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .value-card h4 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+  }
+  .value-card p {
+    font-size: 13px;
+    color: var(--text-body);
+    line-height: 1.7;
+  }
+
+  /* ══════════════════════════
+     FRANCHISE CALLOUT
+  ══════════════════════════ */
+  .franchise-callout {
+    padding: 80px 0;
+    background: var(--off-white);
+    overflow: hidden;
+  }
+  .franchise-inner {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    background: var(--white);
+    padding: 56px;
+    border-left: 6px solid var(--orange);
+    position: relative;
+    overflow: hidden;
+  }
+  .franchise-inner::after {
+    content: '2026';
+    position: absolute;
+    right: -20px; top: -20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 180px;
+    font-weight: 900;
+    color: rgba(28,43,110,0.04);
+    line-height: 1;
+    pointer-events: none;
+  }
+  .franchise-badge {
+    flex-shrink: 0;
+    width: 120px; height: 120px;
+    background: var(--orange);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--white);
+    letter-spacing: -1px;
+    box-shadow: 0 8px 32px rgba(245,130,31,0.4);
+    animation: franchisePulse 3s ease-in-out infinite;
+  }
+  @keyframes franchisePulse {
+    0%, 100% { box-shadow: 0 8px 32px rgba(245,130,31,0.4); transform: scale(1); }
+    50% { box-shadow: 0 12px 48px rgba(245,130,31,0.6); transform: scale(1.04); }
+  }
+  .franchise-content h2 {
+    font-size: clamp(28px, 3vw, 40px);
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+  .franchise-content h2 .accent { color: var(--orange); }
+  .franchise-content p {
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.7;
+    max-width: 600px;
+  }
+
+  /* ══════════════════════════
+     WHATSAPP BUTTON
+  ══════════════════════════ */
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 28px; left: 28px;
+    z-index: 200;
+    background: #25D366;
+    color: var(--white);
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 20px 12px 14px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    box-shadow: 0 6px 24px rgba(37,211,102,0.4);
+    transform: translateX(-120px);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1), opacity 0.4s ease, box-shadow 0.2s, background 0.2s;
+    white-space: nowrap;
+  }
+  .whatsapp-btn.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .whatsapp-btn:hover {
+    background: #1ebe5d;
+    box-shadow: 0 10px 32px rgba(37,211,102,0.55);
+    transform: translateY(-2px) !important;
+    color: var(--white);
+  }
+  .whatsapp-label { line-height: 1; }
+
+  /* ══════════════════════════
+     COOKIE CONSENT BANNER
+  ══════════════════════════ */
+  .cookie-banner {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 500;
+    background: var(--navy-deep);
+    border-top: 3px solid var(--orange);
+    padding: 20px 0;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+    box-shadow: 0 -8px 32px rgba(0,0,0,0.3);
+  }
+  .cookie-banner.show { transform: translateY(0); }
+  .cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 48px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .cookie-text { flex: 1; min-width: 280px; }
+  .cookie-text strong {
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .cookie-text p {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+    margin: 0;
+  }
+  .cookie-actions {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  .cookie-accept {
+    background: var(--orange);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 3px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .cookie-accept:hover { background: var(--orange-dark); }
+  .cookie-decline {
+    background: transparent;
+    color: rgba(255,255,255,0.5);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 12px 20px;
+    border-radius: 3px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .cookie-decline:hover { color: var(--white); border-color: rgba(255,255,255,0.5); }
+
+  /* ══════════════════════════
+     MAP SKELETON LOADER
+  ══════════════════════════ */
+  .map-skeleton {
+    width: 100%;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .map-skel-shape {
+    width: 80%;
+    height: 300px;
+    background: linear-gradient(90deg,
+      rgba(255,255,255,0.04) 25%,
+      rgba(255,255,255,0.08) 50%,
+      rgba(255,255,255,0.04) 75%);
+    background-size: 200% 100%;
+    border-radius: 4px;
+    animation: shimmer 1.6s infinite;
+    clip-path: polygon(30% 5%, 70% 5%, 90% 20%, 95% 50%, 85% 80%, 60% 95%, 40% 95%, 15% 80%, 5% 50%, 10% 20%);
+  }
+  .map-skel-dots {
+    display: flex; gap: 12px;
+  }
+  .map-skel-dots span {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: rgba(245,130,31,0.3);
+    animation: skelDot 1.4s ease-in-out infinite;
+  }
+  .map-skel-dots span:nth-child(2) { animation-delay: 0.15s; }
+  .map-skel-dots span:nth-child(3) { animation-delay: 0.3s; }
+  .map-skel-dots span:nth-child(4) { animation-delay: 0.45s; }
+  .map-skel-dots span:nth-child(5) { animation-delay: 0.6s; }
+  .map-skel-dots span:nth-child(6) { animation-delay: 0.75s; }
+  .map-skel-dots span:nth-child(7) { animation-delay: 0.9s; }
+  .map-skel-dots span:nth-child(8) { animation-delay: 1.05s; }
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  @keyframes skelDot {
+    0%, 100% { background: rgba(245,130,31,0.2); transform: scale(1); }
+    50% { background: rgba(245,130,31,0.7); transform: scale(1.4); }
+  }
+
+  /* ══════════════════════════
+     RESPONSIVE — NEW SECTIONS
+  ══════════════════════════ */
+  @media (max-width: 768px) {
+    .values-grid { grid-template-columns: 1fr; gap: 40px; }
+    .values-cards { grid-template-columns: 1fr; }
+    .franchise-inner { flex-direction: column; gap: 28px; padding: 32px 24px; }
+    .franchise-badge { width: 88px; height: 88px; font-size: 24px; }
+    .cookie-content { padding: 0 20px; flex-direction: column; gap: 16px; }
+    .cookie-actions { width: 100%; }
+    .cookie-accept, .cookie-decline { flex: 1; text-align: center; }
+    .whatsapp-btn { bottom: 16px; left: 16px; padding: 11px 16px 11px 12px; font-size: 12px; }
+  }
+  @media (max-width: 480px) {
+    .values-cards { grid-template-columns: 1fr; }
+    .franchise-inner::after { font-size: 100px; }
+  }
+
+</style>
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/27219275000?text=Hi%20BUYCO%2C%20I%27d%20like%20to%20find%20out%20more%20about%20joining%20your%20buying%20group."
+   class="whatsapp-btn" id="whatsappBtn" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13 1C6.373 1 1 6.373 1 13c0 2.127.553 4.124 1.52 5.854L1 25l6.348-1.494A11.94 11.94 0 0013 25c6.627 0 12-5.373 12-12S19.627 1 13 1z" fill="#25D366"/>
+    <path d="M19.11 16.28c-.306-.153-1.81-.893-2.09-.994-.28-.102-.484-.153-.688.153-.204.306-.79.994-.967 1.198-.178.204-.357.23-.663.077-.306-.153-1.292-.476-2.46-1.517-.91-.81-1.524-1.811-1.702-2.117-.178-.306-.019-.47.133-.622.137-.136.306-.357.459-.535.153-.179.204-.306.306-.51.102-.204.051-.382-.026-.535-.077-.153-.688-1.658-.942-2.27-.248-.596-.5-.515-.688-.524l-.586-.01c-.204 0-.535.077-.816.382-.28.306-1.07 1.046-1.07 2.55 0 1.506 1.096 2.959 1.249 3.163.153.204 2.157 3.294 5.228 4.623.731.315 1.301.503 1.746.644.734.233 1.402.2 1.93.121.589-.088 1.81-.74 2.065-1.455.255-.714.255-1.326.178-1.454-.076-.128-.28-.204-.586-.357z" fill="white"/>
+  </svg>
+  <span class="whatsapp-label">Chat With Us</span>
+</a>
+
+<!-- COOKIE CONSENT BANNER -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-content">
+    <div class="cookie-text">
+      <strong>🍪 We use cookies</strong>
+      <p>This website uses cookies to enhance your browsing experience and analyse site traffic. By continuing to use this site, you consent to our use of cookies in accordance with our <a href="#" style="color:var(--orange);">Privacy Policy</a> and South Africa's POPIA regulations.</p>
+    </div>
+    <div class="cookie-actions">
+      <button class="cookie-accept" onclick="acceptCookies()">Accept All</button>
+      <button class="cookie-decline" onclick="declineCookies()">Decline</button>
+    </div>
+  </div>
+</div>
+
+<!-- STICKY CTA + BACK TO TOP -->
+<div class="sticky-cta">
+  <a href="#" class="sticky-scorecard-btn" id="stickyCta">⚡ Get Your Scorecard</a>
+  <a href="#" class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑</a>
+</div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-logo">
+    <div class="nav-logo-mark">BUY<span>CO</span><span style="color:var(--orange);font-size:10px;vertical-align:super;">.</span></div>
+    <div class="nav-tagline">The Building Company's Collective Buying Group</div>
+  </div>
+  <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" onclick="closeNav()">About Us</a></li>
+    <li><a href="#" onclick="closeNav()">Services</a></li>
+    <li><a href="#" onclick="closeNav()">Benefits</a></li>
+    <li><a href="#" class="highlight" onclick="closeNav()">Promotions</a></li>
+    <li><a href="#" class="btn-nav" onclick="closeNav()">Get Started</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-image"></div>
+  <div class="hero-spotlight" id="heroSpotlight"></div>
+  <div class="hero-deco">BUYCO</div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Independent Retail Collective — Southern Africa</div>
+    <h1>Compete <span class="accent">Smarter.</span><br>Grow <span class="accent">Bigger.</span></h1>
+    <p class="hero-sub">BUYCO arms independent Building & Hardware Retailers with corporate-scale procurement, elite supplier access, and commercial tools to dominate their local markets.</p>
+    <div class="hero-ctas">
+      <a href="#" class="btn-primary">Get Your Scorecard</a>
+      <a href="#" class="btn-ghost">Our Services</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number">R6B+</span>
+        <span class="stat-label">Buying Power</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">8</span>
+        <span class="stat-label">Active Countries</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">4-Day</span>
+        <span class="stat-label">Procurement</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">100+</span>
+        <span class="stat-label">Retailers</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">Built By Traders, For Traders</span>
+    <span class="ticker-item">R6 Billion in Buying Power</span>
+    <span class="ticker-item">More Than You Bargained For</span>
+    <span class="ticker-item">Active in 8 Countries</span>
+    <span class="ticker-item">Independence Shouldn't Mean Isolation</span>
+    <span class="ticker-item">Compete Smarter. Grow Bigger.</span>
+    <span class="ticker-item">Built By Traders, For Traders</span>
+    <span class="ticker-item">R6 Billion in Buying Power</span>
+    <span class="ticker-item">More Than You Bargained For</span>
+    <span class="ticker-item">Active in 8 Countries</span>
+    <span class="ticker-item">Independence Shouldn't Mean Isolation</span>
+    <span class="ticker-item">Compete Smarter. Grow Bigger.</span>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works" id="how-it-works">
+  <div class="section-inner">
+    <div class="hiw-header fade-up">
+      <div class="section-eyebrow">Simple Process</div>
+      <h2>Up and Running in<br><span class="accent">Three Steps.</span></h2>
+      <p class="hiw-sub">No lengthy contracts. No complicated onboarding. Just a clear path from where you are now to where you want to be.</p>
+    </div>
+    <div class="hiw-steps">
+      <div class="hiw-step fade-up">
+        <div class="hiw-step-number">01</div>
+        <div class="hiw-step-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="2"/><path d="M10 12h12M10 16h8M10 20h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Apply</h3>
+        <p>Fill in your free scorecard and tell us about your store. Our team reviews your profile within 48 hours and confirms your eligibility.</p>
+        <div class="hiw-connector"></div>
+      </div>
+      <div class="hiw-step fade-up fade-up-2">
+        <div class="hiw-step-number">02</div>
+        <div class="hiw-step-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/><path d="M16 10v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Onboard</h3>
+        <p>Get connected to our supplier network, logistics framework and commercial tools. Your dedicated BUYCO manager walks you through everything.</p>
+        <div class="hiw-connector"></div>
+      </div>
+      <div class="hiw-step fade-up fade-up-3">
+        <div class="hiw-step-number">03</div>
+        <div class="hiw-step-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M6 22l6-6 4 4 10-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 6h6v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Grow</h3>
+        <p>Start leveraging R6B+ in buying power from day one. Watch your margins improve, your stock turn increase, and your independence stay intact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS — AUDIENCE TOGGLE -->
+<section class="benefits" id="benefits">
+  <div class="section-inner">
+    <div class="benefits-header fade-up">
+      <div class="section-eyebrow">Why Join BUYCO</div>
+      <h2>More Than You<br><span class="accent">Bargained For.</span></h2>
+      <p class="benefits-sub">Whether you're a retailer or a supplier, BUYCO is built to deliver real, measurable value.</p>
+      <div class="audience-toggle">
+        <button class="toggle-btn active" data-audience="retailers">For Retailers</button>
+        <button class="toggle-btn" data-audience="suppliers">For Suppliers</button>
+      </div>
+    </div>
+
+    <!-- RETAILERS PANEL -->
+    <div class="benefits-panel active" data-panel="retailers">
+      <div class="benefits-grid">
+        <div class="benefit-card fade-up">
+          <div class="benefit-icon">💪</div>
+          <h4>You Stay Independent</h4>
+          <p>Your name. Your team. Your brand. We strengthen you, not standardise you. Keep your identity while gaining the power of a national group.</p>
+        </div>
+        <div class="benefit-card fade-up fade-up-2">
+          <div class="benefit-icon">⚡</div>
+          <h4>Buying Power from Day One</h4>
+          <p>Access The Building Company's R6 billion procurement leverage instantly — competitive pricing and terms typically reserved for large-scale chains.</p>
+        </div>
+        <div class="benefit-card fade-up fade-up-3">
+          <div class="benefit-icon">📈</div>
+          <h4>Improved Margins & ROI</h4>
+          <p>Supplier agreements structured to support margin growth through smarter logistics, shared distribution, and enhanced commercial terms.</p>
+        </div>
+        <div class="benefit-card fade-up">
+          <div class="benefit-icon">🚚</div>
+          <h4>Tailored Logistics</h4>
+          <p>Shared load solutions reduce lead times and increase delivery efficiency — benefiting both your store and your supply chain partners.</p>
+        </div>
+        <div class="benefit-card fade-up fade-up-2">
+          <div class="benefit-icon">🏷️</div>
+          <h4>Private Label Opportunities</h4>
+          <p>Differentiate your shelves with an exclusive private label range backed by guaranteed quality and competitive pricing built for your market.</p>
+        </div>
+        <div class="benefit-card fade-up fade-up-3">
+          <div class="benefit-icon">🎓</div>
+          <h4>Staff Training & Support</h4>
+          <p>Ongoing product training from suppliers empowers your team, improves sell-through, and elevates the customer experience in your store.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUPPLIERS PANEL -->
+    <div class="benefits-panel" data-panel="suppliers">
+      <div class="benefits-grid">
+        <div class="benefit-card fade-up">
+          <div class="benefit-icon">🌍</div>
+          <h4>Immediate Market Exposure</h4>
+          <p>Gain access to 130+ BUCO and Timbercity outlets plus a growing network of independent building material retailers across Southern Africa.</p>
+        </div>
+        <div class="benefit-card fade-up fade-up-2">
+          <div class="benefit-icon">📦</div>
+          <h4>Consolidated Volume</h4>
+          <p>Benefit from coordinated bulk orders, improved delivery efficiency, and volume growth through shared logistics and distribution runs.</p>
+        </div>
+        <div class="benefit-card fade-up fade-up-3">
+          <div class="benefit-icon">🤝</div>
+          <h4>Fair Commercial Partnerships</h4>
+          <p>Our approach is collaboration over competition — improved rebate structures, product integrity protection, and preferential retail status.</p>
+        </div>
+        <div class="benefit-card fade-up">
+          <div class="benefit-icon">📊</div>
+          <h4>Market Intelligence</h4>
+          <p>Stay ahead with insights into market trends, regional performance data, and consumer behaviour to inform your product and pricing strategy.</p>
+        </div>
+        <div class="benefit-card fade-up fade-up-2">
+          <div class="benefit-icon">📣</div>
+          <h4>Group Promotions</h4>
+          <p>Participate in monthly promotional calendars and seasonal campaigns to increase product visibility and drive retailer sell-through at scale.</p>
+        </div>
+        <div class="benefit-card fade-up fade-up-3">
+          <div class="benefit-icon">🚀</div>
+          <h4>Scalable Distribution</h4>
+          <p>Whether penetrating new regions or scaling nationally, BUYCO gives you the framework to grow with purpose and predictable volume.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="our-story">
+  <div class="section-inner">
+    <div class="story-grid">
+      <div class="story-image fade-up">
+        <div class="story-img-placeholder">
+          <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
+            <defs>
+              <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0D1640"/>
+                <stop offset="100%" stop-color="#1C2B6E"/>
+              </linearGradient>
+              <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#111E52"/>
+                <stop offset="100%" stop-color="#0A1230"/>
+              </linearGradient>
+              <linearGradient id="truckBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#F5821F"/>
+                <stop offset="100%" stop-color="#D96E10"/>
+              </linearGradient>
+              <radialGradient id="spotGlow" cx="60%" cy="40%" r="55%">
+                <stop offset="0%" stop-color="rgba(245,130,31,0.12)"/>
+                <stop offset="100%" stop-color="rgba(13,22,64,0)"/>
+              </radialGradient>
+              <clipPath id="sceneClip">
+                <rect width="480" height="420" rx="2"/>
+              </clipPath>
+            </defs>
+
+            <g clip-path="url(#sceneClip)">
+              <!-- Background -->
+              <rect width="480" height="420" fill="url(#bgGrad)"/>
+              <rect width="480" height="420" fill="url(#spotGlow)"/>
+
+              <!-- Back wall panels -->
+              <rect x="0" y="0" width="480" height="270" fill="rgba(255,255,255,0.02)"/>
+              <line x1="96" y1="0" x2="96" y2="270" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+              <line x1="192" y1="0" x2="192" y2="270" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+              <line x1="288" y1="0" x2="288" y2="270" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+              <line x1="384" y1="0" x2="384" y2="270" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+              <!-- Floor -->
+              <rect x="0" y="270" width="480" height="150" fill="url(#floorGrad)"/>
+              <line x1="0" y1="270" x2="480" y2="270" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+              <!-- Floor reflection lines (perspective) -->
+              <line x1="0" y1="310" x2="480" y2="310" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+              <line x1="0" y1="350" x2="480" y2="350" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+              <line x1="0" y1="390" x2="480" y2="390" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+
+              <!-- === RACKING SYSTEM LEFT === -->
+              <!-- Left rack - uprights -->
+              <rect x="28" y="40" width="5" height="232" fill="rgba(245,130,31,0.6)" rx="1"/>
+              <rect x="108" y="40" width="5" height="232" fill="rgba(245,130,31,0.6)" rx="1"/>
+              <!-- Left rack - shelves -->
+              <rect x="28" y="60" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
+              <rect x="28" y="120" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
+              <rect x="28" y="180" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
+              <rect x="28" y="240" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
+              <!-- Left rack - stock boxes top shelf -->
+              <rect x="32" y="68" width="24" height="46" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+              <rect x="60" y="74" width="20" height="40" rx="1" fill="#22408A" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+              <rect x="84" y="70" width="22" height="44" rx="1" fill="rgba(245,130,31,0.3)" stroke="rgba(245,130,31,0.2)" stroke-width="0.5"/>
+              <!-- Left rack - stock boxes mid shelf -->
+              <rect x="32" y="128" width="26" height="46" rx="1" fill="rgba(245,130,31,0.25)" stroke="rgba(245,130,31,0.15)" stroke-width="0.5"/>
+              <rect x="62" y="132" width="20" height="42" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+              <rect x="86" y="128" width="20" height="46" rx="1" fill="#22408A" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+              <!-- Left rack - stock boxes lower shelf -->
+              <rect x="32" y="188" width="30" height="46" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+              <rect x="66" y="192" width="22" height="42" rx="1" fill="rgba(245,130,31,0.3)" stroke="rgba(245,130,31,0.2)" stroke-width="0.5"/>
+              <rect x="90" y="190" width="18" height="44" rx="1" fill="#22408A" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+
+              <!-- === RACKING SYSTEM RIGHT === -->
+              <!-- Right rack - uprights -->
+              <rect x="368" y="40" width="5" height="232" fill="rgba(245,130,31,0.6)" rx="1"/>
+              <rect x="448" y="40" width="5" height="232" fill="rgba(245,130,31,0.6)" rx="1"/>
+              <!-- Right rack - shelves -->
+              <rect x="368" y="60" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
+              <rect x="368" y="120" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
+              <rect x="368" y="180" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
+              <rect x="368" y="240" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
+              <!-- Right rack boxes -->
+              <rect x="372" y="68" width="22" height="46" rx="1" fill="rgba(245,130,31,0.25)" stroke="rgba(245,130,31,0.15)" stroke-width="0.5"/>
+              <rect x="398" y="72" width="26" height="42" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+              <rect x="428" y="68" width="20" height="46" rx="1" fill="#22408A" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+              <rect x="372" y="128" width="24" height="46" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+              <rect x="400" y="132" width="20" height="42" rx="1" fill="rgba(245,130,31,0.3)" stroke="rgba(245,130,31,0.2)" stroke-width="0.5"/>
+              <rect x="424" y="128" width="24" height="46" rx="1" fill="#22408A" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+              <rect x="372" y="190" width="28" height="44" rx="1" fill="rgba(245,130,31,0.2)" stroke="rgba(245,130,31,0.1)" stroke-width="0.5"/>
+              <rect x="404" y="188" width="22" height="46" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+              <rect x="430" y="192" width="18" height="42" rx="1" fill="#22408A" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+
+              <!-- === FORKLIFT (centre, detailed) === -->
+              <!-- Mast -->
+              <rect x="246" y="160" width="10" height="115" fill="#0A1230" rx="1"/>
+              <rect x="258" y="160" width="10" height="115" fill="#0D1640" rx="1"/>
+              <!-- Forks -->
+              <rect x="246" y="272" width="52" height="5" rx="1" fill="#D96E10"/>
+              <rect x="246" y="282" width="52" height="5" rx="1" fill="#D96E10"/>
+              <!-- Fork load - pallet of boxes -->
+              <rect x="248" y="238" width="48" height="34" rx="1" fill="rgba(245,130,31,0.15)" stroke="rgba(245,130,31,0.3)" stroke-width="0.5"/>
+              <rect x="252" y="242" width="18" height="14" rx="1" fill="rgba(245,130,31,0.4)"/>
+              <rect x="274" y="244" width="16" height="12" rx="1" fill="rgba(245,130,31,0.3)"/>
+              <rect x="252" y="258" width="20" height="12" rx="1" fill="rgba(245,130,31,0.3)"/>
+              <rect x="276" y="260" width="14" height="10" rx="1" fill="rgba(245,130,31,0.2)"/>
+              <!-- Forklift body -->
+              <rect x="206" y="232" width="50" height="40" rx="3" fill="url(#truckBody)"/>
+              <!-- Cab window -->
+              <rect x="214" y="237" width="22" height="16" rx="1" fill="rgba(13,22,64,0.6)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+              <!-- Exhaust stack -->
+              <rect x="248" y="224" width="5" height="14" rx="1" fill="#C06010"/>
+              <!-- Counterweight -->
+              <rect x="200" y="244" width="10" height="24" rx="1" fill="#C06010"/>
+              <!-- Wheels -->
+              <circle cx="220" cy="275" r="11" fill="#0A1230" stroke="#F5821F" stroke-width="2"/>
+              <circle cx="220" cy="275" r="5" fill="#1C2B6E"/>
+              <circle cx="250" cy="275" r="9" fill="#0A1230" stroke="#F5821F" stroke-width="2"/>
+              <circle cx="250" cy="275" r="4" fill="#1C2B6E"/>
+              <!-- Wheel shine -->
+              <circle cx="217" cy="272" r="2" fill="rgba(255,255,255,0.15)"/>
+              <circle cx="247" cy="272" r="1.5" fill="rgba(255,255,255,0.15)"/>
+
+              <!-- === PALLET STACKS ON FLOOR === -->
+              <!-- Pallet left -->
+              <rect x="130" y="248" width="60" height="8" rx="1" fill="#8B5A2B" opacity="0.7"/>
+              <rect x="133" y="214" width="18" height="34" rx="1" fill="rgba(245,130,31,0.35)" stroke="rgba(245,130,31,0.2)" stroke-width="0.5"/>
+              <rect x="155" y="218" width="16" height="30" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+              <rect x="175" y="220" width="12" height="28" rx="1" fill="rgba(245,130,31,0.25)"/>
+              <!-- Pallet right -->
+              <rect x="300" y="248" width="60" height="8" rx="1" fill="#8B5A2B" opacity="0.7"/>
+              <rect x="303" y="216" width="20" height="32" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
+              <rect x="327" y="220" width="16" height="28" rx="1" fill="rgba(245,130,31,0.3)" stroke="rgba(245,130,31,0.15)" stroke-width="0.5"/>
+              <rect x="347" y="222" width="10" height="26" rx="1" fill="#22408A"/>
+
+              <!-- === CEILING LIGHTS === -->
+              <!-- Light 1 -->
+              <rect x="100" y="0" width="3" height="28" fill="rgba(255,255,255,0.06)"/>
+              <rect x="88" y="26" width="28" height="6" rx="1" fill="rgba(255,255,255,0.12)"/>
+              <ellipse cx="102" cy="35" rx="30" ry="18" fill="rgba(255,255,255,0.04)"/>
+              <!-- Light 2 -->
+              <rect x="240" y="0" width="3" height="28" fill="rgba(255,255,255,0.06)"/>
+              <rect x="228" y="26" width="28" height="6" rx="1" fill="rgba(255,255,255,0.12)"/>
+              <ellipse cx="242" cy="35" rx="30" ry="18" fill="rgba(255,255,255,0.04)"/>
+              <!-- Light 3 -->
+              <rect x="380" y="0" width="3" height="28" fill="rgba(255,255,255,0.06)"/>
+              <rect x="368" y="26" width="28" height="6" rx="1" fill="rgba(255,255,255,0.12)"/>
+              <ellipse cx="382" cy="35" rx="30" ry="18" fill="rgba(255,255,255,0.04)"/>
+
+              <!-- === BUYCO BRANDING ON WALL === -->
+              <text x="240" y="155" text-anchor="middle"
+                font-family="Barlow Condensed, sans-serif"
+                font-size="38" font-weight="900"
+                fill="rgba(255,255,255,0.06)"
+                letter-spacing="-1">BUYCO</text>
+
+              <!-- Floor shadow under forklift -->
+              <ellipse cx="232" cy="282" rx="50" ry="6" fill="rgba(0,0,0,0.3)"/>
+
+              <!-- Bottom label -->
+              <text x="240" y="410" text-anchor="middle"
+                fill="rgba(255,255,255,0.18)"
+                font-family="Barlow Condensed, sans-serif"
+                font-size="10" letter-spacing="3" font-weight="700">BUILDING MATERIALS WAREHOUSE</text>
+            </g>
+          </svg>
+        </div>
+        <div class="story-image-badge">Built By<br>Traders,<br>For Traders.</div>
+      </div>
+      <div class="story-content fade-up fade-up-2">
+        <div class="section-eyebrow">Our Story</div>
+        <h2>Born From a<br><span class="accent">Trusted Legacy.</span></h2>
+        <p>Born from the trusted legacy of The Building Company — the force behind BUCO and Timbercity — BUYCO delivers corporate-scale buying power, commercial expertise, and logistics solutions straight to your store.</p>
+        <p>Our mission is simple: unlock sustainable growth, boost margins, and strengthen your competitive edge, while keeping your independence intact. BUYCO gives you the firepower to turn ambition into measurable results.</p>
+        <ul class="story-bullets">
+          <li><strong>R6B+ Buying Power</strong> — leverage national-scale procurement from day one.</li>
+          <li><strong>Network</strong> — connect, collaborate, and grow with like-minded traders.</li>
+          <li><strong>Sustainable Growth</strong> — smarter supply chains, stronger margins, lasting success.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCORECARD -->
+<section class="scorecard">
+  <div class="section-inner">
+    <div class="scorecard-grid">
+      <div class="scorecard-content fade-up">
+        <div class="section-eyebrow">What We Measure</div>
+        <h2>Take Control of Your<br><span class="accent">Business's Future.</span></h2>
+        <p>The BUYCO Scorecard evaluates the 3 core pillars that determine retail performance. It gives you a clear, practical view of where your business is strong — and where smarter buying can unlock hidden profitability.</p>
+        <div class="scorecard-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">01</div>
+            <div class="pillar-text">
+              <strong>Procurement Performance</strong>
+              <span>Are you buying at the right price?</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">02</div>
+            <div class="pillar-text">
+              <strong>Supply Chain Efficiency</strong>
+              <span>Is your stock flow costing you margin?</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">03</div>
+            <div class="pillar-text">
+              <strong>Commercial Structure</strong>
+              <span>Are your supplier terms working for you?</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn-primary-orange" style="margin-top:8px;">Start Your Free Scorecard</a>
+      </div>
+      <div class="scorecard-visual fade-up fade-up-2">
+        <h3>Frustrated By<br><span class="accent">Shrinking Margins?</span></h3>
+        <p>Don't let another day pass with uncertainty. Get your free, personalised scorecard now and unlock the path to greater profitability.</p>
+        <div class="scorecard-bars">
+          <div class="score-bar-row">
+            <div class="score-bar-label"><span>Procurement</span><span class="bar-val">--</span></div>
+            <div class="score-bar-track"><div class="score-bar-fill" data-target="82"></div></div>
+          </div>
+          <div class="score-bar-row">
+            <div class="score-bar-label"><span>Supply Chain</span><span class="bar-val">--</span></div>
+            <div class="score-bar-track"><div class="score-bar-fill" data-target="67"></div></div>
+          </div>
+          <div class="score-bar-row">
+            <div class="score-bar-label"><span>Commercial</span><span class="bar-val">--</span></div>
+            <div class="score-bar-track"><div class="score-bar-fill" data-target="74"></div></div>
+          </div>
+        </div>
+        <a href="#" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Get Your Scorecard Now →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTPRINT -->
+<section class="footprint">
+  <div class="footprint-bg"></div>
+  <div class="section-inner footprint-inner">
+    <div class="footprint-header">
+      <div>
+        <div class="section-eyebrow" style="color:var(--orange);">Our Footprint</div>
+        <h2 class="fade-up">Building Better Together<br><span class="accent">Across the Region.</span></h2>
+      </div>
+      <p class="fade-up fade-up-2" style="color:rgba(255,255,255,0.55);">Active in 8 countries and growing — we bring the same collective advantage to retailers from Cape Town to Lusaka.</p>
+    </div>
+    <!-- SVG MAP + COUNTRY CARDS SIDE BY SIDE -->
+    <div class="footprint-layout">
+      <div class="map-container fade-up">
+        <div id="d3map">
+          <div class="map-skeleton" id="mapSkeleton">
+            <div class="map-skel-shape"></div>
+            <div class="map-skel-dots">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+        <div class="map-tooltip" id="mapTooltip"></div>
+      </div>
+
+      <div class="countries-grid fade-up fade-up-2">
+        <div class="country-item" data-country="South Africa"><span class="country-dot"></span><span>South Africa</span></div>
+        <div class="country-item" data-country="Namibia"><span class="country-dot"></span><span>Namibia</span></div>
+        <div class="country-item" data-country="Botswana"><span class="country-dot"></span><span>Botswana</span></div>
+        <div class="country-item" data-country="Zimbabwe"><span class="country-dot"></span><span>Zimbabwe</span></div>
+        <div class="country-item" data-country="Zambia"><span class="country-dot"></span><span>Zambia</span></div>
+        <div class="country-item" data-country="Mozambique"><span class="country-dot"></span><span>Mozambique</span></div>
+        <div class="country-item" data-country="Eswatini"><span class="country-dot"></span><span>Eswatini</span></div>
+        <div class="country-item" data-country="Lesotho"><span class="country-dot"></span><span>Lesotho</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPLIERS -->
+<section class="suppliers">
+  <div class="section-inner">
+    <div class="suppliers-header fade-up">
+      <div class="section-eyebrow" style="justify-content:center;">Trusted Suppliers</div>
+      <h2>Partnered With<br><span class="accent">Industry Leaders.</span></h2>
+      <p>We partner with the industry's finest to bring you the best range, quality and value for money.</p>
+    </div>
+    <div class="suppliers-grid fade-up fade-up-2">
+      <div class="supplier-logo"><span class="supplier-logo-text">Plascon</span></div>
+      <div class="supplier-logo"><span class="supplier-logo-text">Duram</span></div>
+      <div class="supplier-logo"><span class="supplier-logo-text">Medal</span></div>
+      <div class="supplier-logo"><span class="supplier-logo-text">AB Academy</span></div>
+      <div class="supplier-logo"><span class="supplier-logo-text">AfriLadder</span></div>
+      <div class="supplier-logo"><span class="supplier-logo-text">Harvey</span></div>
+      <div class="supplier-logo"><span class="supplier-logo-text">Malls Tiles</span></div>
+      <div class="supplier-logo"><span class="supplier-logo-text">Volsma</span></div>
+      <div class="supplier-logo"><span class="supplier-logo-text">RobMeg Steel</span></div>
+      <div class="supplier-logo"><span class="supplier-logo-text">Heunis</span></div>
+      <div class="supplier-logo"><span class="supplier-logo-text">Mechook</span></div>
+      <div class="supplier-logo"><span class="supplier-logo-text">Workforce</span></div>
+    </div>
+    <div class="suppliers-cta fade-up fade-up-3">
+      <a href="#" style="display:inline-flex;align-items:center;gap:8px;color:var(--navy);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border-bottom:2px solid var(--orange);padding-bottom:3px;">View All Suppliers →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-inner">
+    <div class="testimonials-header fade-up">
+      <div class="section-eyebrow">Real Traders, Real Results</div>
+      <h2>What Our Retailers<br><span class="accent">Are Saying.</span></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">BUYCO gave us access to pricing we never thought possible as an independent. Our margins improved from the very first quarter of joining.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">JD</div>
+          <div>
+            <div class="author-name">John Doe</div>
+            <div class="author-role">Hardware Retailer — Gauteng</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up fade-up-2">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">The logistics support alone has transformed how we operate. Predictable delivery and shared distribution have cut our overhead significantly.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SM</div>
+          <div>
+            <div class="author-name">Sarah Mokoena</div>
+            <div class="author-role">Building Supplies — KZN</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up fade-up-3">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Finally a buying group that treats you like a partner, not a number. The scorecard opened our eyes to where we were losing money.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">PV</div>
+          <div>
+            <div class="author-name">Peter van der Berg</div>
+            <div class="author-role">Independent Merchant — WC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+  <div class="section-inner">
+    <div class="services-header">
+      <div class="services-header-row">
+        <div>
+          <div class="section-eyebrow" style="color:var(--orange);">What We Offer</div>
+          <h2 class="fade-up">Measure What <span class="accent">Matters.</span><br>Maximise Your <span class="accent">Potential.</span></h2>
+        </div>
+        <div class="services-header-cta">
+          <a href="#">Click Here To Get Your Scorecard →</a>
+        </div>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-number">01</div>
+        <div class="service-tag">Procurement</div>
+        <h3>Unlock Procurement Power</h3>
+        <p>Turn scale into advantage. Collective buying power that strengthens margins and puts you on equal footing with the biggest players in the industry.</p>
+      </div>
+      <div class="service-card fade-up fade-up-2">
+        <div class="service-number">02</div>
+        <div class="service-tag">Logistics</div>
+        <h3>Optimise Your Supply Chain</h3>
+        <p>Remove friction from your supply chain with coordinated ordering, shared distribution, and predictable delivery that keeps your shelves full.</p>
+      </div>
+      <div class="service-card fade-up fade-up-3">
+        <div class="service-number">03</div>
+        <div class="service-tag">Growth</div>
+        <h3>Accelerate Sustainable Growth</h3>
+        <p>Unlock smarter growth through better margins, improved stock turn, and insights that support long-term success across your business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="section-inner">
+    <div class="faq-layout">
+      <div class="faq-left fade-up">
+        <div class="section-eyebrow">FAQ</div>
+        <h2>Questions<br><span class="accent">Answered.</span></h2>
+        <p>Can't find what you're looking for? Our team is ready to help.</p>
+        <a href="#contact" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Contact Us</a>
+      </div>
+      <div class="faq-list fade-up fade-up-2">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Will I lose my store's independence or brand identity?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely not. Your name, your team, your brand — all remain entirely yours. BUYCO is designed to strengthen independent retailers, not standardise them. You retain full autonomy while gaining the commercial advantages of a national network.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is there a joining fee or long-term contract?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>BUYCO operates on a transparent, collaborative commercial model. There are no hidden costs or lock-in contracts designed to trap you. Contact our team for a detailed breakdown of the commercial structure tailored to your store's size and turnover.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How quickly can I start benefiting from the buying power?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>From the moment your onboarding is complete, you have immediate access to supplier agreements and procurement pricing. Most members see tangible margin improvements within their first full trading quarter.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What size store qualifies to join?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>BUYCO is built for independent building material and hardware retailers of all sizes — from single-store operators to small regional chains. If you're owner-managed and community-rooted, we want to hear from you.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you operate outside of South Africa?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. BUYCO is currently active across 8 countries in Southern Africa — South Africa, Namibia, Botswana, Zimbabwe, Zambia, Mozambique, Eswatini, and Lesotho — and we are actively expanding our footprint.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How is BUYCO connected to The Building Company?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>BUYCO is The Building Company's collective buying group — born directly from the organisation behind BUCO and Timbercity. This means you benefit from decades of procurement infrastructure, supplier relationships, and commercial expertise from day one.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info fade-up">
+        <div class="section-eyebrow">Get In Touch</div>
+        <h2>Let's Start Your<br><span class="accent">Journey.</span></h2>
+        <p>Ready to find out how BUYCO can transform your buying power? Fill in the form and one of our team will be in touch within one business day.</p>
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">✉</div>
+            <div>
+              <div class="contact-detail-label">Email Us</div>
+              <div class="contact-detail-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5c3d383135321c3e29253f33723f3372263d">[email&#160;protected]</a></div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">☎</div>
+            <div>
+              <div class="contact-detail-label">Call Us</div>
+              <div class="contact-detail-value">+27 21 927 5000</div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon">🌐</div>
+            <div>
+              <div class="contact-detail-label">Website</div>
+              <div class="contact-detail-value">www.buyco.co.za</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap fade-up fade-up-2">
+        <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name <span class="req">*</span></label>
+              <input type="text" placeholder="John Smith" required/>
+            </div>
+            <div class="form-group">
+              <label>Store Name <span class="req">*</span></label>
+              <input type="text" placeholder="Smith Hardware" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email Address <span class="req">*</span></label>
+              <input type="email" placeholder="john@smithhardware.co.za" required/>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+27 11 000 0000"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>I Am A <span class="req">*</span></label>
+            <div class="form-select-wrap">
+              <select required>
+                <option value="" disabled selected>Select your role</option>
+                <option>Independent Retailer</option>
+                <option>Supplier / Manufacturer</option>
+                <option>Distributor</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Province / Country</label>
+            <input type="text" placeholder="e.g. Gauteng, South Africa"/>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell us about your store and what you're looking for..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn-form-submit">
+            <span id="formBtnText">Send Enquiry</span>
+            <span id="formBtnLoader" style="display:none">Sending…</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <span>✓</span> Thanks! We'll be in touch within one business day.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES SECTION -->
+<section class="values">
+  <div class="section-inner">
+    <div class="values-grid">
+      <div class="values-left fade-up">
+        <div class="section-eyebrow">Our Foundation</div>
+        <h2>What We<br><span class="accent">Stand For.</span></h2>
+        <p>BUYCO is built on principles that go beyond margin and procurement. We believe that when trust, respect and performance align, everyone wins — suppliers, retailers and the communities they serve.</p>
+        <blockquote class="values-quote">
+          "We value people, true partnerships, and performance — the kind you can take to the bank."
+        </blockquote>
+      </div>
+      <div class="values-cards fade-up fade-up-2">
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h4>Teamwork</h4>
+          <p>We believe the collective is stronger than any individual. Every retailer and supplier in our network contributes to a stronger whole.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🎯</div>
+          <h4>Mutual Respect</h4>
+          <p>Every partner in the BUYCO ecosystem — from the smallest store to the largest supplier — deserves to be treated as an equal.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💡</div>
+          <h4>Honesty</h4>
+          <p>Transparent commercial structures. No hidden fees. No conflicting agendas. Just clear, fair dealings that build long-term trust.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">📦</div>
+          <h4>Customer Value</h4>
+          <p>Every decision we make is ultimately in service of better products, better prices, and better experiences for the end consumer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRANCHISE CALLOUT -->
+<section class="franchise-callout">
+  <div class="section-inner">
+    <div class="franchise-inner fade-up">
+      <div class="franchise-badge">2026</div>
+      <div class="franchise-content">
+        <div class="section-eyebrow" style="color:var(--orange);">What's Coming Next</div>
+        <h2>The Foundation for a<br><span class="accent">New Franchise Brand.</span></h2>
+        <p>BUYCO is more than a buying group — it's the launchpad for an exciting new franchise retail brand set to launch in 2026. Independent building material merchants who grow with us now will have the opportunity to shape the next chapter of the Southern African building materials industry.</p>
+        <p style="margin-top:12px;font-weight:600;color:var(--navy);">Join today and be first in line when the doors open.</p>
+        <a href="#contact" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Register Your Interest</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="section-inner">
+    <div class="cta-inner">
+      <div class="cta-text fade-up">
+        <div class="section-eyebrow" style="color:rgba(255,255,255,0.5);">It's Hammer Time</div>
+        <h2>Let's Build Smarter,<br>Faster, <span class="accent">Stronger.</span></h2>
+        <p>Don't let another day pass with shrinking margins. Get your free scorecard and unlock the path to greater profitability — together.</p>
+      </div>
+      <div class="cta-actions fade-up fade-up-2">
+        <a href="#contact" class="btn-primary">Start Your Free Scorecard</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">BUY<span>CO</span><span style="color:var(--orange);font-size:10px;vertical-align:super;">.</span></div>
+        <div class="footer-tagline-text">The Building Company's Collective Buying Group</div>
+        <p class="footer-desc">Empowering independent building material retailers across Southern Africa with corporate-scale buying power.</p>
+      </div>
+      <div class="footer-nav">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Our Footprint</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Procurement</a></li>
+          <li><a href="#">Logistics</a></li>
+          <li><a href="#">Growth Tools</a></li>
+          <li><a href="#">Scorecard</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Join BUYCO</h4>
+        <ul>
+          <li><a href="#">For Retailers</a></li>
+          <li><a href="#">For Suppliers</a></li>
+          <li><a href="#">Promotions</a></li>
+          <li><a href="#">Get Started</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <h4>Downloads</h4>
+        <ul>
+          <li><a href="#" download>📄 Retailer Brochure</a></li>
+          <li><a href="#" download>📄 Supplier Brochure</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 BUYCO. The Building Company's Collective Buying Group. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // ── SCROLL FADE-UP ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // ── STAGGERED COUNTRY CARDS ──
+  const countryObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.country-item').forEach((card, i) => {
+          setTimeout(() => card.classList.add('country-visible'), i * 80);
+        });
+        countryObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  document.querySelectorAll('.countries-grid').forEach(g => countryObserver.observe(g));
+
+  // ── STAGGERED SERVICE CARDS ──
+  const serviceObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.service-card').forEach((card, i) => {
+          setTimeout(() => card.classList.add('service-visible'), i * 130);
+        });
+        serviceObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  const servicesGrid = document.querySelector('.services-grid');
+  if (servicesGrid) serviceObserver.observe(servicesGrid);
+
+  // ── STAGGERED SUPPLIER LOGOS ──
+  const supplierObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.supplier-logo').forEach((logo, i) => {
+          setTimeout(() => logo.classList.add('supplier-visible'), i * 55);
+        });
+        supplierObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  const suppliersGrid = document.querySelector('.suppliers-grid');
+  if (suppliersGrid) supplierObserver.observe(suppliersGrid);
+
+  // ── STAGGERED TESTIMONIALS ──
+  const testimonialsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.testimonial-card').forEach((card, i) => {
+          setTimeout(() => card.classList.add('testimonial-visible'), i * 150);
+        });
+        testimonialsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  const testimonialsGrid = document.querySelector('.testimonials-grid');
+  if (testimonialsGrid) testimonialsObserver.observe(testimonialsGrid);
+
+  // ── STAT COUNTER ──
+  function animateCounter(el, target, prefix, suffix, duration) {
+    let start = 0;
+    const step = target / (duration / 16);
+    const timer = setInterval(() => {
+      start = Math.min(start + step, target);
+      el.textContent = prefix + Math.floor(start) + suffix;
+      if (start >= target) clearInterval(timer);
+    }, 16);
+  }
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.stat-number').forEach(n => {
+          const t = n.textContent.trim();
+          if (t === 'R6B+') animateCounter(n, 6, 'R', 'B+', 1200);
+          else if (t === '8') animateCounter(n, 8, '', '', 800);
+          else if (t === '100+') animateCounter(n, 100, '', '+', 1400);
+          else if (t === '4-Day') { /* static */ }
+        });
+        statsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  const heroStats = document.querySelector('.hero-stats');
+  if (heroStats) statsObserver.observe(heroStats);
+
+  // ── PILLAR STAGGER ──
+  const pillarObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.pillar').forEach((p, i) => {
+          setTimeout(() => p.classList.add('pillar-visible'), i * 120);
+        });
+        pillarObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  const pillarList = document.querySelector('.scorecard-pillars');
+  if (pillarList) pillarObserver.observe(pillarList);
+
+  // ── SCORECARD PROGRESS BARS ──
+  const barsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.score-bar-fill').forEach((bar, i) => {
+          const target = parseInt(bar.dataset.target);
+          setTimeout(() => {
+            bar.style.width = target + '%';
+            const valEl = bar.closest('.score-bar-row').querySelector('.bar-val');
+            let count = 0;
+            const timer = setInterval(() => {
+              count = Math.min(count + 2, target);
+              valEl.textContent = count + '%';
+              if (count >= target) clearInterval(timer);
+            }, 20);
+          }, i * 200 + 300);
+        });
+        barsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+  const scorecardVisual = document.querySelector('.scorecard-visual');
+  if (scorecardVisual) barsObserver.observe(scorecardVisual);
+
+  // ── SCROLL PROGRESS BAR ──
+  const progressBar = document.getElementById('scrollProgress');
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    if (progressBar) progressBar.style.width = pct + '%';
+  }, { passive: true });
+
+  // ── NAV SHRINK ──
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (navEl) navEl.classList.toggle('scrolled', window.scrollY > 80);
+  }, { passive: true });
+
+  // ── WHATSAPP + STICKY ELEMENTS ──
+  const stickyCta = document.getElementById('stickyCta');
+  const backToTop = document.getElementById('backToTop');
+  const whatsappBtn = document.getElementById('whatsappBtn');
+  window.addEventListener('scroll', () => {
+    const show = window.scrollY > 400;
+    if (stickyCta) stickyCta.classList.toggle('show', show);
+    if (backToTop) backToTop.classList.toggle('show', show);
+    if (whatsappBtn) whatsappBtn.classList.toggle('show', show);
+  }, { passive: true });
+
+  // ── COOKIE BANNER ──
+  function acceptCookies() {
+    localStorage.setItem('buyco_cookies', 'accepted');
+    document.getElementById('cookieBanner').classList.remove('show');
+  }
+  function declineCookies() {
+    localStorage.setItem('buyco_cookies', 'declined');
+    document.getElementById('cookieBanner').classList.remove('show');
+  }
+  // Show cookie banner if not yet decided
+  if (!localStorage.getItem('buyco_cookies')) {
+    setTimeout(() => {
+      const banner = document.getElementById('cookieBanner');
+      if (banner) banner.classList.add('show');
+    }, 1800);
+  }
+
+  // ── VALUES CARD STAGGER ──
+  const valuesObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.value-card').forEach((card, i) => {
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, i * 100);
+        });
+        valuesObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  document.querySelectorAll('.values-cards').forEach(el => {
+    el.querySelectorAll('.value-card').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(20px)';
+      card.style.transition = 'opacity 0.4s ease, transform 0.4s ease, border-color 0.25s, box-shadow 0.25s, background 0.25s';
+    });
+    valuesObserver.observe(el);
+  });
+
+  // ── HERO MOUSE SPOTLIGHT ──
+  const heroSection = document.querySelector('.hero');
+  const spotlight = document.getElementById('heroSpotlight');
+  if (heroSection && spotlight) {
+    heroSection.addEventListener('mousemove', (e) => {
+      const rect = heroSection.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      spotlight.style.background = `radial-gradient(circle 400px at ${x}px ${y}px, rgba(245,130,31,0.08) 0%, transparent 70%)`;
+    });
+    heroSection.addEventListener('mouseleave', () => {
+      spotlight.style.background = 'radial-gradient(circle 350px at 50% 50%, rgba(245,130,31,0.06) 0%, transparent 70%)';
+    });
+  }
+
+  // ── HERO PARALLAX DECO ──
+  window.addEventListener('scroll', () => {
+    const deco = document.querySelector('.hero-deco');
+    if (deco) deco.style.transform = `translateY(calc(-50% + ${window.scrollY * 0.12}px))`;
+  }, { passive: true });
+
+  // ── HAMBURGER MENU ──
+  const hamburger = document.getElementById('navHamburger');
+  const navLinks = document.getElementById('navLinks');
+  function closeNav() {
+    hamburger.classList.remove('open');
+    navLinks.classList.remove('open');
+  }
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+  }
+  window.addEventListener('scroll', () => { closeNav(); }, { passive: true });
+
+  // ── AUDIENCE TOGGLE ──
+  document.querySelectorAll('.toggle-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const audience = btn.dataset.audience;
+      document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.benefits-panel').forEach(p => {
+        p.classList.remove('active');
+        if (p.dataset.panel === audience) p.classList.add('active');
+      });
+      // Re-trigger fade-up for benefit cards
+      document.querySelectorAll('.benefits-panel.active .benefit-card').forEach((card, i) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+          card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, i * 80);
+      });
+    });
+  });
+
+  // ── FAQ ACCORDION ──
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      // Open clicked if it was closed
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // ── CONTACT FORM ──
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('formBtnText');
+    const loader = document.getElementById('formBtnLoader');
+    const success = document.getElementById('formSuccess');
+    btn.style.display = 'none';
+    loader.style.display = 'inline';
+    setTimeout(() => {
+      loader.style.display = 'none';
+      success.style.display = 'block';
+      e.target.reset();
+      setTimeout(() => { success.style.display = 'none'; btn.style.display = 'inline'; }, 5000);
+    }, 1500);
+  }
+</script>
+<!-- D3 MAP LIBRARIES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script>
+// ── D3 SOUTHERN AFRICA MAP ──
+const BUYCO_COUNTRIES = {
+  'South Africa': { iso: 'ZAF', dot: [-25.7, 28.2], delay: 0 },
+  'Namibia':      { iso: 'NAM', dot: [-22.5, 17.0], delay: 250 },
+  'Botswana':     { iso: 'BWA', dot: [-22.3, 24.7], delay: 500 },
+  'Zimbabwe':     { iso: 'ZWE', dot: [-19.0, 29.8], delay: 750 },
+  'Zambia':       { iso: 'ZMB', dot: [-13.1, 27.8], delay: 1000 },
+  'Mozambique':   { iso: 'MOZ', dot: [-18.0, 35.0], delay: 1250 },
+  'Eswatini':     { iso: 'SWZ', dot: [-26.5, 31.5], delay: 1500 },
+  'Lesotho':      { iso: 'LSO', dot: [-29.6, 28.2], delay: 1750 },
+};
+
+const isoToName = {};
+Object.entries(BUYCO_COUNTRIES).forEach(([name, d]) => { isoToName[d.iso] = name; });
+
+function buildMap() {
+  const container = document.getElementById('d3map');
+  if (!container) return;
+
+  const W = container.clientWidth || 420;
+  const H = W * 1.05;
+
+  const svg = d3.select('#d3map')
+    .append('svg')
+    .attr('width', W)
+    .attr('height', H)
+    .style('overflow', 'visible');
+
+  // Mercator projection centred on Southern Africa
+  const projection = d3.geoMercator()
+    .center([28, -22])
+    .scale(W * 1.38)
+    .translate([W / 2, H / 2]);
+
+  const path = d3.geoPath().projection(projection);
+
+  // Load world topojson from CDN
+  d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json').then(world => {
+    // Hide skeleton
+    const skel = document.getElementById('mapSkeleton');
+    if (skel) skel.style.display = 'none';
+    const countries = topojson.feature(world, world.objects.countries);
+
+    // ISO numeric → alpha3 lookup for our 8 countries
+    const numericToIso = {
+      '710': 'ZAF', '516': 'NAM', '072': 'BWA',
+      '716': 'ZWE', '894': 'ZMB', '508': 'MOZ',
+      '748': 'SWZ', '426': 'LSO'
+    };
+
+    const buycoNumerics = new Set(Object.keys(numericToIso));
+
+    // Draw all countries in region as dim background first
+    const regionNumerics = new Set([
+      '710','516','072','716','894','508','748','426',
+      '404','834','180','024','818','800','706','231','706'
+    ]);
+
+    // Draw BUYCO countries
+    const countryPaths = svg.selectAll('.d3-country')
+      .data(countries.features.filter(f => buycoNumerics.has(String(f.id).padStart(3,'0'))))
+      .enter()
+      .append('path')
+      .attr('class', 'd3-country')
+      .attr('d', path)
+      .attr('data-country', d => {
+        const iso = numericToIso[String(d.id).padStart(3,'0')];
+        return isoToName[iso] || '';
+      })
+      .style('fill', 'rgba(28,43,110,0.7)')
+      .style('stroke', 'rgba(255,255,255,0.3)')
+      .style('stroke-width', '1px')
+      .style('cursor', 'pointer')
+      .style('transition', 'fill 0.25s ease')
+      .style('opacity', 0);
+
+    // Fade in staggered
+    countryPaths.each(function(d, i) {
+      const el = this;
+      setTimeout(() => {
+        d3.select(el).style('opacity', 1).style('transition', 'fill 0.25s ease, opacity 0.5s ease');
+      }, i * 100 + 300);
+    });
+
+    // Hover interactions
+    const tooltip = document.getElementById('mapTooltip');
+    const mapDiv = document.getElementById('d3map');
+
+    countryPaths
+      .on('mouseenter', function(event, d) {
+        const name = d3.select(this).attr('data-country');
+        if (!name) return;
+        d3.select(this).style('fill', 'rgba(245,130,31,0.5)').style('stroke', 'rgba(245,130,31,0.8)').style('stroke-width', '2px');
+        highlightCard(name, true);
+        highlightDot(name, true);
+        if (tooltip) {
+          tooltip.textContent = name;
+          tooltip.classList.add('visible');
+        }
+      })
+      .on('mousemove', function(event) {
+        if (tooltip && mapDiv) {
+          const rect = mapDiv.getBoundingClientRect();
+          tooltip.style.left = (event.clientX - rect.left - tooltip.offsetWidth / 2) + 'px';
+          tooltip.style.top = (event.clientY - rect.top - 44) + 'px';
+        }
+      })
+      .on('mouseleave', function(event, d) {
+        const name = d3.select(this).attr('data-country');
+        d3.select(this).style('fill', 'rgba(28,43,110,0.7)').style('stroke', 'rgba(255,255,255,0.3)').style('stroke-width', '1px');
+        highlightCard(name, false);
+        highlightDot(name, false);
+        if (tooltip) tooltip.classList.remove('visible');
+      });
+
+    // Add animated dots + pulse rings
+    let dotIndex = 0;
+    Object.entries(BUYCO_COUNTRIES).forEach(([name, data]) => {
+      const [lat, lng] = data.dot;
+      const [px, py] = projection([lng, lat]);
+      const delay = data.delay;
+      const isSmall = name === 'Eswatini' || name === 'Lesotho';
+      const r = isSmall ? 4 : 5;
+
+      // Pulse ring
+      const pulse = svg.append('circle')
+        .attr('class', 'map-pulse')
+        .attr('cx', px).attr('cy', py).attr('r', r)
+        .style('animation-delay', (dotIndex * 0.28) + 's')
+        .style('opacity', 0);
+
+      // Solid dot
+      const dot = svg.append('circle')
+        .attr('class', 'map-dot')
+        .attr('cx', px).attr('cy', py).attr('r', r)
+        .attr('data-country', name)
+        .style('fill', 'var(--orange)')
+        .style('cursor', 'pointer')
+        .style('opacity', 0)
+        .style('transition', 'r 0.2s ease');
+
+      setTimeout(() => {
+        dot.style('opacity', '1').style('transition', 'opacity 0.4s ease, r 0.2s ease');
+        pulse.style('opacity', '1');
+      }, delay + 500);
+
+      dot.on('mouseenter', () => { highlightCard(name, true); highlightCountryPath(name, true); })
+         .on('mouseleave', () => { highlightCard(name, false); highlightCountryPath(name, false); });
+
+      dotIndex++;
+    });
+
+    // Cross-highlight helpers
+    function highlightCountryPath(name, on) {
+      countryPaths.filter(d => {
+        const iso = numericToIso[String(d.id).padStart(3,'0')];
+        return isoToName[iso] === name;
+      })
+      .style('fill', on ? 'rgba(245,130,31,0.5)' : 'rgba(28,43,110,0.7)')
+      .style('stroke', on ? 'rgba(245,130,31,0.8)' : 'rgba(255,255,255,0.3)')
+      .style('stroke-width', on ? '2px' : '1px');
+    }
+
+    function highlightDot(name, on) {
+      svg.selectAll('.map-dot')
+        .filter(function() { return d3.select(this).attr('data-country') === name; })
+        .attr('r', on ? 8 : 5)
+        .style('filter', on ? 'drop-shadow(0 0 8px rgba(245,130,31,1))' : '');
+    }
+
+    window._highlightMapCountry = highlightCountryPath;
+    window._highlightMapDot = highlightDot;
+  }).catch(err => {
+    console.warn('Map load failed:', err);
+    const skel = document.getElementById('mapSkeleton');
+    if (skel) skel.style.display = 'none';
+    // Fallback: show styled placeholder
+    document.getElementById('d3map').innerHTML = `
+      <div style="width:100%;height:400px;background:rgba(28,43,110,0.3);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;border-radius:2px;">
+        <span style="color:rgba(255,255,255,0.4);font-family:Barlow Condensed,sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;">Southern Africa</span>
+      </div>`;
+  });
+}
+
+function highlightCard(name, on) {
+  document.querySelectorAll('.country-item').forEach(c => {
+    if (c.dataset.country === name) {
+      if (on) {
+        c.style.background = 'rgba(245,130,31,0.18)';
+        c.style.borderColor = 'rgba(245,130,31,0.5)';
+        c.style.transform = 'translateY(-4px) scale(1.02)';
+      } else {
+        c.style.background = '';
+        c.style.borderColor = '';
+        c.style.transform = '';
+      }
+    }
+  });
+}
+
+// Wire up card hover → map
+document.querySelectorAll('.country-item').forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    const name = card.dataset.country;
+    if (window._highlightMapCountry) window._highlightMapCountry(name, true);
+    if (window._highlightMapDot) window._highlightMapDot(name, true);
+  });
+  card.addEventListener('mouseleave', () => {
+    const name = card.dataset.country;
+    if (window._highlightMapCountry) window._highlightMapCountry(name, false);
+    if (window._highlightMapDot) window._highlightMapDot(name, false);
+  });
+});
+
+// Build map when footprint section enters viewport
+const mapBuildObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      buildMap();
+      mapBuildObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.2 });
+const d3mapEl = document.getElementById('d3map');
+if (d3mapEl) mapBuildObserver.observe(d3mapEl);
+</script>
+</body>
+</html>
