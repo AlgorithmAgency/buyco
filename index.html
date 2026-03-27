@@ -2278,8 +2278,64 @@
     .franchise-inner::after { font-size: 100px; }
   }
 
+  /* ══════════════════════════
+     TRUST STRIP
+  ══════════════════════════ */
+  .trust-strip {
+    padding: 56px 0;
+    background: var(--navy-deep);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .trust-strip-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+    cursor: default;
+    transition: transform .2s;
+  }
+  .trust-item:hover { transform: translateY(-4px); }
+  .trust-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--orange);
+    display: block;
+    line-height: 1;
+  }
+  .trust-item:hover .trust-num { text-shadow: 0 0 20px rgba(245,130,31,0.5); }
+  .trust-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.45);
+    margin-top: 6px;
+    display: block;
+    font-weight: 700;
+  }
+  .trust-divider {
+    width: 1px;
+    height: 56px;
+    background: rgba(255,255,255,0.08);
+    flex-shrink: 0;
+  }
+  @media (max-width: 768px) {
+    .trust-divider { display: none; }
+    .trust-strip-inner { justify-content: center; gap: 20px; }
+    .trust-item { min-width: 90px; }
+    .trust-num { font-size: 36px; }
+  }
+
 </style>
 </head>
+<body>
+
 <body>
 
 <!-- SCROLL PROGRESS -->
@@ -2369,6 +2425,39 @@
   </div>
 </div>
 
+
+<!-- TRUST STRIP -->
+<section class="trust-strip">
+  <div class="section-inner">
+    <div class="trust-strip-inner">
+      <div class="trust-item fade-up">
+        <span class="trust-num">R6B+</span>
+        <span class="trust-label">Buying Power</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item fade-up fade-up-2">
+        <span class="trust-num">8</span>
+        <span class="trust-label">Active Countries</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item fade-up fade-up-3">
+        <span class="trust-num">100+</span>
+        <span class="trust-label">Independent Retailers</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item fade-up">
+        <span class="trust-num">130+</span>
+        <span class="trust-label">BUCO & Timbercity Outlets</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item fade-up fade-up-2">
+        <span class="trust-num">4-Day</span>
+        <span class="trust-label">Procurement Cycle</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- HOW IT WORKS -->
 <section class="how-it-works" id="how-it-works">
   <div class="section-inner">
@@ -2403,332 +2492,6 @@
         </div>
         <h3>Grow</h3>
         <p>Start leveraging R6B+ in buying power from day one. Watch your margins improve, your stock turn increase, and your independence stay intact.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BENEFITS — AUDIENCE TOGGLE -->
-<section class="benefits" id="benefits">
-  <div class="section-inner">
-    <div class="benefits-header fade-up">
-      <div class="section-eyebrow">Why Join BUYCO</div>
-      <h2>More Than You<br><span class="accent">Bargained For.</span></h2>
-      <p class="benefits-sub">Whether you're a retailer or a supplier, BUYCO is built to deliver real, measurable value.</p>
-      <div class="audience-toggle">
-        <button class="toggle-btn active" data-audience="retailers">For Retailers</button>
-        <button class="toggle-btn" data-audience="suppliers">For Suppliers</button>
-      </div>
-    </div>
-
-    <!-- RETAILERS PANEL -->
-    <div class="benefits-panel active" data-panel="retailers">
-      <div class="benefits-grid">
-        <div class="benefit-card fade-up">
-          <div class="benefit-icon">💪</div>
-          <h4>You Stay Independent</h4>
-          <p>Your name. Your team. Your brand. We strengthen you, not standardise you. Keep your identity while gaining the power of a national group.</p>
-        </div>
-        <div class="benefit-card fade-up fade-up-2">
-          <div class="benefit-icon">⚡</div>
-          <h4>Buying Power from Day One</h4>
-          <p>Access The Building Company's R6 billion procurement leverage instantly — competitive pricing and terms typically reserved for large-scale chains.</p>
-        </div>
-        <div class="benefit-card fade-up fade-up-3">
-          <div class="benefit-icon">📈</div>
-          <h4>Improved Margins & ROI</h4>
-          <p>Supplier agreements structured to support margin growth through smarter logistics, shared distribution, and enhanced commercial terms.</p>
-        </div>
-        <div class="benefit-card fade-up">
-          <div class="benefit-icon">🚚</div>
-          <h4>Tailored Logistics</h4>
-          <p>Shared load solutions reduce lead times and increase delivery efficiency — benefiting both your store and your supply chain partners.</p>
-        </div>
-        <div class="benefit-card fade-up fade-up-2">
-          <div class="benefit-icon">🏷️</div>
-          <h4>Private Label Opportunities</h4>
-          <p>Differentiate your shelves with an exclusive private label range backed by guaranteed quality and competitive pricing built for your market.</p>
-        </div>
-        <div class="benefit-card fade-up fade-up-3">
-          <div class="benefit-icon">🎓</div>
-          <h4>Staff Training & Support</h4>
-          <p>Ongoing product training from suppliers empowers your team, improves sell-through, and elevates the customer experience in your store.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- SUPPLIERS PANEL -->
-    <div class="benefits-panel" data-panel="suppliers">
-      <div class="benefits-grid">
-        <div class="benefit-card fade-up">
-          <div class="benefit-icon">🌍</div>
-          <h4>Immediate Market Exposure</h4>
-          <p>Gain access to 130+ BUCO and Timbercity outlets plus a growing network of independent building material retailers across Southern Africa.</p>
-        </div>
-        <div class="benefit-card fade-up fade-up-2">
-          <div class="benefit-icon">📦</div>
-          <h4>Consolidated Volume</h4>
-          <p>Benefit from coordinated bulk orders, improved delivery efficiency, and volume growth through shared logistics and distribution runs.</p>
-        </div>
-        <div class="benefit-card fade-up fade-up-3">
-          <div class="benefit-icon">🤝</div>
-          <h4>Fair Commercial Partnerships</h4>
-          <p>Our approach is collaboration over competition — improved rebate structures, product integrity protection, and preferential retail status.</p>
-        </div>
-        <div class="benefit-card fade-up">
-          <div class="benefit-icon">📊</div>
-          <h4>Market Intelligence</h4>
-          <p>Stay ahead with insights into market trends, regional performance data, and consumer behaviour to inform your product and pricing strategy.</p>
-        </div>
-        <div class="benefit-card fade-up fade-up-2">
-          <div class="benefit-icon">📣</div>
-          <h4>Group Promotions</h4>
-          <p>Participate in monthly promotional calendars and seasonal campaigns to increase product visibility and drive retailer sell-through at scale.</p>
-        </div>
-        <div class="benefit-card fade-up fade-up-3">
-          <div class="benefit-icon">🚀</div>
-          <h4>Scalable Distribution</h4>
-          <p>Whether penetrating new regions or scaling nationally, BUYCO gives you the framework to grow with purpose and predictable volume.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- OUR STORY -->
-<section class="our-story">
-  <div class="section-inner">
-    <div class="story-grid">
-      <div class="story-image fade-up">
-        <div class="story-img-placeholder">
-          <svg viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
-            <defs>
-              <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#0D1640"/>
-                <stop offset="100%" stop-color="#1C2B6E"/>
-              </linearGradient>
-              <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#111E52"/>
-                <stop offset="100%" stop-color="#0A1230"/>
-              </linearGradient>
-              <linearGradient id="truckBody" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#F5821F"/>
-                <stop offset="100%" stop-color="#D96E10"/>
-              </linearGradient>
-              <radialGradient id="spotGlow" cx="60%" cy="40%" r="55%">
-                <stop offset="0%" stop-color="rgba(245,130,31,0.12)"/>
-                <stop offset="100%" stop-color="rgba(13,22,64,0)"/>
-              </radialGradient>
-              <clipPath id="sceneClip">
-                <rect width="480" height="420" rx="2"/>
-              </clipPath>
-            </defs>
-
-            <g clip-path="url(#sceneClip)">
-              <!-- Background -->
-              <rect width="480" height="420" fill="url(#bgGrad)"/>
-              <rect width="480" height="420" fill="url(#spotGlow)"/>
-
-              <!-- Back wall panels -->
-              <rect x="0" y="0" width="480" height="270" fill="rgba(255,255,255,0.02)"/>
-              <line x1="96" y1="0" x2="96" y2="270" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-              <line x1="192" y1="0" x2="192" y2="270" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-              <line x1="288" y1="0" x2="288" y2="270" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-              <line x1="384" y1="0" x2="384" y2="270" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
-
-              <!-- Floor -->
-              <rect x="0" y="270" width="480" height="150" fill="url(#floorGrad)"/>
-              <line x1="0" y1="270" x2="480" y2="270" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-
-              <!-- Floor reflection lines (perspective) -->
-              <line x1="0" y1="310" x2="480" y2="310" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-              <line x1="0" y1="350" x2="480" y2="350" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-              <line x1="0" y1="390" x2="480" y2="390" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-
-              <!-- === RACKING SYSTEM LEFT === -->
-              <!-- Left rack - uprights -->
-              <rect x="28" y="40" width="5" height="232" fill="rgba(245,130,31,0.6)" rx="1"/>
-              <rect x="108" y="40" width="5" height="232" fill="rgba(245,130,31,0.6)" rx="1"/>
-              <!-- Left rack - shelves -->
-              <rect x="28" y="60" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
-              <rect x="28" y="120" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
-              <rect x="28" y="180" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
-              <rect x="28" y="240" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
-              <!-- Left rack - stock boxes top shelf -->
-              <rect x="32" y="68" width="24" height="46" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
-              <rect x="60" y="74" width="20" height="40" rx="1" fill="#22408A" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
-              <rect x="84" y="70" width="22" height="44" rx="1" fill="rgba(245,130,31,0.3)" stroke="rgba(245,130,31,0.2)" stroke-width="0.5"/>
-              <!-- Left rack - stock boxes mid shelf -->
-              <rect x="32" y="128" width="26" height="46" rx="1" fill="rgba(245,130,31,0.25)" stroke="rgba(245,130,31,0.15)" stroke-width="0.5"/>
-              <rect x="62" y="132" width="20" height="42" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
-              <rect x="86" y="128" width="20" height="46" rx="1" fill="#22408A" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
-              <!-- Left rack - stock boxes lower shelf -->
-              <rect x="32" y="188" width="30" height="46" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-              <rect x="66" y="192" width="22" height="42" rx="1" fill="rgba(245,130,31,0.3)" stroke="rgba(245,130,31,0.2)" stroke-width="0.5"/>
-              <rect x="90" y="190" width="18" height="44" rx="1" fill="#22408A" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-
-              <!-- === RACKING SYSTEM RIGHT === -->
-              <!-- Right rack - uprights -->
-              <rect x="368" y="40" width="5" height="232" fill="rgba(245,130,31,0.6)" rx="1"/>
-              <rect x="448" y="40" width="5" height="232" fill="rgba(245,130,31,0.6)" rx="1"/>
-              <!-- Right rack - shelves -->
-              <rect x="368" y="60" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
-              <rect x="368" y="120" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
-              <rect x="368" y="180" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
-              <rect x="368" y="240" width="85" height="6" fill="rgba(245,130,31,0.4)" rx="1"/>
-              <!-- Right rack boxes -->
-              <rect x="372" y="68" width="22" height="46" rx="1" fill="rgba(245,130,31,0.25)" stroke="rgba(245,130,31,0.15)" stroke-width="0.5"/>
-              <rect x="398" y="72" width="26" height="42" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
-              <rect x="428" y="68" width="20" height="46" rx="1" fill="#22408A" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-              <rect x="372" y="128" width="24" height="46" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
-              <rect x="400" y="132" width="20" height="42" rx="1" fill="rgba(245,130,31,0.3)" stroke="rgba(245,130,31,0.2)" stroke-width="0.5"/>
-              <rect x="424" y="128" width="24" height="46" rx="1" fill="#22408A" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-              <rect x="372" y="190" width="28" height="44" rx="1" fill="rgba(245,130,31,0.2)" stroke="rgba(245,130,31,0.1)" stroke-width="0.5"/>
-              <rect x="404" y="188" width="22" height="46" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-              <rect x="430" y="192" width="18" height="42" rx="1" fill="#22408A" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-
-              <!-- === FORKLIFT (centre, detailed) === -->
-              <!-- Mast -->
-              <rect x="246" y="160" width="10" height="115" fill="#0A1230" rx="1"/>
-              <rect x="258" y="160" width="10" height="115" fill="#0D1640" rx="1"/>
-              <!-- Forks -->
-              <rect x="246" y="272" width="52" height="5" rx="1" fill="#D96E10"/>
-              <rect x="246" y="282" width="52" height="5" rx="1" fill="#D96E10"/>
-              <!-- Fork load - pallet of boxes -->
-              <rect x="248" y="238" width="48" height="34" rx="1" fill="rgba(245,130,31,0.15)" stroke="rgba(245,130,31,0.3)" stroke-width="0.5"/>
-              <rect x="252" y="242" width="18" height="14" rx="1" fill="rgba(245,130,31,0.4)"/>
-              <rect x="274" y="244" width="16" height="12" rx="1" fill="rgba(245,130,31,0.3)"/>
-              <rect x="252" y="258" width="20" height="12" rx="1" fill="rgba(245,130,31,0.3)"/>
-              <rect x="276" y="260" width="14" height="10" rx="1" fill="rgba(245,130,31,0.2)"/>
-              <!-- Forklift body -->
-              <rect x="206" y="232" width="50" height="40" rx="3" fill="url(#truckBody)"/>
-              <!-- Cab window -->
-              <rect x="214" y="237" width="22" height="16" rx="1" fill="rgba(13,22,64,0.6)" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
-              <!-- Exhaust stack -->
-              <rect x="248" y="224" width="5" height="14" rx="1" fill="#C06010"/>
-              <!-- Counterweight -->
-              <rect x="200" y="244" width="10" height="24" rx="1" fill="#C06010"/>
-              <!-- Wheels -->
-              <circle cx="220" cy="275" r="11" fill="#0A1230" stroke="#F5821F" stroke-width="2"/>
-              <circle cx="220" cy="275" r="5" fill="#1C2B6E"/>
-              <circle cx="250" cy="275" r="9" fill="#0A1230" stroke="#F5821F" stroke-width="2"/>
-              <circle cx="250" cy="275" r="4" fill="#1C2B6E"/>
-              <!-- Wheel shine -->
-              <circle cx="217" cy="272" r="2" fill="rgba(255,255,255,0.15)"/>
-              <circle cx="247" cy="272" r="1.5" fill="rgba(255,255,255,0.15)"/>
-
-              <!-- === PALLET STACKS ON FLOOR === -->
-              <!-- Pallet left -->
-              <rect x="130" y="248" width="60" height="8" rx="1" fill="#8B5A2B" opacity="0.7"/>
-              <rect x="133" y="214" width="18" height="34" rx="1" fill="rgba(245,130,31,0.35)" stroke="rgba(245,130,31,0.2)" stroke-width="0.5"/>
-              <rect x="155" y="218" width="16" height="30" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-              <rect x="175" y="220" width="12" height="28" rx="1" fill="rgba(245,130,31,0.25)"/>
-              <!-- Pallet right -->
-              <rect x="300" y="248" width="60" height="8" rx="1" fill="#8B5A2B" opacity="0.7"/>
-              <rect x="303" y="216" width="20" height="32" rx="1" fill="#1C3580" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/>
-              <rect x="327" y="220" width="16" height="28" rx="1" fill="rgba(245,130,31,0.3)" stroke="rgba(245,130,31,0.15)" stroke-width="0.5"/>
-              <rect x="347" y="222" width="10" height="26" rx="1" fill="#22408A"/>
-
-              <!-- === CEILING LIGHTS === -->
-              <!-- Light 1 -->
-              <rect x="100" y="0" width="3" height="28" fill="rgba(255,255,255,0.06)"/>
-              <rect x="88" y="26" width="28" height="6" rx="1" fill="rgba(255,255,255,0.12)"/>
-              <ellipse cx="102" cy="35" rx="30" ry="18" fill="rgba(255,255,255,0.04)"/>
-              <!-- Light 2 -->
-              <rect x="240" y="0" width="3" height="28" fill="rgba(255,255,255,0.06)"/>
-              <rect x="228" y="26" width="28" height="6" rx="1" fill="rgba(255,255,255,0.12)"/>
-              <ellipse cx="242" cy="35" rx="30" ry="18" fill="rgba(255,255,255,0.04)"/>
-              <!-- Light 3 -->
-              <rect x="380" y="0" width="3" height="28" fill="rgba(255,255,255,0.06)"/>
-              <rect x="368" y="26" width="28" height="6" rx="1" fill="rgba(255,255,255,0.12)"/>
-              <ellipse cx="382" cy="35" rx="30" ry="18" fill="rgba(255,255,255,0.04)"/>
-
-              <!-- === BUYCO BRANDING ON WALL === -->
-              <text x="240" y="155" text-anchor="middle"
-                font-family="Barlow Condensed, sans-serif"
-                font-size="38" font-weight="900"
-                fill="rgba(255,255,255,0.06)"
-                letter-spacing="-1">BUYCO</text>
-
-              <!-- Floor shadow under forklift -->
-              <ellipse cx="232" cy="282" rx="50" ry="6" fill="rgba(0,0,0,0.3)"/>
-
-              <!-- Bottom label -->
-              <text x="240" y="410" text-anchor="middle"
-                fill="rgba(255,255,255,0.18)"
-                font-family="Barlow Condensed, sans-serif"
-                font-size="10" letter-spacing="3" font-weight="700">BUILDING MATERIALS WAREHOUSE</text>
-            </g>
-          </svg>
-        </div>
-        <div class="story-image-badge">Built By<br>Traders,<br>For Traders.</div>
-      </div>
-      <div class="story-content fade-up fade-up-2">
-        <div class="section-eyebrow">Our Story</div>
-        <h2>Born From a<br><span class="accent">Trusted Legacy.</span></h2>
-        <p>Born from the trusted legacy of The Building Company — the force behind BUCO and Timbercity — BUYCO delivers corporate-scale buying power, commercial expertise, and logistics solutions straight to your store.</p>
-        <p>Our mission is simple: unlock sustainable growth, boost margins, and strengthen your competitive edge, while keeping your independence intact. BUYCO gives you the firepower to turn ambition into measurable results.</p>
-        <ul class="story-bullets">
-          <li><strong>R6B+ Buying Power</strong> — leverage national-scale procurement from day one.</li>
-          <li><strong>Network</strong> — connect, collaborate, and grow with like-minded traders.</li>
-          <li><strong>Sustainable Growth</strong> — smarter supply chains, stronger margins, lasting success.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SCORECARD -->
-<section class="scorecard">
-  <div class="section-inner">
-    <div class="scorecard-grid">
-      <div class="scorecard-content fade-up">
-        <div class="section-eyebrow">What We Measure</div>
-        <h2>Take Control of Your<br><span class="accent">Business's Future.</span></h2>
-        <p>The BUYCO Scorecard evaluates the 3 core pillars that determine retail performance. It gives you a clear, practical view of where your business is strong — and where smarter buying can unlock hidden profitability.</p>
-        <div class="scorecard-pillars">
-          <div class="pillar">
-            <div class="pillar-icon">01</div>
-            <div class="pillar-text">
-              <strong>Procurement Performance</strong>
-              <span>Are you buying at the right price?</span>
-            </div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-icon">02</div>
-            <div class="pillar-text">
-              <strong>Supply Chain Efficiency</strong>
-              <span>Is your stock flow costing you margin?</span>
-            </div>
-          </div>
-          <div class="pillar">
-            <div class="pillar-icon">03</div>
-            <div class="pillar-text">
-              <strong>Commercial Structure</strong>
-              <span>Are your supplier terms working for you?</span>
-            </div>
-          </div>
-        </div>
-        <a href="join.html" class="btn-primary-orange" style="margin-top:8px;">Start Your Free Scorecard</a>
-      </div>
-      <div class="scorecard-visual fade-up fade-up-2">
-        <h3>Frustrated By<br><span class="accent">Shrinking Margins?</span></h3>
-        <p>Don't let another day pass with uncertainty. Get your free, personalised scorecard now and unlock the path to greater profitability.</p>
-        <div class="scorecard-bars">
-          <div class="score-bar-row">
-            <div class="score-bar-label"><span>Procurement</span><span class="bar-val">--</span></div>
-            <div class="score-bar-track"><div class="score-bar-fill" data-target="82"></div></div>
-          </div>
-          <div class="score-bar-row">
-            <div class="score-bar-label"><span>Supply Chain</span><span class="bar-val">--</span></div>
-            <div class="score-bar-track"><div class="score-bar-fill" data-target="67"></div></div>
-          </div>
-          <div class="score-bar-row">
-            <div class="score-bar-label"><span>Commercial</span><span class="bar-val">--</span></div>
-            <div class="score-bar-track"><div class="score-bar-fill" data-target="74"></div></div>
-          </div>
-        </div>
-        <a href="join.html" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Get Your Scorecard Now →</a>
       </div>
     </div>
   </div>
@@ -2846,42 +2609,22 @@
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="services">
+<!-- FRANCHISE CALLOUT -->
+<section class="franchise-callout">
   <div class="section-inner">
-    <div class="services-header">
-      <div class="services-header-row">
-        <div>
-          <div class="section-eyebrow" style="color:var(--orange);">What We Offer</div>
-          <h2 class="fade-up">Measure What <span class="accent">Matters.</span><br>Maximise Your <span class="accent">Potential.</span></h2>
-        </div>
-        <div class="services-header-cta">
-          <a href="join.html">Click Here To Get Your Scorecard →</a>
-        </div>
-      </div>
-    </div>
-    <div class="services-grid">
-      <div class="service-card fade-up">
-        <div class="service-number">01</div>
-        <div class="service-tag">Procurement</div>
-        <h3>Unlock Procurement Power</h3>
-        <p>Turn scale into advantage. Collective buying power that strengthens margins and puts you on equal footing with the biggest players in the industry.</p>
-      </div>
-      <div class="service-card fade-up fade-up-2">
-        <div class="service-number">02</div>
-        <div class="service-tag">Logistics</div>
-        <h3>Optimise Your Supply Chain</h3>
-        <p>Remove friction from your supply chain with coordinated ordering, shared distribution, and predictable delivery that keeps your shelves full.</p>
-      </div>
-      <div class="service-card fade-up fade-up-3">
-        <div class="service-number">03</div>
-        <div class="service-tag">Growth</div>
-        <h3>Accelerate Sustainable Growth</h3>
-        <p>Unlock smarter growth through better margins, improved stock turn, and insights that support long-term success across your business.</p>
+    <div class="franchise-inner fade-up">
+      <div class="franchise-badge">2026</div>
+      <div class="franchise-content">
+        <div class="section-eyebrow" style="color:var(--orange);">What's Coming Next</div>
+        <h2>The Foundation for a<br><span class="accent">New Franchise Brand.</span></h2>
+        <p>BUYCO is more than a buying group — it's the launchpad for an exciting new franchise retail brand set to launch in 2026. Independent building material merchants who grow with us now will have the opportunity to shape the next chapter of the Southern African building materials industry.</p>
+        <p style="margin-top:12px;font-weight:600;color:var(--navy);">Join today and be first in line when the doors open.</p>
+        <a href="join.html" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Register Your Interest</a>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- FAQ -->
 <section class="faq" id="faq">
@@ -2889,9 +2632,9 @@
     <div class="faq-layout">
       <div class="faq-left fade-up">
         <div class="section-eyebrow">FAQ</div>
-        <h2>Questions<br><span class="accent">Answered.</span></h2>
-        <p>Can't find what you're looking for? Our team is ready to help.</p>
-        <a href="join.html#contact" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Contact Us</a>
+        <h2>Quick<br><span class="accent">Answers.</span></h2>
+        <p>The most common questions from retailers considering joining BUYCO.</p>
+        <a href="join.html#faq" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">View All FAQs →</a>
       </div>
       <div class="faq-list fade-up fade-up-2">
         <div class="faq-item">
@@ -2909,7 +2652,7 @@
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>BUYCO operates on a transparent, collaborative commercial model. There are no hidden costs or lock-in contracts designed to trap you. Contact our team for a detailed breakdown of the commercial structure tailored to your store's size and turnover.</p>
+            <p>BUYCO operates on a transparent, collaborative commercial model. There are no hidden costs or lock-in contracts designed to trap you. Contact our team for a detailed breakdown tailored to your store's size and turnover.</p>
           </div>
         </div>
         <div class="faq-item">
@@ -2921,174 +2664,6 @@
             <p>From the moment your onboarding is complete, you have immediate access to supplier agreements and procurement pricing. Most members see tangible margin improvements within their first full trading quarter.</p>
           </div>
         </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>What size store qualifies to join?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>BUYCO is built for independent building material and hardware retailers of all sizes — from single-store operators to small regional chains. If you're owner-managed and community-rooted, we want to hear from you.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Do you operate outside of South Africa?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes. BUYCO is currently active across 8 countries in Southern Africa — South Africa, Namibia, Botswana, Zimbabwe, Zambia, Mozambique, Eswatini, and Lesotho — and we are actively expanding our footprint.</p>
-          </div>
-        </div>
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>How is BUYCO connected to The Building Company?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>BUYCO is The Building Company's collective buying group — born directly from the organisation behind BUCO and Timbercity. This means you benefit from decades of procurement infrastructure, supplier relationships, and commercial expertise from day one.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT FORM -->
-<section class="contact" id="contact">
-  <div class="section-inner">
-    <div class="contact-grid">
-      <div class="contact-info fade-up">
-        <div class="section-eyebrow">Get In Touch</div>
-        <h2>Let's Start Your<br><span class="accent">Journey.</span></h2>
-        <p>Ready to find out how BUYCO can transform your buying power? Fill in the form and one of our team will be in touch within one business day.</p>
-        <div class="contact-details">
-          <div class="contact-detail-item">
-            <div class="contact-detail-icon">✉</div>
-            <div>
-              <div class="contact-detail-label">Email Us</div>
-              <div class="contact-detail-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5c3d383135321c3e29253f33723f3372263d">[email&#160;protected]</a></div>
-            </div>
-          </div>
-          <div class="contact-detail-item">
-            <div class="contact-detail-icon">☎</div>
-            <div>
-              <div class="contact-detail-label">Call Us</div>
-              <div class="contact-detail-value">+27 21 927 5000</div>
-            </div>
-          </div>
-          <div class="contact-detail-item">
-            <div class="contact-detail-icon">🌐</div>
-            <div>
-              <div class="contact-detail-label">Website</div>
-              <div class="contact-detail-value">www.buyco.co.za</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="contact-form-wrap fade-up fade-up-2">
-        <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
-          <div class="form-row">
-            <div class="form-group">
-              <label>Your Name <span class="req">*</span></label>
-              <input type="text" placeholder="John Smith" required/>
-            </div>
-            <div class="form-group">
-              <label>Store Name <span class="req">*</span></label>
-              <input type="text" placeholder="Smith Hardware" required/>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Email Address <span class="req">*</span></label>
-              <input type="email" placeholder="john@smithhardware.co.za" required/>
-            </div>
-            <div class="form-group">
-              <label>Phone Number</label>
-              <input type="tel" placeholder="+27 11 000 0000"/>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>I Am A <span class="req">*</span></label>
-            <div class="form-select-wrap">
-              <select required>
-                <option value="" disabled selected>Select your role</option>
-                <option>Independent Retailer</option>
-                <option>Supplier / Manufacturer</option>
-                <option>Distributor</option>
-                <option>Other</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Province / Country</label>
-            <input type="text" placeholder="e.g. Gauteng, South Africa"/>
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea placeholder="Tell us about your store and what you're looking for..." rows="4"></textarea>
-          </div>
-          <button type="submit" class="btn-form-submit">
-            <span id="formBtnText">Send Enquiry</span>
-            <span id="formBtnLoader" style="display:none">Sending…</span>
-          </button>
-          <div class="form-success" id="formSuccess">
-            <span>✓</span> Thanks! We'll be in touch within one business day.
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- VALUES SECTION -->
-<section class="values">
-  <div class="section-inner">
-    <div class="values-grid">
-      <div class="values-left fade-up">
-        <div class="section-eyebrow">Our Foundation</div>
-        <h2>What We<br><span class="accent">Stand For.</span></h2>
-        <p>BUYCO is built on principles that go beyond margin and procurement. We believe that when trust, respect and performance align, everyone wins — suppliers, retailers and the communities they serve.</p>
-        <blockquote class="values-quote">
-          "We value people, true partnerships, and performance — the kind you can take to the bank."
-        </blockquote>
-      </div>
-      <div class="values-cards fade-up fade-up-2">
-        <div class="value-card">
-          <div class="value-icon">🤝</div>
-          <h4>Teamwork</h4>
-          <p>We believe the collective is stronger than any individual. Every retailer and supplier in our network contributes to a stronger whole.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">🎯</div>
-          <h4>Mutual Respect</h4>
-          <p>Every partner in the BUYCO ecosystem — from the smallest store to the largest supplier — deserves to be treated as an equal.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">💡</div>
-          <h4>Honesty</h4>
-          <p>Transparent commercial structures. No hidden fees. No conflicting agendas. Just clear, fair dealings that build long-term trust.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">📦</div>
-          <h4>Customer Value</h4>
-          <p>Every decision we make is ultimately in service of better products, better prices, and better experiences for the end consumer.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FRANCHISE CALLOUT -->
-<section class="franchise-callout">
-  <div class="section-inner">
-    <div class="franchise-inner fade-up">
-      <div class="franchise-badge">2026</div>
-      <div class="franchise-content">
-        <div class="section-eyebrow" style="color:var(--orange);">What's Coming Next</div>
-        <h2>The Foundation for a<br><span class="accent">New Franchise Brand.</span></h2>
-        <p>BUYCO is more than a buying group — it's the launchpad for an exciting new franchise retail brand set to launch in 2026. Independent building material merchants who grow with us now will have the opportunity to shape the next chapter of the Southern African building materials industry.</p>
-        <p style="margin-top:12px;font-weight:600;color:var(--navy);">Join today and be first in line when the doors open.</p>
-        <a href="join.html" class="btn-primary-orange" style="margin-top:24px;display:inline-block;">Register Your Interest</a>
       </div>
     </div>
   </div>
