@@ -43,9 +43,7 @@
   .fade-up-2{transition-delay:.15s}
   .fade-up-3{transition-delay:.3s}
   .scroll-progress{position:fixed;top:0;left:0;height:3px;background:var(--orange);z-index:999;width:0%;box-shadow:0 0 8px rgba(245,130,31,0.6)}
-  .whatsapp-btn{position:fixed;bottom:28px;left:28px;z-index:200;background:#25D366;color:var(--white);display:flex;align-items:center;gap:10px;padding:12px 20px 12px 14px;border-radius:50px;text-decoration:none;font-weight:700;font-size:13px;box-shadow:0 6px 24px rgba(37,211,102,0.4);transform:translateX(-120px);opacity:0;transition:transform .4s cubic-bezier(0.34,1.56,0.64,1),opacity .4s;white-space:nowrap}
-  .whatsapp-btn.show{transform:translateX(0);opacity:1}
-  .whatsapp-btn:hover{background:#1ebe5d;transform:translateY(-2px)!important;color:var(--white)}
+  
 
   /* ══ HERO ══ */
   .join-hero{min-height:100vh;background:linear-gradient(105deg,var(--navy-deep) 0%,var(--navy) 60%,#1E3080 100%);display:flex;align-items:center;padding-top:68px;position:relative;overflow:hidden}
@@ -211,7 +209,6 @@
     .trust-strip-inner{justify-content:center;gap:24px}
     .trust-item{min-width:100px}
     .section-inner,.footer-inner{padding-left:20px;padding-right:20px}
-    .whatsapp-btn{bottom:16px;left:16px;font-size:12px;padding:11px 16px 11px 12px}
   }
   @media(max-width:480px){.aud-stat-grid{grid-template-columns:1fr}.aud-visual{padding:24px 20px}.section-inner,.footer-inner{padding-left:16px;padding-right:16px}}
   .nav-hamburger{display:none}
@@ -221,11 +218,6 @@
 <body>
 
 <div class="scroll-progress" id="scrollProgress"></div>
-<a href="https://wa.me/27219275000?text=Hi%20BUYCO%2C%20I%27d%20like%20to%20join%20the%20buying%20group." class="whatsapp-btn" id="whatsappBtn" target="_blank" rel="noopener">
-  <svg width="22" height="22" viewBox="0 0 26 26" fill="none"><path d="M13 1C6.373 1 1 6.373 1 13c0 2.127.553 4.124 1.52 5.854L1 25l6.348-1.494A11.94 11.94 0 0013 25c6.627 0 12-5.373 12-12S19.627 1 13 1z" fill="white"/><path d="M19.11 16.28c-.306-.153-1.81-.893-2.09-.994-.28-.102-.484-.153-.688.153-.204.306-.79.994-.967 1.198-.178.204-.357.23-.663.077-.306-.153-1.292-.476-2.46-1.517-.91-.81-1.524-1.811-1.702-2.117-.178-.306-.019-.47.133-.622.137-.136.306-.357.459-.535.153-.179.204-.306.306-.51.102-.204.051-.382-.026-.535-.077-.153-.688-1.658-.942-2.27-.248-.596-.5-.515-.688-.524l-.586-.01c-.204 0-.535.077-.816.382-.28.306-1.07 1.046-1.07 2.55 0 1.506 1.096 2.959 1.249 3.163.153.204 2.157 3.294 5.228 4.623.731.315 1.301.503 1.746.644.734.233 1.402.2 1.93.121.589-.088 1.81-.74 2.065-1.455.255-.714.255-1.326.178-1.454-.076-.128-.28-.204-.586-.357z" fill="white"/></svg>
-  <span>Chat With Us</span>
-</a>
-
 <nav id="mainNav">
   <a href="index.html" class="nav-logo">
     <div class="nav-logo-mark">BUY<span>CO</span><span style="color:var(--orange);font-size:10px;vertical-align:super;">.</span></div>
@@ -398,11 +390,7 @@
         <div class="section-eyebrow" style="color:var(--orange);">FAQ</div>
         <h2>Questions<br><span>Answered.</span></h2>
         <p>Still unsure? Everything you need to know before applying is below. Still have questions? Our team is one message away.</p>
-        <a href="https://wa.me/27219275000" target="_blank" style="margin-top:16px;display:inline-flex;align-items:center;gap:8px;background:#25D366;color:white;padding:12px 20px;border-radius:3px;font-weight:700;font-size:13px;text-decoration:none;letter-spacing:.5px">
-          <svg width="18" height="18" viewBox="0 0 26 26" fill="none"><path d="M13 1C6.373 1 1 6.373 1 13c0 2.127.553 4.124 1.52 5.854L1 25l6.348-1.494A11.94 11.94 0 0013 25c6.627 0 12-5.373 12-12S19.627 1 13 1z" fill="white" opacity="0.4"/><path d="M19.11 16.28c-.306-.153-1.81-.893-2.09-.994-.28-.102-.484-.153-.688.153-.204.306-.79.994-.967 1.198-.178.204-.357.23-.663.077-.306-.153-1.292-.476-2.46-1.517-.91-.81-1.524-1.811-1.702-2.117-.178-.306-.019-.47.133-.622.137-.136.306-.357.459-.535.153-.179.204-.306.306-.51.102-.204.051-.382-.026-.535-.077-.153-.688-1.658-.942-2.27-.248-.596-.5-.515-.688-.524l-.586-.01c-.204 0-.535.077-.816.382-.28.306-1.07 1.046-1.07 2.55 0 1.506 1.096 2.959 1.249 3.163.153.204 2.157 3.294 5.228 4.623.731.315 1.301.503 1.746.644.734.233 1.402.2 1.93.121.589-.088 1.81-.74 2.065-1.455.255-.714.255-1.326.178-1.454-.076-.128-.28-.204-.586-.357z" fill="white"/></svg>
-          WhatsApp Us
-        </a>
-      </div>
+              </div>
       <div class="faq-list fade-up fade-up-2">
         <div class="faq-item"><button class="faq-q"><span>Will I lose my store's independence or brand?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>Absolutely not. Your name, your team, your brand — all remain entirely yours. BUYCO is designed to strengthen independent retailers, not standardise them. You retain full autonomy while gaining the commercial advantages of a national network.</p></div></div>
         <div class="faq-item"><button class="faq-q"><span>Is there a joining fee or long-term contract?</span><span class="faq-icon">+</span></button><div class="faq-a"><p>BUYCO operates on a transparent, collaborative commercial model. There are no hidden costs or lock-in contracts designed to trap you. Contact our team for a detailed breakdown tailored to your store's size and turnover.</p></div></div>
@@ -425,7 +413,7 @@
         <h2>Let's Start Your<br><span>Journey.</span></h2>
         <p>Prefer to speak directly? Our team is ready to answer your questions and guide you through the application process.</p>
         <div class="contact-details">
-          <div class="contact-item"><div class="contact-icon">✉</div><div><div class="contact-label">Email Us</div><div class="contact-value">admin@buyco.co.za</div></div></div>
+          <div class="contact-item"><div class="contact-icon">✉</div><div><div class="contact-label">Email Us</div><div class="contact-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="85e4e1e8ecebc5e7f0fce6eaabe6eaabffe4">[email&#160;protected]</a></div></div></div>
           <div class="contact-item"><div class="contact-icon">☎</div><div><div class="contact-label">Call Us</div><div class="contact-value">+27 21 927 5000</div></div></div>
           <div class="contact-item"><div class="contact-icon">🌐</div><div><div class="contact-label">Website</div><div class="contact-value">www.buyco.co.za</div></div></div>
         </div>
@@ -467,21 +455,20 @@
       <div class="footer-nav"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="about.html#legacy">Our Story</a></li><li><a href="index.html#footprint">Our Footprint</a></li></ul></div>
       <div class="footer-nav"><h4>Services</h4><ul><li><a href="services.html#procurement">Procurement</a></li><li><a href="services.html#logistics">Logistics</a></li><li><a href="services.html#growth">Growth Tools</a></li><li><a href="services.html#scorecard">Scorecard</a></li></ul></div>
       <div class="footer-nav"><h4>Join BUYCO</h4><ul><li><a href="join.html">For Retailers</a></li><li><a href="#suppliers">For Suppliers</a></li><li><a href="#contact">Contact Us</a></li></ul></div>
-      <div class="footer-nav"><h4>Downloads</h4><ul><li><a href="#" download>📄 Retailer Brochure</a></li><li><a href="#" download>📄 Supplier Brochure</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+      <div class="footer-nav"><h4>Downloads</h4><ul><li><a href="#" download>📄 Retailer Brochure</a></li><li><a href="#" download>📄 Supplier Brochure</a></li><li><a href="join.html#contact">Privacy Policy</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <p>© 2025 BUYCO. The Building Company's Collective Buying Group. All rights reserved.</p>
-      <div class="footer-legal"><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a></div>
+      <div class="footer-legal"><a href="join.html#contact">Terms & Conditions</a><a href="join.html#contact">Privacy Policy</a></div>
     </div>
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const obs = new IntersectionObserver(e => e.forEach(x => { if(x.isIntersecting) x.target.classList.add('visible'); }), {threshold:0.1});
   document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
   const nav = document.querySelector('nav');
-  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 80); document.getElementById('scrollProgress').style.width = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100) + '%'; }, {passive:true});
-  window.addEventListener('scroll', () => { document.getElementById('whatsappBtn').classList.toggle('show', window.scrollY > 400); }, {passive:true});
+  
   const hb = document.getElementById('navHamburger'), nl = document.getElementById('navLinks');
   hb.addEventListener('click', () => { hb.classList.toggle('open'); nl.classList.toggle('open'); });
   window.addEventListener('scroll', () => { hb.classList.remove('open'); nl.classList.remove('open'); }, {passive:true});
@@ -515,8 +502,4 @@
     const btn = e.target.querySelector('button[type=submit]');
     btn.textContent = 'Sending…';
     btn.disabled = true;
-    setTimeout(() => { btn.textContent = 'Send Enquiry'; btn.disabled = false; document.getElementById('contactSuccess').style.display = 'block'; e.target.reset(); setTimeout(() => { document.getElementById('contactSuccess').style.display = 'none'; }, 5000); }, 1500);
-  }
-</script>
-</body>
-</html>
+    setTimeout(() => { btn.textContent = 'Send Enquiry'; btn.disabled =
