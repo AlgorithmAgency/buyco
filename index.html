@@ -2340,6 +2340,9 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
   }
   .carousel-wrap::before,
   .carousel-wrap::after {
@@ -2355,10 +2358,18 @@
     width: max-content;
     animation: carouselScroll 32s linear infinite;
   }
+  .carousel-track.row2 {
+    animation: carouselScrollReverse 36s linear infinite;
+  }
   .carousel-track.paused { animation-play-state: paused; }
+  .carousel-track.row2.paused { animation-play-state: paused; }
   @keyframes carouselScroll {
     0%   { transform: translateX(0); }
     100% { transform: translateX(-50%); }
+  }
+  @keyframes carouselScrollReverse {
+    0%   { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
   }
   .carousel-item {
     background: var(--white);
@@ -2679,9 +2690,9 @@
       <p>We partner with the industry's finest to bring you the best range, quality and value for money.</p>
     </div>
 
-    <!-- CAROUSEL VIEW (default) -->
+    <!-- CAROUSEL VIEW -->
     <div class="carousel-wrap fade-up fade-up-2" id="carouselWrap">
-      <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-track" id="carouselTrack1">
         <div class="carousel-item" style="background:#1C2B6E;" title="Plascon">
           <img src="image/suppliers/Plascon%20Logo.png" alt="Plascon" loading="lazy">
         </div>
@@ -2730,6 +2741,56 @@
         <div class="carousel-item" style="background:#1C2B6E;" title="KBC">
           <img src="image/suppliers/KBC%20Logo-06%20-%20NEW%202022.png" alt="KBC" loading="lazy">
         </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Plascon">
+          <img src="image/suppliers/Plascon%20Logo.png" alt="Plascon" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Duram">
+          <img src="image/suppliers/DuramLogo_RGB_FC_transparent_wsp.png" alt="Duram" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Eureka">
+          <img src="image/suppliers/EUREKA.png" alt="Eureka" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Eurolux">
+          <img src="image/suppliers/Eurolux%20Centred.png" alt="Eurolux" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Swartland">
+          <img src="image/suppliers/SWL%20Experience%20Quality%20black.png" alt="Swartland" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Swartland Insulation">
+          <img src="image/suppliers/SWL%20Insulation%20black.png" alt="Swartland Insulation" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="JoJo">
+          <img src="image/suppliers/JoJo%20Logo_Digital_One%20Line%20Tagline_Blue.png" alt="JoJo" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Academy Brushware">
+          <img src="image/suppliers/Academy.png" alt="Academy Brushware" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="AfriLadder">
+          <img src="image/suppliers/AfriLad%20Landscape%20High%20Res.png" alt="AfriLadder" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Africa Tank">
+          <img src="image/suppliers/Africa-Tank-logos-6%20%281%29.png" alt="Africa Tank" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="COL">
+          <img src="image/suppliers/COL.png" alt="COL" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Cape Culture">
+          <img src="image/suppliers/Cape%20Culture.png" alt="Cape Culture" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="DiGi">
+          <img src="image/suppliers/Digi.png" alt="DiGi" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Gentech Industries">
+          <img src="image/suppliers/Gentech%20Industries%20logo%20PNG.png" alt="Gentech Industries" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Hydro">
+          <img src="image/suppliers/Hydro.png" alt="Hydro" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="KBC">
+          <img src="image/suppliers/KBC%20Logo-06%20-%20NEW%202022.png" alt="KBC" loading="lazy">
+        </div>
+      </div>
+      <div class="carousel-track row2" id="carouselTrack2">
         <div class="carousel-item" style="background:#1C2B6E;" title="Kayo">
           <img src="image/suppliers/Kayo.png" alt="Kayo" loading="lazy">
         </div>
@@ -2777,54 +2838,6 @@
         </div>
         <div class="carousel-item" style="background:#ffffff;" title="Vulcania">
           <img src="image/suppliers/VULCANIA%20LOGO%20plain_%20V%20-%20Square%20-%20Copy.png" alt="Vulcania" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#1C2B6E;" title="Plascon">
-          <img src="image/suppliers/Plascon%20Logo.png" alt="Plascon" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#1C2B6E;" title="Duram">
-          <img src="image/suppliers/DuramLogo_RGB_FC_transparent_wsp.png" alt="Duram" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#1C2B6E;" title="Eureka">
-          <img src="image/suppliers/EUREKA.png" alt="Eureka" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#ffffff;" title="Eurolux">
-          <img src="image/suppliers/Eurolux%20Centred.png" alt="Eurolux" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#ffffff;" title="Swartland">
-          <img src="image/suppliers/SWL%20Experience%20Quality%20black.png" alt="Swartland" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#ffffff;" title="Swartland Insulation">
-          <img src="image/suppliers/SWL%20Insulation%20black.png" alt="Swartland Insulation" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#1C2B6E;" title="JoJo">
-          <img src="image/suppliers/JoJo%20Logo_Digital_One%20Line%20Tagline_Blue.png" alt="JoJo" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#1C2B6E;" title="Academy Brushware">
-          <img src="image/suppliers/Academy.png" alt="Academy Brushware" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#1C2B6E;" title="AfriLadder">
-          <img src="image/suppliers/AfriLad%20Landscape%20High%20Res.png" alt="AfriLadder" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#1C2B6E;" title="Africa Tank">
-          <img src="image/suppliers/Africa-Tank-logos-6%20%281%29.png" alt="Africa Tank" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#1C2B6E;" title="COL">
-          <img src="image/suppliers/COL.png" alt="COL" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#1C2B6E;" title="Cape Culture">
-          <img src="image/suppliers/Cape%20Culture.png" alt="Cape Culture" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#ffffff;" title="DiGi">
-          <img src="image/suppliers/Digi.png" alt="DiGi" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#1C2B6E;" title="Gentech Industries">
-          <img src="image/suppliers/Gentech%20Industries%20logo%20PNG.png" alt="Gentech Industries" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#ffffff;" title="Hydro">
-          <img src="image/suppliers/Hydro.png" alt="Hydro" loading="lazy">
-        </div>
-        <div class="carousel-item" style="background:#1C2B6E;" title="KBC">
-          <img src="image/suppliers/KBC%20Logo-06%20-%20NEW%202022.png" alt="KBC" loading="lazy">
         </div>
         <div class="carousel-item" style="background:#1C2B6E;" title="Kayo">
           <img src="image/suppliers/Kayo.png" alt="Kayo" loading="lazy">
@@ -2877,7 +2890,7 @@
       </div>
     </div>
 
-    <!-- GRID VIEW (shown when "View All" clicked) -->
+    <!-- GRID VIEW -->
     <div class="suppliers-grid-full" id="suppliersGrid" style="display:none;">
       <div class="supplier-logo-full" style="background:#1C2B6E;" title="Plascon">
         <img src="image/suppliers/Plascon%20Logo.png" alt="Plascon" loading="lazy">
@@ -3395,30 +3408,41 @@
       grid.style.display = 'grid';
       btn.textContent = '← Show Carousel';
       btn.classList.add('expanded');
-      // Stagger grid items
       grid.querySelectorAll('.supplier-logo-full').forEach((el, i) => {
         el.style.opacity = '0';
         el.style.transform = 'scale(0.9)';
         setTimeout(() => {
-          el.style.transition = 'opacity 0.3s ease, transform 0.3s ease, filter 0.25s, box-shadow 0.25s';
-          el.style.opacity = '0.6';
+          el.style.transition = 'opacity 0.3s ease, transform 0.3s ease, filter 0.25s';
+          el.style.opacity = '0.7';
           el.style.transform = 'scale(1)';
-        }, i * 40);
+        }, i * 30);
       });
     } else {
-      carousel.style.display = 'block';
+      carousel.style.display = 'flex';
       grid.style.display = 'none';
       btn.textContent = 'View All Suppliers →';
       btn.classList.remove('expanded');
-      // Resume carousel
-      document.getElementById('carouselTrack').classList.remove('paused');
+      ['carouselTrack1','carouselTrack2'].forEach(id => {
+        const t = document.getElementById(id);
+        if (t) t.classList.remove('paused');
+      });
     }
   }
-  // Pause carousel on hover
-  const track = document.getElementById('carouselTrack');
-  if (track) {
-    track.addEventListener('mouseenter', () => track.classList.add('paused'));
-    track.addEventListener('mouseleave', () => track.classList.remove('paused'));
+  // Pause both tracks on hover
+  const carouselWrap = document.getElementById('carouselWrap');
+  if (carouselWrap) {
+    carouselWrap.addEventListener('mouseenter', () => {
+      ['carouselTrack1','carouselTrack2'].forEach(id => {
+        const t = document.getElementById(id);
+        if (t) t.classList.add('paused');
+      });
+    });
+    carouselWrap.addEventListener('mouseleave', () => {
+      ['carouselTrack1','carouselTrack2'].forEach(id => {
+        const t = document.getElementById(id);
+        if (t) t.classList.remove('paused');
+      });
+    });
   }
 
   // ── AUDIENCE TOGGLE ──
