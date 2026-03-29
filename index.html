@@ -690,12 +690,9 @@
     background: var(--white);
     padding: 32px 28px;
     display: flex; align-items: center; justify-content: center;
-    filter: grayscale(100%);
-    opacity: 0.6;
-    transition: filter 0.2s, opacity 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
   }
-
-  .supplier-logo:hover { filter: none; opacity: 1; }
+  .supplier-logo:hover { transform: scale(1.04); }
 
   .supplier-logo-text {
     font-family: 'Barlow Condensed', sans-serif;
@@ -2359,17 +2356,13 @@
     animation: carouselScroll 32s linear infinite;
   }
   .carousel-track.row2 {
-    animation: carouselScrollReverse 36s linear infinite;
+    animation: carouselScroll 38s linear infinite;
   }
   .carousel-track.paused { animation-play-state: paused; }
   .carousel-track.row2.paused { animation-play-state: paused; }
   @keyframes carouselScroll {
     0%   { transform: translateX(0); }
     100% { transform: translateX(-50%); }
-  }
-  @keyframes carouselScrollReverse {
-    0%   { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
   }
   .carousel-item {
     background: var(--white);
@@ -2380,9 +2373,8 @@
     justify-content: center;
     min-width: 180px;
     height: 90px;
-    filter: grayscale(100%);
-    opacity: 0.7;
-    transition: filter 0.25s, opacity 0.25s, transform 0.25s, box-shadow 0.25s;
+    opacity: 1;
+    transition: transform 0.25s, box-shadow 0.25s;
     flex-shrink: 0;
     cursor: default;
   }
@@ -2395,10 +2387,8 @@
     display: block;
   }
   .carousel-item:hover {
-    filter: none;
-    opacity: 1;
     transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(28,43,110,0.12);
+    box-shadow: 0 8px 24px rgba(28,43,110,0.15);
     position: relative;
     z-index: 1;
   }
@@ -2422,9 +2412,8 @@
     align-items: center;
     justify-content: center;
     height: 100px;
-    filter: grayscale(100%);
-    opacity: 0.7;
-    transition: filter 0.25s, opacity 0.25s, transform 0.25s;
+    opacity: 1;
+    transition: transform 0.25s, box-shadow 0.25s;
   }
   .supplier-logo-full img {
     max-height: 56px;
@@ -2435,9 +2424,8 @@
     display: block;
   }
   .supplier-logo-full:hover {
-    filter: none;
-    opacity: 1;
-    transform: scale(1.04);
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(28,43,110,0.12);
     position: relative;
     z-index: 1;
   }
