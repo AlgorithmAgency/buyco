@@ -2363,20 +2363,33 @@
   .carousel-item {
     background: var(--white);
     border: 1px solid var(--grey-light);
-    padding: 28px 36px;
-    display: flex; align-items: center; justify-content: center;
-    min-width: 160px;
+    padding: 20px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+    height: 90px;
     filter: grayscale(100%);
-    opacity: 0.6;
+    opacity: 0.7;
     transition: filter 0.25s, opacity 0.25s, transform 0.25s, box-shadow 0.25s;
     flex-shrink: 0;
     cursor: default;
   }
+  .carousel-item img {
+    max-height: 52px;
+    max-width: 140px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
   .carousel-item:hover {
-    filter: none; opacity: 1;
+    filter: none;
+    opacity: 1;
     transform: translateY(-3px);
     box-shadow: 0 8px 24px rgba(28,43,110,0.12);
-    position: relative; z-index: 1;
+    position: relative;
+    z-index: 1;
   }
   .suppliers-grid-full {
     display: grid;
@@ -2393,16 +2406,29 @@
   }
   .supplier-logo-full {
     background: var(--white);
-    padding: 32px 24px;
-    display: flex; align-items: center; justify-content: center;
+    padding: 24px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
     filter: grayscale(100%);
-    opacity: 0.6;
+    opacity: 0.7;
     transition: filter 0.25s, opacity 0.25s, transform 0.25s;
   }
+  .supplier-logo-full img {
+    max-height: 56px;
+    max-width: 140px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
   .supplier-logo-full:hover {
-    filter: none; opacity: 1;
+    filter: none;
+    opacity: 1;
     transform: scale(1.04);
-    position: relative; z-index: 1;
+    position: relative;
+    z-index: 1;
   }
   .view-all-btn {
     background: none;
@@ -2656,57 +2682,299 @@
     <!-- CAROUSEL VIEW (default) -->
     <div class="carousel-wrap fade-up fade-up-2" id="carouselWrap">
       <div class="carousel-track" id="carouselTrack">
-        <!-- Row 1 — duplicated for infinite loop -->
-        <div class="carousel-item"><span class="supplier-logo-text">Plascon</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Duram</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Medal</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">AfriSam</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Eureka</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Eurolux</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Agrinet</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">AfriLadder</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Harvey</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Malls Tiles</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Volsma</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">RobMeg Steel</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Heunis</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Mechook</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Workforce</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Plascon</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Duram</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Medal</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">AfriSam</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Eureka</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Eurolux</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Agrinet</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">AfriLadder</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Harvey</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Malls Tiles</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Volsma</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">RobMeg Steel</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Heunis</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Mechook</span></div>
-        <div class="carousel-item"><span class="supplier-logo-text">Workforce</span></div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Plascon">
+          <img src="images/suppliers/Plascon%20Logo.png" alt="Plascon" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Duram">
+          <img src="images/suppliers/DuramLogo_RGB_FC_transparent_wsp.png" alt="Duram" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Eureka">
+          <img src="images/suppliers/EUREKA.png" alt="Eureka" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Eurolux">
+          <img src="images/suppliers/Eurolux%20Centred.png" alt="Eurolux" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Swartland">
+          <img src="images/suppliers/SWL%20Experience%20Quality%20black.png" alt="Swartland" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Swartland Insulation">
+          <img src="images/suppliers/SWL%20Insulation%20black.png" alt="Swartland Insulation" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="JoJo">
+          <img src="images/suppliers/JoJo%20Logo_Digital_One%20Line%20Tagline_Blue.png" alt="JoJo" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Academy Brushware">
+          <img src="images/suppliers/Academy.png" alt="Academy Brushware" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="AfriLadder">
+          <img src="images/suppliers/AfriLad%20Landscape%20High%20Res.png" alt="AfriLadder" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Africa Tank">
+          <img src="images/suppliers/Africa-Tank-logos-6%20%281%29.png" alt="Africa Tank" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="COL">
+          <img src="images/suppliers/COL.png" alt="COL" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Cape Culture">
+          <img src="images/suppliers/Cape%20Culture.png" alt="Cape Culture" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="DiGi">
+          <img src="images/suppliers/Digi.png" alt="DiGi" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Gentech Industries">
+          <img src="images/suppliers/Gentech%20Industries%20logo%20PNG.png" alt="Gentech Industries" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Hydro">
+          <img src="images/suppliers/Hydro.png" alt="Hydro" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="KBC">
+          <img src="images/suppliers/KBC%20Logo-06%20-%20NEW%202022.png" alt="KBC" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Kayo">
+          <img src="images/suppliers/Kayo.png" alt="Kayo" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Kenzo">
+          <img src="images/suppliers/Kenzo.png" alt="Kenzo" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Marley Roofing">
+          <img src="images/suppliers/Marley%20Roofing%20Main%20Logo%20.png" alt="Marley Roofing" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Motoquip">
+          <img src="images/suppliers/Motoquip.png" alt="Motoquip" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Premier Rainwatergoods">
+          <img src="images/suppliers/Premier%20Rain%20Water%20goods_logo_info.jpg" alt="Premier Rainwatergoods" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Proton">
+          <img src="images/suppliers/Proton%20Logo.png" alt="Proton" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="RWG">
+          <img src="images/suppliers/RWG%20Logo%20%28002%29.png" alt="RWG" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Ruwag">
+          <img src="images/suppliers/Ruwag%20logo%20-%20transparent%20background.png" alt="Ruwag" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="SBS">
+          <img src="images/suppliers/SBS.png" alt="SBS" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Sanlic">
+          <img src="images/suppliers/SHOL.png" alt="Sanlic" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Styrene Cornices">
+          <img src="images/suppliers/StyreneCornices.jpg" alt="Styrene Cornices" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Summit">
+          <img src="images/suppliers/Summit.png" alt="Summit" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Dejay">
+          <img src="images/suppliers/dejay%20logo%20dark%20blue.png" alt="Dejay" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Vermont Sales">
+          <img src="images/suppliers/vermont%20sales.png" alt="Vermont Sales" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Winsters">
+          <img src="images/suppliers/Winsters.png" alt="Winsters" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Vulcania">
+          <img src="images/suppliers/VULCANIA%20LOGO%20plain_%20V%20-%20Square%20-%20Copy.png" alt="Vulcania" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Plascon">
+          <img src="images/suppliers/Plascon%20Logo.png" alt="Plascon" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Duram">
+          <img src="images/suppliers/DuramLogo_RGB_FC_transparent_wsp.png" alt="Duram" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Eureka">
+          <img src="images/suppliers/EUREKA.png" alt="Eureka" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Eurolux">
+          <img src="images/suppliers/Eurolux%20Centred.png" alt="Eurolux" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Swartland">
+          <img src="images/suppliers/SWL%20Experience%20Quality%20black.png" alt="Swartland" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Swartland Insulation">
+          <img src="images/suppliers/SWL%20Insulation%20black.png" alt="Swartland Insulation" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="JoJo">
+          <img src="images/suppliers/JoJo%20Logo_Digital_One%20Line%20Tagline_Blue.png" alt="JoJo" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Academy Brushware">
+          <img src="images/suppliers/Academy.png" alt="Academy Brushware" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="AfriLadder">
+          <img src="images/suppliers/AfriLad%20Landscape%20High%20Res.png" alt="AfriLadder" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Africa Tank">
+          <img src="images/suppliers/Africa-Tank-logos-6%20%281%29.png" alt="Africa Tank" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="COL">
+          <img src="images/suppliers/COL.png" alt="COL" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Cape Culture">
+          <img src="images/suppliers/Cape%20Culture.png" alt="Cape Culture" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="DiGi">
+          <img src="images/suppliers/Digi.png" alt="DiGi" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Gentech Industries">
+          <img src="images/suppliers/Gentech%20Industries%20logo%20PNG.png" alt="Gentech Industries" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Hydro">
+          <img src="images/suppliers/Hydro.png" alt="Hydro" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="KBC">
+          <img src="images/suppliers/KBC%20Logo-06%20-%20NEW%202022.png" alt="KBC" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Kayo">
+          <img src="images/suppliers/Kayo.png" alt="Kayo" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Kenzo">
+          <img src="images/suppliers/Kenzo.png" alt="Kenzo" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Marley Roofing">
+          <img src="images/suppliers/Marley%20Roofing%20Main%20Logo%20.png" alt="Marley Roofing" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Motoquip">
+          <img src="images/suppliers/Motoquip.png" alt="Motoquip" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Premier Rainwatergoods">
+          <img src="images/suppliers/Premier%20Rain%20Water%20goods_logo_info.jpg" alt="Premier Rainwatergoods" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Proton">
+          <img src="images/suppliers/Proton%20Logo.png" alt="Proton" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="RWG">
+          <img src="images/suppliers/RWG%20Logo%20%28002%29.png" alt="RWG" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Ruwag">
+          <img src="images/suppliers/Ruwag%20logo%20-%20transparent%20background.png" alt="Ruwag" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="SBS">
+          <img src="images/suppliers/SBS.png" alt="SBS" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Sanlic">
+          <img src="images/suppliers/SHOL.png" alt="Sanlic" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Styrene Cornices">
+          <img src="images/suppliers/StyreneCornices.jpg" alt="Styrene Cornices" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Summit">
+          <img src="images/suppliers/Summit.png" alt="Summit" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Dejay">
+          <img src="images/suppliers/dejay%20logo%20dark%20blue.png" alt="Dejay" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#1C2B6E;" title="Vermont Sales">
+          <img src="images/suppliers/vermont%20sales.png" alt="Vermont Sales" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Winsters">
+          <img src="images/suppliers/Winsters.png" alt="Winsters" loading="lazy">
+        </div>
+        <div class="carousel-item" style="background:#ffffff;" title="Vulcania">
+          <img src="images/suppliers/VULCANIA%20LOGO%20plain_%20V%20-%20Square%20-%20Copy.png" alt="Vulcania" loading="lazy">
+        </div>
       </div>
     </div>
 
     <!-- GRID VIEW (shown when "View All" clicked) -->
     <div class="suppliers-grid-full" id="suppliersGrid" style="display:none;">
-      <div class="supplier-logo-full"><span class="supplier-logo-text">Plascon</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">Duram</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">Medal</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">AfriSam</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">Eureka</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">Eurolux</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">Agrinet</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">AfriLadder</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">Harvey</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">Malls Tiles</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">Volsma</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">RobMeg Steel</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">Heunis</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">Mechook</span></div>
-      <div class="supplier-logo-full"><span class="supplier-logo-text">Workforce</span></div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Plascon">
+        <img src="images/suppliers/Plascon%20Logo.png" alt="Plascon" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Duram">
+        <img src="images/suppliers/DuramLogo_RGB_FC_transparent_wsp.png" alt="Duram" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Eureka">
+        <img src="images/suppliers/EUREKA.png" alt="Eureka" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#ffffff;" title="Eurolux">
+        <img src="images/suppliers/Eurolux%20Centred.png" alt="Eurolux" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#ffffff;" title="Swartland">
+        <img src="images/suppliers/SWL%20Experience%20Quality%20black.png" alt="Swartland" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#ffffff;" title="Swartland Insulation">
+        <img src="images/suppliers/SWL%20Insulation%20black.png" alt="Swartland Insulation" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="JoJo">
+        <img src="images/suppliers/JoJo%20Logo_Digital_One%20Line%20Tagline_Blue.png" alt="JoJo" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Academy Brushware">
+        <img src="images/suppliers/Academy.png" alt="Academy Brushware" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="AfriLadder">
+        <img src="images/suppliers/AfriLad%20Landscape%20High%20Res.png" alt="AfriLadder" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Africa Tank">
+        <img src="images/suppliers/Africa-Tank-logos-6%20%281%29.png" alt="Africa Tank" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="COL">
+        <img src="images/suppliers/COL.png" alt="COL" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Cape Culture">
+        <img src="images/suppliers/Cape%20Culture.png" alt="Cape Culture" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#ffffff;" title="DiGi">
+        <img src="images/suppliers/Digi.png" alt="DiGi" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Gentech Industries">
+        <img src="images/suppliers/Gentech%20Industries%20logo%20PNG.png" alt="Gentech Industries" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#ffffff;" title="Hydro">
+        <img src="images/suppliers/Hydro.png" alt="Hydro" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="KBC">
+        <img src="images/suppliers/KBC%20Logo-06%20-%20NEW%202022.png" alt="KBC" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Kayo">
+        <img src="images/suppliers/Kayo.png" alt="Kayo" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Kenzo">
+        <img src="images/suppliers/Kenzo.png" alt="Kenzo" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Marley Roofing">
+        <img src="images/suppliers/Marley%20Roofing%20Main%20Logo%20.png" alt="Marley Roofing" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Motoquip">
+        <img src="images/suppliers/Motoquip.png" alt="Motoquip" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#ffffff;" title="Premier Rainwatergoods">
+        <img src="images/suppliers/Premier%20Rain%20Water%20goods_logo_info.jpg" alt="Premier Rainwatergoods" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#ffffff;" title="Proton">
+        <img src="images/suppliers/Proton%20Logo.png" alt="Proton" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="RWG">
+        <img src="images/suppliers/RWG%20Logo%20%28002%29.png" alt="RWG" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Ruwag">
+        <img src="images/suppliers/Ruwag%20logo%20-%20transparent%20background.png" alt="Ruwag" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="SBS">
+        <img src="images/suppliers/SBS.png" alt="SBS" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Sanlic">
+        <img src="images/suppliers/SHOL.png" alt="Sanlic" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#ffffff;" title="Styrene Cornices">
+        <img src="images/suppliers/StyreneCornices.jpg" alt="Styrene Cornices" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Summit">
+        <img src="images/suppliers/Summit.png" alt="Summit" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Dejay">
+        <img src="images/suppliers/dejay%20logo%20dark%20blue.png" alt="Dejay" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#1C2B6E;" title="Vermont Sales">
+        <img src="images/suppliers/vermont%20sales.png" alt="Vermont Sales" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#ffffff;" title="Winsters">
+        <img src="images/suppliers/Winsters.png" alt="Winsters" loading="lazy">
+      </div>
+      <div class="supplier-logo-full" style="background:#ffffff;" title="Vulcania">
+        <img src="images/suppliers/VULCANIA%20LOGO%20plain_%20V%20-%20Square%20-%20Copy.png" alt="Vulcania" loading="lazy">
+      </div>
     </div>
 
     <div class="suppliers-cta fade-up fade-up-3">
