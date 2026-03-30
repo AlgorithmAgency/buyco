@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — BUYCO</title>
+<meta name="theme-color" content="#0D1640">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#1C2B6E;--navy-deep:#0D1640;--orange:#F5821F;--orange-dark:#D96E10;--white:#FFFFFF;--off-white:#F4F5F8;--grey:#8A919E;--grey-light:#E8EAF0;--text-dark:#1A1F2E;--text-body:#3D4459}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Barlow',sans-serif;background:var(--off-white);min-height:100vh;display:flex;flex-direction:column}
+  nav{background:var(--navy-deep);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:88px;border-bottom:1px solid rgba(255,255,255,0.08);flex-shrink:0}
+  .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .nav-logo-mark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:36px;color:var(--white);letter-spacing:-1px}
+  .nav-logo-mark .o{color:var(--orange)}.nav-logo-mark .dot{font-size:10px;color:var(--orange);vertical-align:super}
+  .nav-tagline{font-size:9px;color:rgba(255,255,255,0.45);letter-spacing:1.5px;text-transform:uppercase;border-left:1px solid rgba(255,255,255,0.2);padding-left:12px;line-height:1.5;max-width:150px}
+  .nav-back{color:rgba(255,255,255,0.6);font-size:13px;font-weight:600;text-decoration:none;text-transform:uppercase;letter-spacing:.5px;transition:color .2s}
+  .nav-back:hover{color:var(--orange)}
+  .page-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:48px 24px}
+  .form-card{background:var(--white);border-radius:10px;padding:44px 40px;width:100%;max-width:520px;box-shadow:0 2px 20px rgba(28,43,110,0.09);border:1px solid var(--grey-light)}
+  .card-logo{display:flex;flex-direction:column;align-items:center;gap:4px;margin-bottom:32px}
+  .card-logo-mark{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:48px;color:var(--navy);letter-spacing:-2px;line-height:1}
+  .card-logo-mark .o{color:var(--orange)}.card-logo-mark .dot{font-size:13px;color:var(--orange);vertical-align:super}
+  .card-logo-sub{font-size:8px;color:var(--grey);letter-spacing:2px;text-transform:uppercase;font-weight:700;text-align:center;margin-top:2px}
+  .form-card h2{font-family:'Barlow',sans-serif;font-weight:700;font-size:22px;color:var(--text-dark);margin-bottom:6px}
+  .form-card .sub{font-size:14px;color:var(--grey);margin-bottom:28px;line-height:1.6}
+  .form-group{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+  .form-group label{font-size:14px;font-weight:600;color:var(--text-dark)}
+  .form-group input,.form-group select,.form-group textarea{width:100%;padding:13px 16px;background:var(--off-white);border:1.5px solid var(--grey-light);border-radius:6px;font-family:'Barlow',sans-serif;font-size:14px;color:var(--text-dark);outline:none;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+  .form-group input::placeholder,.form-group textarea::placeholder{color:#b8c0cc}
+  .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(245,130,31,0.1);background:var(--white)}
+  .form-group textarea{resize:vertical;min-height:110px}
+  .field-error{font-size:12px;color:#D94040;font-weight:600;display:none}
+  .form-group.has-error input,.form-group.has-error textarea{border-color:#D94040}
+  .form-group.has-error .field-error{display:block}
+  .terms-row{display:flex;align-items:flex-start;gap:12px;padding:13px 16px;border:1.5px solid var(--grey-light);border-radius:6px;background:var(--off-white);margin-bottom:20px}
+  .terms-row input[type="checkbox"]{width:17px;height:17px;accent-color:var(--orange);flex-shrink:0;margin-top:1px;cursor:pointer}
+  .terms-row span{font-size:14px;color:var(--text-body);line-height:1.5}
+  .terms-row a{color:var(--orange);font-weight:600;text-decoration:none}
+  .terms-row a:hover{text-decoration:underline}
+  .btn-submit{width:100%;background:var(--orange);color:var(--white);border:none;padding:16px;border-radius:6px;font-family:'Barlow',sans-serif;font-weight:700;font-size:16px;cursor:pointer;transition:background .2s,transform .15s}
+  .btn-submit:hover{background:var(--orange-dark);transform:translateY(-1px)}
+  .btn-submit:disabled{background:var(--grey);cursor:not-allowed;transform:none}
+  .page-footer{height:8px;background:var(--orange);flex-shrink:0}
+  @media(max-width:600px){nav{padding:0 20px;height:72px}.nav-tagline{display:none}.form-card{padding:32px 20px}.page-wrap{padding:28px 16px}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">BUY<span class="o">CO</span><span class="dot">.</span></div>
+    <div class="nav-tagline">The Building Company's Collective Buying Group</div>
+  </a>
+  <a href="index.html" class="nav-back">← Back to Home</a>
+</nav>
+<div class="page-wrap">
+  <div class="form-card">
+    <div class="card-logo">
+      <div class="card-logo-mark">BUY<span class="o">CO</span><span class="dot">.</span></div>
+      <div class="card-logo-sub">The Building Company's Collective Buying Group</div>
+    </div>
+    <h2>Contact Us</h2>
+    <p class="sub">Tell us a little bit about yourself and your business to get started.</p>
+    <form id="contactForm" novalidate onsubmit="handleSubmit(event)">
+      <div class="form-group" id="fg-fullName">
+        <label>Full Name</label>
+        <input type="text" placeholder="John Doe" required>
+        <span class="field-error">Please enter your full name.</span>
+      </div>
+      <div class="form-group" id="fg-company">
+        <label>Company Name</label>
+        <input type="text" placeholder="Your Company Ltd.">
+      </div>
+      <div class="form-group" id="fg-designation">
+        <label>Designation</label>
+        <input type="text" placeholder="e.g., Owner, Procurement Manager">
+      </div>
+      <div class="form-group" id="fg-email">
+        <label>Email Address</label>
+        <input type="email" placeholder="you@company.com" required>
+        <span class="field-error">Please enter a valid email.</span>
+      </div>
+      <div class="form-group" id="fg-phone">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="+27 72 123 4567" required>
+        <span class="field-error">Please enter your phone number.</span>
+      </div>
+      <div class="form-group" id="fg-message">
+        <label>Message</label>
+        <textarea placeholder="How can we help you?" required></textarea>
+        <span class="field-error">Please enter a message.</span>
+      </div>
+      <div class="terms-row">
+        <input type="checkbox" id="terms" required>
+        <span>I agree to the <a href="#">terms and privacy policy.</a></span>
+      </div>
+      <button type="submit" class="btn-submit" id="submitBtn">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="page-footer"></div>
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    let valid = true;
+    e.target.querySelectorAll('[required]').forEach(f => {
+      const fg = f.closest('.form-group');
+      const bad = !f.value || (f.type==='checkbox'&&!f.checked) || (f.type==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value));
+      if(bad){if(fg)fg.classList.add('has-error');valid=false;}
+      else{if(fg)fg.classList.remove('has-error');}
+    });
+    if(!valid)return;
+    const btn=document.getElementById('submitBtn');
+    btn.textContent='Sending…';btn.disabled=true;
+    setTimeout(()=>{window.location.href='thankyou.html';},1000);
+  }
+  document.querySelectorAll('input,textarea').forEach(el=>{
+    el.addEventListener('input',()=>{const fg=el.closest('.form-group');if(fg)fg.classList.remove('has-error');});
+  });
+</script>
+</body>
+</html>
